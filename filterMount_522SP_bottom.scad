@@ -12,6 +12,14 @@ module 522SP_filterMountBottom(){
 		translate([0,-22.5,0]) cube(size=[30,4,20],center=true);
 		//screwHoles
 		lowerScrewHoles();
+		//key
+		translate([-30,-20,0]){
+			cube(size=[11,6,6],center=true);
+		}
+	}
+	//key
+	translate([30,-25,0]){
+		cube(size=[10,5,5],center=true);
 	}
 	rotate([0,0,180]){
 		translate([0,-5,4.5]){

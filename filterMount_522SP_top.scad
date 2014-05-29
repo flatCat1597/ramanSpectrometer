@@ -20,6 +20,14 @@ module 522SP_filterMountTop(){
 		//cornerNotch
 		translate([45,22.5,0]) cylinder(h=30,r=2,center=true);
 		translate([-45,22.5,0]) cylinder(h=30,r=2,center=true);
+		//key
+		translate([30,20,0]){
+			cube(size=[11,6,6],center=true);
+		}
+	}
+	//key
+	translate([-30,25,0]){
+		cube(size=[10,5,5],center=true);
 	}
 }
 
