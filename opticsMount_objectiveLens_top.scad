@@ -18,6 +18,9 @@ module objectiveLensMountTop(){
 			arrow();
 		}
 	}
+	//keys
+	translate([0,17,-8]) cube(size=[5,7,4],center=true);
+	translate([0,-17,-8]) cube(size=[7,5,4],center=true);
 }
 
 translate([0,0,0]){

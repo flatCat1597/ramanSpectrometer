@@ -13,6 +13,9 @@ module objectiveLensMountBottom(){
 		translate([9,17,6]) color([1,0,0]) cylinder(h=10,r=1.5,$fn=8,center=true);
 		translate([-9,-17,6]) color([1,0,0]) cylinder(h=10,r=1.5,$fn=8,center=true);
 		translate([9,-17,6]) color([1,0,0]) cylinder(h=10,r=1.5,$fn=8,center=true);
+		//keys
+		translate([0,17,7]) cube(size=[6,8,7],center=true);
+		translate([0,-17,7]) cube(size=[8,6,7],center=true);
 	}
 	difference(){
 		//base
