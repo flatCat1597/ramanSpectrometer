@@ -37,7 +37,7 @@ time.sleep(1)
 lcdBacklightOn()
 #lcdReverse()
 lcd.write(" Meridian Scientific ")
-lcd.write("PhotoSpectrometer v01")
+lcd.write("ramanSpectrometer v01")
 
 lcd.write("Setting Up GPIO:")
 GPIO.setmode(GPIO.BCM)
