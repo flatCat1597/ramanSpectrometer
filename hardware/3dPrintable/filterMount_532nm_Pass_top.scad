@@ -1,8 +1,8 @@
-//module 532nmPassFilter(){
-//	rotate([0,90,0]) {
-//		cylinder(r=13.25, h=6,$fn=100,center=true);
-//	}
-//}
+module 532nmPassFilter(){
+	rotate([0,90,0]) {
+		cylinder(r=13.25, h=4.32,$fn=100,center=true);
+	}
+}
 
 module 532nmPassFilterTop(){
 	difference(){
@@ -17,7 +17,7 @@ module 532nmPassFilterTop(){
 		//filterHole
 		translate([0,0,0]){
 			rotate([0,90,0]) {
-				cylinder(r=13.5, h=7,$fn=100,center=true);
+				cylinder(r=13.5, h=4.75,$fn=100,center=true);
 			}
 		}
 		translate([0,0,0]){

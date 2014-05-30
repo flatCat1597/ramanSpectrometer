@@ -68,7 +68,7 @@ mechanical_lensCassette();
 translate([filterInPosition,-34,-38]){
 	mechanical_slideStepper_mountingBracket_small();
 }
-translate([filterInPosition,-4,-38]){
+translate([filterInStorage,-4,-38]){
 	mechanical_slideStepper_mountingBracket_small();
 }
 translate([filterInStorage,34,-38]){
@@ -115,22 +115,22 @@ translate([filterInPosition,-34,47.5]){
 }
 
 //550LP_Filter
-translate([filterInPosition,-10,70]){
+translate([filterInStorage,-10,70]){
 	rotate([90,180,0]){
 		filterMountRetainingBracket();
 	}
 }
-translate([filterInPosition,2,70]){
+translate([filterInStorage,2,70]){
 	rotate([90,180,180]){
 		filterMountRetainingBracket();
 	}
 }
-translate([filterInPosition,-4,92.5]){
+translate([filterInStorage,-4,92.5]){
 	rotate([90,180,0]){
 		550LP_filterMountTop();
 	}
 }
-translate([filterInPosition,-4,47.5]){
+translate([filterInStorage,-4,47.5]){
 	rotate([90,180,0]){
 		550LP_filterMountBottom();
 	}
