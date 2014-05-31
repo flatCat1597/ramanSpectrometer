@@ -9,7 +9,7 @@ module 532nmPassFilter(){
 module 532nmPassFilterBottom(){
 	difference(){
 		//basePlate
-		translate([0,0,-14]){
+		translate([0,0,-19.5]){
 			color([0.8,1,.6]) cube(size=[25,55,2],center=true);	
 		}
 		//filterHole
@@ -17,23 +17,23 @@ module 532nmPassFilterBottom(){
 			cylinder(r=13.5, h=4.75,$fn=50,center=true);
 		}
 		//screwHoles
-		translate([9,24,-14]){
+		translate([9,24,-19]){
 			 color([1,0,0]) cylinder(r=1.5,h=5,$fn=8,center=true);
 		}
-		translate([9,-24,-14]) {
+		translate([9,-24,-19]) {
 			color([1,0,0]) cylinder(r=1.5,h=5,$fn=8,center=true);
 		}
-		translate([-9,24,-14]){
+		translate([-9,24,-19]){
 			color([1,0,0]) cylinder(r=1.5,h=5,$fn=8,center=true);
 		}
-		translate([-9,-24,-14]){
+		translate([-9,-24,-19]){
 			color([1,0,0]) cylinder(r=1.5,h=5,$fn=8,center=true);
 		}
 	}
 	difference(){
 		//base
-		translate([0,0,-7]){
-			color([0.8,1,.6]) cube(size=[12,40,14],center=true);	
+		translate([0,0,-9.25]){
+			color([0.8,1,.6]) cube(size=[12,40,18.5],center=true);	
 		}
 		//filterHole
 		translate([0,0,0]){

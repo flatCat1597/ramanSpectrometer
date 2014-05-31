@@ -13,6 +13,12 @@ use <../opticsMount_verticalAperture_bracket_025.scad>
 use <../opticsMount_diffractionGrating_top.scad>
 use <../opticsMount_standard_bottom.scad>
 use <../opticsMount_retainingBracket.scad>
+use <../opticsMount_beamSplitter_bottom.scad>
+use <../opticsMount_beamSplitter_top.scad>
+use <../opticsMount_objectiveLens_Bottom.scad>
+use <../opticsMount_objectiveLens_Top.scad>
+use <../filterMount_532nm_Pass_bottom.scad>
+use <../filterMount_532nm_Pass_top.scad>
 use <../filterMount_522SP_bottom.scad>
 use <../filterMount_522SP_top.scad>
 use <../filterMount_550LP_bottom.scad>
@@ -28,10 +34,20 @@ use <../mechanical_slideStepper_mountingBracket_large.scad>
 use <../mechanical_slideStepper_mountingBracket_small.scad>
 
 module laserEmitter(){
-	color([0.4,0.4,0.4]) cube(size=[85,40,40],center=true);	
+	difference(){
+		color([0.4,0.4,0.4]) cube(size=[96,40,40],center=true);	
+		translate([-45,0,0]){
+			rotate([0,90,0]) cylinder(r=11.75,h=10,$fn=20,center=true);
+		}
+	}
 }
 module laserEmitter_powerSupply(){
-	color([0.4,0.4,0.4]) cube(size=[85,40,40],center=true);	
+//	color([0.4,0.4,0.4]) cube(size=[102.5,47,47.5],center=true);	
+	color([0.4,0.4,0.4]) cube(size=[47.5,47,102.5],center=true);	
+	translate([24,-4,0]){
+//		color([0.4,0.4,0.4]) cube(size=[102.5,67,1],center=true);		
+		color([0.4,0.4,0.4]) cube(size=[1,67,102.5],center=true);		
+	}
 }
 module laserBeam(length){
 	rotate([0,90,0]) color([0,1,0]) cylinder(h=length,r=.5,$fn=50,center=true);	
@@ -131,7 +147,7 @@ translate([-73,-105,31.5]){
 translate([90,-85,70]){
 	laserEmitter();
 }
-translate([98,85,22]){
+translate([110,85,52]){
 	laserEmitter_powerSupply();
 }
 translate([-35,-85,38]){
@@ -233,8 +249,35 @@ translate([-60,85,70]) {
 filterInPosition = -10;
 filterInStorage = 50;
 
+//									532nm_Pass
+translate([28,-85,70]){
+	532nmPassFilterBottom();
+}
+translate([28,-85,70]){
+	532nmPassFilterTop();
+}
 
-//522SP_Filter
+//									beamSplitter
+translate([-10,-85,60]){
+	rotate([0,0,270]){
+		beamSplitterMountBottom();
+	}
+}
+translate([-10,-85,75]){
+	rotate([0,0,270]){
+		beamSplitterMountTop();
+	}
+}
+
+//									objectiveLens
+translate([-62,-85,60]){
+	objectiveLensMountBottom();
+}
+translate([-62,-85,76]){
+	objectiveLensMountTop();
+}
+
+//									522SP_Filter
 translate([filterInPosition,-40,70]){
 	rotate([90,180,0]){
 		filterMountRetainingBracket();
@@ -256,7 +299,7 @@ translate([filterInPosition,-34,47.5]){
 	}
 }
 
-//550LP_Filter
+//									550LP_Filter
 translate([filterInStorage,-10,70]){
 	rotate([90,180,0]){
 		filterMountRetainingBracket();
@@ -278,7 +321,7 @@ translate([filterInStorage,-4,47.5]){
 	}
 }
 
-//Interference_Filter
+//									Interference_Filter
 translate([filterInStorage,20.5,70]){
 	rotate([90,180,0]){
 		filterMountRetainingBracket();
