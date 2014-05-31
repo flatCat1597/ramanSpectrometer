@@ -22,18 +22,46 @@ translate([3,0,20]){
 	}
 }
 
-translate([27,0,20]){
+translate([-27,0,20]){
+	rotate([0,0,0]){
+		lensCapture();
+	}
+}
+translate([-29,0,20]){
 	rotate([0,0,180]){
 		lensCapture();
 	}
 }
-translate([29,0,20]){
-		lensCapture();
-}
-translate([28,0,20]){
-	rotate([0,0,180]){
+translate([-28,0,20]){
+	rotate([0,0,0]){
 		retainingBracket();
 	}
 }
-collimatingLens();
+
+
+	//captureAssemblyMountScrews(doesn't look like it makes sense unless I show these)
+	translate([-12,14.5,35]){
+		rotate([0,90,0]){
+			cylinder(r=1.5,h=45,center=true);
+		}
+	}
+	translate([-12,-14.5,35]){
+		rotate([0,90,0]){
+			cylinder(r=1.5,h=45,center=true);
+		}
+	}
+	translate([-12,14.5,5.5]){
+		rotate([0,90,0]){
+			cylinder(r=1.5,h=45,center=true);
+		}
+	}
+	translate([-12,-14.5,5.5]){
+		rotate([0,90,0]){
+			cylinder(r=1.5,h=45,center=true);
+		}
+	}
+
+translate([-56,0,0]){
+	collimatingLens();
+}
 collimatingLensMount();
