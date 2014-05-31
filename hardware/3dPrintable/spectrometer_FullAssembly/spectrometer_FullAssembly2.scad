@@ -17,6 +17,7 @@ use <../opticsMount_beamSplitter_bottom.scad>
 use <../opticsMount_beamSplitter_top.scad>
 use <../opticsMount_objectiveLens_Bottom.scad>
 use <../opticsMount_objectiveLens_Top.scad>
+use <../opticsMount_collimating_lensCapture.scad>
 use <../filterMount_532nm_Pass_bottom.scad>
 use <../filterMount_532nm_Pass_top.scad>
 use <../filterMount_522SP_bottom.scad>
@@ -53,7 +54,7 @@ module laserBeam(length){
 	rotate([0,90,0]) color([0,1,0]) cylinder(h=length,r=.5,$fn=50,center=true);	
 }
 module container(){
-	%translate([0,0,0]) color([0.9,0.9,0.7]) cube(size=[280,230,2],center=true);
+	%translate([-4,0,0]) color([0.9,0.9,0.7]) cube(size=[285,230,2],center=true);
 }
 module containerWalls(){
 	translate([0,0,59]){
@@ -209,22 +210,48 @@ translate([-61,85,50]){
 			aperture();
 		}
 	}	
+	translate([-25,0,20]){
+		captureAssembly();
+	}
+	//captureAssemblyMountScrews(doesn't look like it makes sense unless I show these)
+	translate([-12,14.5,35]){
+		rotate([0,90,0]){
+			cylinder(r=1.5,h=45,center=true);
+		}
+	}
+	translate([-12,-14.5,35]){
+		rotate([0,90,0]){
+			cylinder(r=1.5,h=45,center=true);
+		}
+	}
+	translate([-12,14.5,5.5]){
+		rotate([0,90,0]){
+			cylinder(r=1.5,h=45,center=true);
+		}
+	}
+	translate([-12,-14.5,5.5]){
+		rotate([0,90,0]){
+			cylinder(r=1.5,h=45,center=true);
+		}
+	}
 }
 translate([-61,85,2]){
 	opticsMount_standard_base();
 }
 
-translate([-109,82,70]){
-	rotate([0,0,115]){
+
+//									DIFFRACTIONGRATING
+translate([-119,82,70]){
+	rotate([0,0,125]){
 		retainingBracket();
 	}
 }
-translate([-111,85,50]){
-	rotate([0,0,115]){
+translate([-121,85,50]){
+	rotate([0,0,125]){
 		opticsMount_diffractionGrating_top();
 	}
 }
-translate([-111,85,2]){
+translate([-121,85,2]){
 	opticsMount_standard_base();
 }
 
@@ -242,8 +269,8 @@ rotate([0,0,90]){
 		laserBeam(170);
 	}
 }
-translate([-60,85,70]) {
-	laserBeam(100);
+translate([-65,85,70]) {
+	laserBeam(110);
 }
 
 filterInPosition = -10;
