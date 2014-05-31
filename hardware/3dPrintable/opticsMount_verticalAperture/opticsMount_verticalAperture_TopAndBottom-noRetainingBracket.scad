@@ -10,5 +10,5 @@ translate([0,0,-49]){
 }
 
 translate([-2,0,20]){
-	retainingBracket();
+//	retainingBracket();
 }

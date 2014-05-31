@@ -101,5 +101,8 @@ module captureAssembly(){
 	translate([0,0,-20]){
 		collimatingLensMount();
 	}
+	lensCapture();
 }
+
 lensCapture();
+captureAssembly();
