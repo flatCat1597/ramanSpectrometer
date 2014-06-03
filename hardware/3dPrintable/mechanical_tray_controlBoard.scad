@@ -3,10 +3,10 @@ use <electronic_stNucleoF401RE.scad>
 
 module edgeClips(){
 	translate([0,0,6]){
-		color([0.8,0.2,0.1]) cube(size=[4,5,12],center=true);
+		color([0.8,0.2,0.1]) cube(size=[4,15,12],center=true);
 	}
 	translate([2,0,5]){
-		color([0.8,0.2,0.1]) cube(size=[2,5,9],center=true);
+		color([0.8,0.2,0.1]) cube(size=[2,15,9],center=true);
 	}
 	translate([1.75,2.5,11.5]){
 		rotate([90,0,0]){
@@ -22,12 +22,12 @@ module edgeClipPositions(){
 	translate([-67,30,0]){
 		edgeClips();
 	}
-	translate([-7,-45.75,0]){
+	translate([-5,-45.75,0]){
 		rotate([0,0,90]){
 			edgeClips();
 		}
 	}
-	translate([-7,37.75,0]){
+	translate([-5,38.25,0]){
 		rotate([0,0,270]){
 			edgeClips();
 		}

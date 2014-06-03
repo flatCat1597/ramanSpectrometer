@@ -1,15 +1,15 @@
-use <mechanical_slideStepperMotor.scad>
-use <filterMount_550LP_top.scad>
-use <filterMount_550LP_bottom.scad>
-use <filterMount_522SP_bottom.scad>
-use <filterMount_522SP_top.scad>
-use <filterMount_interference_bottom.scad>
-use <filterMount_interference_top.scad>
-use <filterMount_retainingBracket.scad>
+use <../mechanical_slideStepperMotor.scad>
+use <../filterMount_550LP_top.scad>
+use <../filterMount_550LP_bottom.scad>
+use <../filterMount_522SP_bottom.scad>
+use <../filterMount_522SP_top.scad>
+use <../filterMount_interference_bottom.scad>
+use <../filterMount_interference_top.scad>
+use <../filterMount_retainingBracket.scad>
 
-use <mechanical_slideStepper_mountingBracket_large.scad>
-use <mechanical_slideStepper_mountingBracket_small.scad>
-use <mechanical_slideStepper_frame.scad>
+use <../mechanical_slideStepper_mountingBracket_large.scad>
+use <../mechanical_slideStepper_mountingBracket_small.scad>
+use <../mechanical_slideStepper_frame.scad>
 
 filterInPosition = -10;
 filterInStorage = 50;
