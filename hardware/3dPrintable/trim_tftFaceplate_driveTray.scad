@@ -86,7 +86,7 @@ module trim_tftFacePlate_driveTray(){
 	}
 	difference(){
 		//lightBoxes-mainCube
-		translate([-36,0,10.5]){
+		translate([-36,0,11]){
 			cube(size=[45,35,14],center=true);
 		}
 		//lightBoxes-okButton
@@ -128,40 +128,81 @@ module trim_tftFacePlate_driveTray(){
 	}
 	//nucleoSupports
 	//bottomRail_left
-	translate([-35.75,14.5,-50]){
-		color([1,0,0]) cube(size=[4,7,60],center=true);
+	translate([-36.25,13,-50]){
+		color([1,0,0]) cube(size=[4,10,60],center=true);
 	}	
 	//topRail_left
-	translate([-35.75,7.5,-50]){
-		color([1,0,0]) cube(size=[4,2,60],center=true);
+	translate([-36.25,3,-50]){
+		color([1,1,0]) cube(size=[4,2,60],center=true);
 	}	
 	//sideRail_left
-	translate([-36.75,10,-50]){
-		color([1,0,0]) cube(size=[2,3,60],center=true);
-	}	
-
-	translate([35.75,14.5,-50]){
-		color([1,0,0]) cube(size=[4,7,60],center=true);
-	}	
-	//topRail_right
-	translate([35.75,7.5,-50]){
-		color([1,0,0]) cube(size=[4,2,60],center=true);
-	}	
-	//sideRail_right
-	translate([36.75,10,-50]){
-		color([1,0,0]) cube(size=[2,3,60],center=true);
+	translate([-37.25,6,-50]){
+		color([1,0,1]) cube(size=[2,4,60],center=true);
 	}	
 	//bottomRail_right
-	translate([0,14.5,-12]){
-		color([1,0,0]) cube(size=[40,7,4],center=true);
+	translate([36.25,13,-50]){
+		color([1,0,0]) cube(size=[4,10,60],center=true);
 	}	
-	translate([-10,15.75,-15]){
-		color([1,0,0]) cube(size=[12,9.5,4],center=true);
+	//topRail_right
+	translate([36.25,3,-50]){
+		color([1,1,0]) cube(size=[4,2,60],center=true);
+	}	
+	//sideRail_right
+	translate([37.25,6,-50]){
+		color([1,0,1]) cube(size=[2,4,60],center=true);
+	}	
+	//bottomRail_top
+	translate([0,13,-12]){
+		color([1,0,0]) cube(size=[40,10,4],center=true);
+	}	
+	translate([-10,14.35,-15]){
+		color([1,0,0]) cube(size=[12,12.5,4],center=true);
 	}	
 
-	translate([0,10,-11]){
+	translate([0,7,-11]){
 		color([1,0,0]) cube(size=[20,4,2],center=true);
 	}	
+	//supports
+	translate([-20,18.65,8]){
+		rotate([90,0,0]){
+			color([.4,.3,.2]) cylinder(r=1,h=4,center=true);
+		}
+	}
+	translate([-20,18.65,15]){
+		rotate([90,0,0]){
+			color([.4,.3,.2]) cylinder(r=1,h=4,center=true);
+		}
+	}
+	translate([-30,18.65,8]){
+		rotate([90,0,0]){
+			color([.4,.3,.2]) cylinder(r=1,h=4,center=true);
+		}
+	}
+	translate([-30,18.65,15]){
+		rotate([90,0,0]){
+			color([.4,.3,.2]) cylinder(r=1,h=4,center=true);
+		}
+	}
+	translate([-40,18.65,8]){
+		rotate([90,0,0]){
+			color([.4,.3,.2]) cylinder(r=1,h=4,center=true);
+		}
+	}
+	translate([-40,18.65,15]){
+		rotate([90,0,0]){
+			color([.4,.3,.2]) cylinder(r=1,h=4,center=true);
+		}
+	}
+	translate([-50,18.65,8]){
+		rotate([90,0,0]){
+			color([.4,.3,.2]) cylinder(r=1,h=4,center=true);
+		}
+	}
+	translate([-50,18.65,15]){
+		rotate([90,0,0]){
+			color([.4,.3,.2]) cylinder(r=1,h=4,center=true);
+		}
+	}
 }
 
 
