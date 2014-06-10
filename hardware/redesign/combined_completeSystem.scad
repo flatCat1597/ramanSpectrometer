@@ -1,11 +1,11 @@
-use <electronic_object_laser_emitter.scad>
-use <structural_mount_laser_top.scad>
-use <structural_mount_laser_bottom.scad>
-use <mechanical_object_9gServo.scad>
+use <rw_electronic_object_laser_emitter.scad>
+use <electronic_mount_laser_top.scad>
+use <electronic_mount_laser_bottom.scad>
+use <rw_mechanical_object_9gServo.scad>
 use <mechanical_device_laserShutter_top.scad>
 use <mechanical_device_laserShutter_bottom.scad>
-use <optics_surfaceMirror_top.scad>
-use <optics_surfaceMirror_bottom.scad>
+use <optics_module_surfaceMirror_top.scad>
+use <optics_module_surfaceMirror_bottom.scad>
 
 structural_mount_laser_top();
 structural_mount_laser_bottom();

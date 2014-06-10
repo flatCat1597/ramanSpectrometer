@@ -1,5 +1,5 @@
 use <mechanical_object_raspiMount.scad>
-use <mechanical_tray_standard.scad>
+use <std_mechanical_object_tray.scad>
 
 module raspiMount(){
 	//raspiMount

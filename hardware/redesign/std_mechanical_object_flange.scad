@@ -1,4 +1,4 @@
-module flange(){
+module flangeBody(){
 	difference(){
 		//tubeBody
 		translate([5,0,0]) rotate([0,90,0]) cylinder(h=12,r=12,center=true);
@@ -32,8 +32,11 @@ module flangeFace(){
 	}
 }
 
-
-union(){
-	flange();
-	flangeFace();
+module flange(){
+	union(){
+		flangeBody();
+		flangeFace();
+	}
 }
+
+flange();
