@@ -38,10 +38,18 @@ module mainFrame(){
 			//deflectionIndicator2
 			translate([0,0,-10]) cylinder(r=5,h=10,center=true);
 		}
+		//servoMounts
+		difference(){
+			translate([-14.5,15,0]) cube(size=[5.5,8,12],center=true);
+			translate([-14.5,17.5,0]) rotate([90,0,0]) cylinder(r=1.5,h=5,center=true);
+		}
+		difference(){
+			translate([14.5,15,0]) cube(size=[5.5,8,12],center=true);
+			translate([14.5,17.5,0]) rotate([90,0,0]) cylinder(r=1.5,h=5,center=true);
+		}
+		//block
+		translate([0,-13,0]) cube(size=[15,1,15],center=true);
 	}
-	//servoMounts
-	translate([-14.5,15,0]) cube(size=[5.5,8,12],center=true);
-	translate([14.5,15,0]) cube(size=[5.5,8,12],center=true);
 }
 
 //translate([0,0,20]) cube(size=[48,1,1],center=true);
