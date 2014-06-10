@@ -12,9 +12,13 @@ structural_mount_laser_bottom();
 laserEmitter();
 
 translate([88,0,0]){
-	translate([0,25,0]) rotate([90,0,0]) 9g_motor();
 	laserShutter_Top();
 	laserShutter_Bottom();
+}
+translate([88,25,0]){
+	 rotate([90,0,0]){
+		9g_motor();
+	}
 }
 
 
@@ -22,6 +26,7 @@ translate([133,0,0]){
 	mirror_mount_top();
 	mirror_mount_bottom();
 }
+	mirror();
 
 
 //translate([50,0,30]) color([1,0,0]) cube(size=[200,1,1],center=true);
