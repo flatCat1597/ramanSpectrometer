@@ -62,7 +62,7 @@ module outerCasing_top(){
 			translate([-35,-25,15]) cylinder(h=22,r=4,center=true);
 			
 			//alignmentPeg1
-			translate([0,-25,-4]) cylinder(h=10,r=2.25,center=true);
+			translate([0,-25,5]) cylinder(h=12,r=2.25,center=true);
 		}
 		//alignmentPeg2
 		translate([0,25,0]) cylinder(h=10,r=2,center=true);
