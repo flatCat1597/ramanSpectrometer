@@ -6,6 +6,7 @@ use <mechanical_device_laserShutter_top.scad>
 use <mechanical_device_laserShutter_bottom.scad>
 use <optics_module_surfaceMirror_top.scad>
 use <optics_module_surfaceMirror_bottom.scad>
+use <optics_module_beamSplitter_top.scad>
 
 structural_mount_laser_top();
 structural_mount_laser_bottom();
@@ -26,7 +27,11 @@ translate([133,0,0]){
 	mirror_mount_top();
 	mirror_mount_bottom();
 }
+translate([133,0,0]){
 	mirror();
-
+}
 
 //translate([50,0,30]) color([1,0,0]) cube(size=[200,1,1],center=true);
+translate([133,-64,0]){
+	beamSplitter_mount();
+}
