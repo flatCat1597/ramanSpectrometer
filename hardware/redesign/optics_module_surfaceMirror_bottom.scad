@@ -1,4 +1,4 @@
-use <std_mechanical_object_flange.scad>
+use <std_mechanical_object_flange3.scad>
 
 module mirror(){
 	translate ([1.75,1.75,0]) rotate([0,90,45]) cylinder(r=13,h=5,$fn=100,center=true);

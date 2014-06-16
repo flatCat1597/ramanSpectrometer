@@ -1,4 +1,4 @@
-use <std_mechanical_object_flange.scad>
+use <std_mechanical_object_flange3.scad>
 
 module bodyTubes(){
 	union(){
@@ -130,8 +130,8 @@ module screwHoleOuter(){
 }
 
 module screwHoleInner(){
-		translate([0,0,-5]) cylinder(r=1.5,h=15,center=true);
-		translate([0,0,8]) cylinder(r=3,h=15,center=true);
+		translate([0,0,5]) cylinder(r=1.5,h=15,center=true);
+		translate([0,0,11]) cylinder(r=3,h=15,center=true);
 }
 
 module beamSplitterTop(){

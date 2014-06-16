@@ -1,4 +1,4 @@
-use <std_mechanical_object_flange.scad>
+use <std_mechanical_object_flange3.scad>
 
 module outerCasing_top(){
 	union(){
@@ -35,14 +35,16 @@ module outerCasing_top(){
 			rotate([22.5,0,0]){
 				for ( z = [0 : 7] ){
 					rotate( z * 360 / 8, [1, 0, 0]){
-						translate([50, 15, 0]){
-							rotate([0,90,0]){
-								cylinder(r=3,h=7,center=true);
+						translate([50, 17, 0]){
+							rotate([45,90,0]){
+								cylinder(r=4,h=9,center=true);
 							}
 						}
 					}
 				}
 			}
+			translate([50,15.75,15.75]) rotate([0,90,0]) cylinder(r=4,h=7,center=true);	
+			translate([50,-15.75,15.75]) rotate([0,90,0]) cylinder(r=4,h=7,center=true);
 			for (q=[0:8]){
 				translate([(q*100 / 8)-50,0,24]){
 					rotate([0,45,45]){

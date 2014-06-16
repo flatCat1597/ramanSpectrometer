@@ -1,5 +1,5 @@
 use <rw_mechanical_object_9gServo.scad>
-use <std_mechanical_object_flange.scad>
+use <std_mechanical_object_flange3.scad>
 
 module mainFrame(){
 	union(){
