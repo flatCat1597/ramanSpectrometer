@@ -138,7 +138,7 @@ module beamSplitterTop(){
 	difference(){
 		bodyUnit();
 		//chopBottom
-		translate([0,0,-10]) cube([100,100,20],center=true);
+//		translate([0,0,-10]) cube([100,100,20],center=true);
 	}
 }
 
