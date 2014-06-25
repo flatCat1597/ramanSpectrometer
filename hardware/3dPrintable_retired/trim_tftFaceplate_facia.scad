@@ -2,8 +2,7 @@ module trim_tftFacePlate_facia(){
 	difference(){
 		//mainBox
 		translate([0,0,17]){
-//			color([0.6,0.8,0.2]) cube(size=[150.56,42.88,2],center=true);
-			color([0.6,0.8,0.2]) cube(size=[147.56,46.88,2],center=true);
+			color([0.6,0.8,0.2]) cube(size=[150.56,42.88,2],center=true);
 		}
 		//displayHole
 		translate([25.5,0,16.75]){

@@ -33,7 +33,7 @@
 	t = 1; 			//mm letter thickness
 	space =1; 			//extra space between characters in (character widths)
 	rotate=0;			// text rotation (clockwise)
-	font = "trim_lib_letters.dxf";	//default for aditional fonts
+	font = "lib_trim_letters.dxf";	//default for aditional fonts
 
 
 // write cube defaults

@@ -25,13 +25,13 @@ module bodyTubes(){
 		difference(){
 			//crossTubeOuter
 			intersection(){
-				translate([-4.5,-15,0]) cube(size=[51,30,20],center=true);
-				translate([-4.5,-15,0]) rotate([0,90,0]) cylinder(r=15,h=52,center=true);
+				translate([3.5,-15,0]) cube(size=[51,30,20],center=true);
+				translate([3.5,-15,0]) rotate([0,90,0]) cylinder(r=15,h=52,center=true);
 			}
 			//crossTubeInner
 			intersection(){
-				translate([-4.5,-15,0]) cube(size=[52,25,15],center=true);
-				translate([-4.5,-15,0]) rotate([0,90,0]) cylinder(r=11,h=53,center=true);
+				translate([3.5,-15,0]) cube(size=[52,25,15],center=true);
+				translate([3.5,-15,0]) rotate([0,90,0]) cylinder(r=11,h=53,center=true);
 			}
 			//mainWallCutout
 				cube(size=[25,70,15],center=true);
@@ -68,13 +68,13 @@ module centralHub(){
 	}
 	//beamStopFlange
 	rotate([0,0,0]){
-		translate([11,-15,0]){
+		translate([18,-15,0]){
 			flangeFace();
 		}
 	}
 	//lensSelectorFlange
 	rotate([0,0,180]){
-		translate([20,15,0]){
+		translate([11,15,0]){
 			flangeFace();
 		}
 	}

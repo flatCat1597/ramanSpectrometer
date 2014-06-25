@@ -302,16 +302,19 @@ translate([0,-70,-58]){
 	%translate([0,-60,35]) cube(size=[12,12,45],center=true);
 }
 
-translate([25,-10,-51]){
-	rotate([0,0,90]){
-		mechanical_StepperMotor();
-		translate([0,17.5,8]){
-			rotate([0,14.5,0]){
-				mechanical_cuvetteTrayMotorPinion();
+module stepperMotorPinion(){
+	translate([25,-10,-51]){
+		rotate([0,0,90]){
+			mechanical_StepperMotor();
+			translate([0,17.5,8]){
+				rotate([0,14.5,0]){
+					mechanical_cuvetteTrayMotorPinion();
+				}
 			}
 		}
 	}
 }
+stepperMotorPinion();
 
 module 6x12x4Bearing(){
 		rotate([0,90,0]){
