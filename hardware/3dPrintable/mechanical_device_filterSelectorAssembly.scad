@@ -1,5 +1,5 @@
 use <std_mechanical_object_flange3.scad>
-use <mechanical_rackAndPinion.scad>
+use <std_mechanical_lib_rackAndPinion.scad>
 use <mechanical_object_pinion.scad>
 use <rw_mechanical_object_stepperMotor.scad>
 
@@ -54,7 +54,7 @@ translate([0,27,0]){
 difference(){
 	translate([20,15,-17]){
 		rotate([90,0,0]){
-			color([.6,.7,.2]) pinion(4,60,4,5);
+			color([.6,.7,.2]) pinion(4,60,4,22);
 		}
 	}
 }

@@ -9,8 +9,9 @@ module objectiveMount(){
 				translate([0,3,0]) rotate([90,0,0]) cylinder(r=18,h=35,center=true);
 			}
 			//lensHole
-			translate([0,9,0]) rotate([90,0,0]) cylinder(h=13,r=12,center=true);
-			translate([0,-6,0]) rotate([90,0,0]) cylinder(h=18,r=10,center=true);
+			translate([0,8,0]) rotate([90,0,0]) cylinder(h=11.5,r=12.25,center=true);
+			translate([0,-6,0]) rotate([90,0,0]) cylinder(h=18,r=10.25,center=true);
+			translate([0,15,0]) rotate([90,0,0]) cylinder(h=4.5,r=10.5,center=true);
 			intersection(){
 				translate([0,14,0]) cube(size=[20,10,15],center=true);
 				translate([0,15,0]) rotate([90,0,0]) cylinder(r=10,h=10,center=true);
@@ -69,14 +70,14 @@ module objectiveMount(){
 	}
 	union(){
 		difference(){
-			translate([-15,-4,0]) screwHoleOuter();
-			translate([-15,-4,0]) screwHoleInner();
+			translate([-15.5,-4,0]) screwHoleOuter();
+			translate([-15.5,-4,0]) screwHoleInner();
 		}
 	}
 	union(){
 		difference(){
-			translate([15,-4,0]) screwHoleOuter();
-			translate([15,-4,0]) screwHoleInner();
+			translate([15.5,-4,0]) screwHoleOuter();
+			translate([15.5,-4,0]) screwHoleInner();
 		}
 	}
 	//sideScrewHoles
@@ -107,7 +108,7 @@ module objectiveMount(){
 			intersection(){
 				color([0,0.7,0.4]) cube(size=[15,15,2],center=true);
 				translate([0,0,12.5]){
-				color([0,0.7,1]) sphere(r=15,center=true);
+					color([0,0.7,1]) sphere(r=15,center=true);
 				}
 			}
 		}

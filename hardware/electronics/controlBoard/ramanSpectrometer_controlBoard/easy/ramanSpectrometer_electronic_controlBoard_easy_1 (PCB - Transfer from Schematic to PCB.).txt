@@ -1,0 +1,16 @@
+Transfer from Schematic to PCB.
+-------------------------------
+
+Report File    : C:\Users\bbgAdminX\Google Drive\projectData\Projects\gitHub\ramanSpectrometer\hardware\electronics\controlBoard\ramanSpectrometer_controlBoard\easy\ramanSpectrometer_electronic_controlBoard_easy_1 (PCB - Transfer from Schematic to PCB.).txt
+Report Written : Friday, June 27, 2014
+Design Path    : C:\Users\bbgAdminX\Google Drive\projectData\Projects\gitHub\ramanSpectrometer\hardware\electronics\controlBoard\ramanSpectrometer_controlBoard\easy\ramanSpectrometer_electronic_controlBoard_easy_1.pcb
+Design Title   : 
+Created        : 6/27/2014 8:59:42 AM
+Last Saved     : 6/27/2014 9:00:28 AM
+Editing Time   : 0 min
+Units          : thou (precision 0)
+
+PCB component "U1" does not have a pad numbered 16.
+PCB component "U4" does not have a pad numbered 16.
+
+End Of Report.

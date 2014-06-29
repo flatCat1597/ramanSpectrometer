@@ -1,5 +1,5 @@
 use <std_mechanical_object_flange3.scad>
-use <lib_trim_write.scad>
+use <std_trim_lib_write.scad>
 
 module outerCasing_bottom(){
 	union(){
