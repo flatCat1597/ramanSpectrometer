@@ -4,7 +4,7 @@ use <trim_tftFaceplate_facia.scad>
 use <optics_module_beamSplitter_top.scad>
 use <std_mechanical_object_flange3.scad>
 use <mechanical_object_pinion.scad>
-use <mechanical_rackAndPinion.scad>
+use <std_mechanical_lib_rackAndPinion.scad>
 
 module mainBox(){
 	difference(){
