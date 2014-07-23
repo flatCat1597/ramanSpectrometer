@@ -110,20 +110,164 @@ if __name__ == '__main__':
 #                inHex = double_to_hex(inFloat)
                 #printHex(inHex)
 #                sendHex(inHex) 
-           byte = chr(0xA0)
+           print "Request Laser Temp:"
+           byte = chr(0xF0)
            serial.write(byte)
-           printHex(byte)
+#           printHex(byte)
 
-           time.sleep(0.12)
+#           time.sleep(.25)
 
-           byte = chr(0xA5)
+           byte = chr(0xF2)
            serial.write(byte)
-           printHex(byte)
+#           printHex(byte)
 #            except ValueError:
 #               logd("Enter a proper number!")
  
-           time.sleep(4)
+ #          time.sleep(.25)
  
+           byte = chr(0xC0)
+           serial.write(byte)
+#           printHex(byte)
+
+  #         time.sleep(.25)
+
+           byte = chr(0xC5)
+           serial.write(byte)
+#           printHex(byte)
+ 
+#           time.sleep(.25)
+
+           byte = chr(0xF2)
+           serial.write(byte)
+#           printHex(byte)
+
+#           time.sleep(.25)
+
+           byte = chr(0xF3)
+           serial.write(byte)
+#           printHex(byte)
+ 
+           time.sleep(2)
+
+
+           print "Request Cuvette Temp:"
+           byte = chr(0xF0)
+           serial.write(byte)
+#           printHex(byte)
+
+#           time.sleep(.5)
+
+           byte = chr(0xF2)
+           serial.write(byte)
+#           printHex(byte)
+#            except ValueError:
+#               logd("Enter a proper number!")
+ 
+#           time.sleep(.5)
+ 
+           byte = chr(0xA0)
+           serial.write(byte)
+#           printHex(byte)
+
+#           time.sleep(.5)
+
+           byte = chr(0xA5)
+           serial.write(byte)
+#           printHex(byte)
+ 
+#           time.sleep(.5)
+
+           byte = chr(0xF2)
+           serial.write(byte)
+#           printHex(byte)
+
+#           time.sleep(.5)
+
+           byte = chr(0xF3)
+           serial.write(byte)
+#           printHex(byte)
+ 
+           time.sleep(2)
+
+           print "Request Open Tray:"
+           byte = chr(0xF0)
+           serial.write(byte)
+#           printHex(byte)
+
+#           time.sleep(.5)
+
+           byte = chr(0xF2)
+           serial.write(byte)
+#           printHex(byte)
+#            except ValueError:
+#               logd("Enter a proper number!")
+ 
+#           time.sleep(.5)
+ 
+           byte = chr(0xA0)
+           serial.write(byte)
+#           printHex(byte)
+
+#           time.sleep(.5)
+
+           byte = chr(0xA1)
+           serial.write(byte)
+#           printHex(byte)
+ 
+#           time.sleep(.5)
+
+           byte = chr(0xF2)
+           serial.write(byte)
+#           printHex(byte)
+
+#           time.sleep(.5)
+
+           byte = chr(0xF3)
+           serial.write(byte)
+#           printHex(byte)
+ 
+           time.sleep(10)
+
+
+           print "Request Close Tray:"
+           byte = chr(0xF0)
+           serial.write(byte)
+#           printHex(byte)
+
+#           time.sleep(.5)
+
+           byte = chr(0xF2)
+           serial.write(byte)
+#           printHex(byte)
+#            except ValueError:
+#               logd("Enter a proper number!")
+ 
+#           time.sleep(.5)
+ 
+           byte = chr(0xA0)
+           serial.write(byte)
+#           printHex(byte)
+
+#           time.sleep(.5)
+
+           byte = chr(0xA2)
+           serial.write(byte)
+#           printHex(byte)
+ 
+#           time.sleep(.5)
+
+           byte = chr(0xF2)
+           serial.write(byte)
+#           printHex(byte)
+
+#           time.sleep(.5)
+
+           byte = chr(0xF3)
+           serial.write(byte)
+#           printHex(byte)
+ 
+           time.sleep(10)
+
         except KeyboardInterrupt:
             print
             logd("Keyboard interrupt")

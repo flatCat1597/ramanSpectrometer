@@ -19,119 +19,123 @@ module objectiveMount(){
 			translate([-15,-4,0]) screwHoleInner();
 			translate([15,-4,0]) screwHoleInner();
 		}
-		color([0.6,0.84,0.64]){
-		union(){
-			intersection(){
+//		color([0.6,0.84,0.64]){
+			union(){
 				difference(){
-					translate([0,48,0]) cube(size=[30,60,20],center=true);
-					intersection(){
-						translate([0,48,0]) cube(size=[28,61,10],center=true);
-						translate([0,48,0]) rotate([90,0,0]) cylinder(r=7,h=62,center=true);
+				intersection(){
+					difference(){
+						translate([0,48,0]) cube(size=[30,60,20],center=true);
+						intersection(){
+							translate([0,48,0]) cube(size=[28,61,10],center=true);
+							translate([0,48,0]) rotate([90,0,0]) cylinder(r=7,h=62,center=true);
+						}
+						translate([0,48,0]) rotate([0,0,0]) cube(size=[27.5,40,14],center=true);
 					}
-					translate([0,48,0]) rotate([0,0,0]) cube(size=[27.5,40,14],center=true);
-					//mainScrewHoles
-					translate([-12,70,0]) screwHoleInner();
-					translate([12,70,0]) screwHoleInner();
-					translate([-12,25,0]) screwHoleInner();
-					translate([12,25,0]) screwHoleInner();
+					translate([0,48,0]) rotate([90,0,0]) cylinder(r=15,h=62,center=true);
 				}
-				translate([0,48,0]) rotate([90,0,0]) cylinder(r=15,h=62,center=true);
+						//mainScrewHoles
+						translate([-12,70,0]) screwHoleInner();
+						translate([12,70,0]) screwHoleInner();
+						translate([-12,25,0]) screwHoleInner();
+						translate([12,25,0]) screwHoleInner();
+}
+				translate([0,73.5,0]){
+					rotate([0,0,90]){
+						flange();
+					}
+				}
+			}	
+//		}
+		union(){
+			//mainScrewHoles
+			union(){
+				difference(){
+					translate([-12,70,0])  screwHoleOuter();
+					translate([-12,70,0])  screwHoleInner();
+				}
 			}
-			translate([0,73.5,0]){
-				rotate([0,0,90]){
-					flange();
+		union(){
+			difference(){
+				translate([12,70,0]) screwHoleOuter();
+				translate([12,70,0]) screwHoleInner();
+			}
+		}
+		union(){
+			difference(){
+				translate([-12,25,0]) screwHoleOuter();
+				translate([-12,25,0]) screwHoleInner();
+			}
+		}
+		union(){
+			difference(){
+				translate([12,25,0]) screwHoleOuter();
+				translate([12,25,0]) screwHoleInner();
+			}
+		}
+		union(){
+			difference(){
+				translate([-15.5,-4,0]) screwHoleOuter();
+				translate([-15.5,-4,0]) screwHoleInner();
+			}
+		}
+		union(){
+			difference(){
+				translate([15.5,-4,0]) screwHoleOuter();
+				translate([15.5,-4,0]) screwHoleInner();
+			}
+		}
+		//sideScrewHoles
+		union(){
+			rotate([0,90,0]){
+				difference(){
+					translate([-17,8,0]) screwHoleOuter();
+					translate([-17,8,0]) screwHoleInner2();
+				}
+			}
+			translate([0,8,13]){
+				intersection(){
+					color([0,0.7,0.4]) cube(size=[15,15,2],center=true);
+					translate([0,0,-12.5]){
+						color([0,0.7,1]) sphere(r=15,center=true);
+					}
 				}
 			}
 		}	
-	//mainScrewHoles
-	union(){
-		difference(){
-			translate([-12,70,0])  screwHoleOuter();
-			translate([-12,70,0])  screwHoleInner();
-		}
-	}
-	union(){
-		difference(){
-			translate([12,70,0]) screwHoleOuter();
-			translate([12,70,0]) screwHoleInner();
-		}
-	}
-	union(){
-		difference(){
-			translate([-12,25,0]) screwHoleOuter();
-			translate([-12,25,0]) screwHoleInner();
-		}
-	}
-	union(){
-		difference(){
-			translate([12,25,0]) screwHoleOuter();
-			translate([12,25,0]) screwHoleInner();
-		}
-	}
-	union(){
-		difference(){
-			translate([-15.5,-4,0]) screwHoleOuter();
-			translate([-15.5,-4,0]) screwHoleInner();
-		}
-	}
-	union(){
-		difference(){
-			translate([15.5,-4,0]) screwHoleOuter();
-			translate([15.5,-4,0]) screwHoleInner();
-		}
-	}
-	//sideScrewHoles
-	union(){
-		rotate([0,90,0]){
-			difference(){
-				translate([-17,8,0]) screwHoleOuter();
-				translate([-17,8,0]) screwHoleInner2();
+		union(){
+			rotate([0,90,0]){
+				difference(){
+					translate([17,8,0]) screwHoleOuter();
+					translate([17.5,8,0]) screwHoleInner2();
+				}	
 			}
-		}
-		translate([0,8,13]){
-			intersection(){
+			translate([0,8,-13]){
+				intersection(){
 					color([0,0.7,0.4]) cube(size=[15,15,2],center=true);
-				translate([0,0,-12.5]){
-					color([0,0.7,1]) sphere(r=15,center=true);
+					translate([0,0,12.5]){
+						color([0,0.7,1]) sphere(r=15,center=true);
+					}
+				}
+			}
+		}
+		union(){
+			rotate([0,90,0]){
+				difference(){
+					translate([-13,58,0]) screwHoleOuter();
+					translate([-13,58,0]) screwHoleInner2();
+				}		
+			}
+		}
+		union(){
+			rotate([0,90,0]){
+				difference(){
+					translate([13,58,0]) screwHoleOuter();
+					translate([13,58,0]) screwHoleInner2();
 				}
 			}
 		}
 	}
-	union(){
-		rotate([0,90,0]){
-			difference(){
-				translate([17,8,0]) screwHoleOuter();
-				translate([17.5,8,0]) screwHoleInner2();
-			}	
-		}
-		translate([0,8,-13]){
-			intersection(){
-				color([0,0.7,0.4]) cube(size=[15,15,2],center=true);
-				translate([0,0,12.5]){
-					color([0,0.7,1]) sphere(r=15,center=true);
-				}
-			}
-		}
-	}
-	union(){
-		rotate([0,90,0]){
-			difference(){
-				translate([-13,58,0]) screwHoleOuter();
-				translate([-13,58,0]) screwHoleInner2();
-			}		
-		}
-	}
-	union(){
-		rotate([0,90,0]){
-			difference(){
-				translate([13,58,0]) screwHoleOuter();
-				translate([13,58,0]) screwHoleInner2();
-			}
-		}
-	}
-	}
-}	}
-
+}
+}
 
 module screwHoleOuter(){
 		cylinder(r=5,h=15,center=true);
