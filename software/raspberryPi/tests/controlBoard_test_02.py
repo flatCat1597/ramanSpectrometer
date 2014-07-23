@@ -123,6 +123,54 @@ if __name__ == '__main__':
  
            time.sleep(10)
 
+           cool = (chr(0x01))
+           heat = (chr(0x02))
+           off  = (chr(0x00))
+
+           cmd_cuvette_pelt_power = (chr(0xF0)+chr(0xF2)+chr(0XD2)+chr(0xD3)+chr(0xF2)+chr(0xF3))
+           print "Command Cuvette Peltier COOL:"
+           serial.write(cmd_cuvette_pelt_power)
+           time.sleep(0.1)
+           serial.write(cool)
+ 
+           time.sleep(10)
+
+           print "Command Cuvette Peltier HEAT:"
+           serial.write(cmd_cuvette_pelt_power)
+           time.sleep(0.1)
+           serial.write(heat)
+ 
+           time.sleep(10)
+
+           print "Command Cuvette Peltier OFF:"
+           serial.write(cmd_cuvette_pelt_power)
+           time.sleep(0.1)
+           serial.write(off)
+ 
+           time.sleep(10)
+
+           cmd_ccd_pelt_power = (chr(0xF0)+chr(0xF2)+chr(0XD0)+chr(0xD1)+chr(0xF2)+chr(0xF3))
+           print "Command CCD Peltier COOL:"
+           serial.write(cmd_ccd_pelt_power)
+           time.sleep(0.1)
+           serial.write(cool)
+ 
+           time.sleep(10)
+
+           print "Command CCD Peltier HEAT:"
+           serial.write(cmd_ccd_pelt_power)
+           time.sleep(0.1)
+           serial.write(heat)
+ 
+           time.sleep(10)
+
+           print "Command CCD Peltier OFF:"
+           serial.write(cmd_ccd_pelt_power)
+           time.sleep(0.1)
+           serial.write(off)
+ 
+           time.sleep(10)
+
         except KeyboardInterrupt:
             print
             logd("Keyboard interrupt")

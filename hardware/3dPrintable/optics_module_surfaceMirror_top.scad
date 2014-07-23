@@ -16,7 +16,7 @@ module mirrorSphere_top(){
 		translate([-10,0,0]) cube(size=[20,20,20],center=true);
 		translate([0,-10,0]) cube(size=[20,20,20],center=true);
 		//mirrorSlot
-		translate ([1.75,1.75,0]) rotate([0,90,45]) cylinder(r=14,h=6,$fn=100,center=true);
+		translate ([1.75,1.75,0]) rotate([0,90,45]) cylinder(r=14.5,h=6,$fn=100,center=true);
 		//screwHoles
 		translate([2,12.5,0]) cylinder(r=1.55,h=15,center=true);
 		translate([12.5,2,0]) cylinder(r=1.55,h=15,center=true);
