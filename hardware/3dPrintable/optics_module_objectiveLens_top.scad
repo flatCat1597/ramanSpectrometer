@@ -20,7 +20,7 @@ module objectiveMount(){
 			translate([15,-4,0]) screwHoleInner();
 			//lensHole
 			union(){
-				translate([0,8,0]) rotate([90,0,0]) cylinder(h=11.5,r=12.25,center=true);
+				translate([0,7,0]) rotate([90,0,0]) cylinder(h=13,r=12.25,center=true);
 				translate([0,-6,0]) rotate([90,0,0]) cylinder(h=18,r=10.25,center=true);
 				translate([0,15,0]) rotate([90,0,0]) cylinder(h=4.5,r=10.5,center=true);
 			}
