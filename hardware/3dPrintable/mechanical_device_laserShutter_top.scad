@@ -1,6 +1,10 @@
 use <rw_mechanical_object_9gServo.scad>
 use <std_mechanical_object_flange3.scad>
 
+module passFilter(){
+	translate ([0,0,0]) rotate([0,90,0]) color([0,.5,0]) cylinder(r=14,h=6,$fn=100,center=true);
+}
+
 module mainFrame(){
 	union(){
 		difference(){
@@ -76,6 +80,9 @@ module laserShutter_Module(){
 module laserShutter_Top(){
 	difference(){
 		laserShutter_Module();
+//		translate([-6.5,0,0]){
+//			passFilter();
+//		}
 		//bottomChop
 		translate([0,0,-25]) cube(size=[50,50,50],center=true);
 		//screwHoles
@@ -90,5 +97,4 @@ module laserShutter_Top(){
 		translate([-11,11,10]) cylinder(r=2.5,h=7,center=true);
 	}
 }
-
 laserShutter_Top();

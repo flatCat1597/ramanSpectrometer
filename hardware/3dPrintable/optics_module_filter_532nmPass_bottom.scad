@@ -1,4 +1,4 @@
-use <std_mechanical_object_flange.scad>
+use <std_mechanical_object_flange3.scad>
 
 module passFilter(){
 	translate ([0,0,0]) rotate([0,90,0]) color([0,.5,0]) cylinder(r=13,h=5,$fn=100,center=true);
