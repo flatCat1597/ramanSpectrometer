@@ -6,24 +6,43 @@ module mirror(){
 
 module mirrorSphere_top(){
 	union(){
-	difference(){
-		//mainBody
-		intersection(){
-			cube(size=[30,30,30],center=true);
-			sphere(r=21,center=true);
-		}
-		//laserPath
-		translate([-10,0,0]) cube(size=[20,20,20],center=true);
-		translate([0,-10,0]) cube(size=[20,20,20],center=true);
-		//mirrorSlot
-		translate ([1.75,1.75,0]) rotate([0,90,45]) cylinder(r=14.5,h=6,$fn=100,center=true);
-		//screwHoles
-		translate([2,12.5,0]) cylinder(r=1.55,h=15,center=true);
-		translate([12.5,2,0]) cylinder(r=1.55,h=15,center=true);
+		difference(){
+			//mainBody
+			intersection(){
+				cube(size=[30,30,30],center=true);
+				sphere(r=21,center=true);
+			}
+			//laserPath
+			translate([-10,0,0]) cube(size=[20,20,20],center=true);
+			translate([0,-10,0]) cube(size=[20,20,20],center=true);
+			//mirrorSlot
+			translate ([1.75,1.75,0]) rotate([0,90,45]) cylinder(r=14.5,h=6,$fn=100,center=true);
+			//screwPaths
+			translate([6,-15,14]) rotate([-55,0,0]) cylinder(r=4,h=10,center=true);
+			translate([-6,-15,14]) rotate([-55,0,0]) cylinder(r=4,h=10,center=true);
 
-		translate([2,12.5,10]) cylinder(r=2,h=12,center=true);
-		translate([12.5,2,10]) cylinder(r=2,h=12,center=true);
-	}
+			translate([6,-15,-14]) rotate([55,0,0]) cylinder(r=4,h=10,center=true);
+			translate([-6,-15,-14]) rotate([55,0,0]) cylinder(r=4,h=10,center=true);
+
+			translate([-15,6,14]) rotate([-55,0,270]) cylinder(r=4,h=10,center=true);
+			translate([-15,-6,14]) rotate([-55,0,270]) cylinder(r=4,h=10,center=true);
+
+			translate([-15,6,-14]) rotate([55,0,270]) cylinder(r=4,h=10,center=true);
+			translate([-15,-6,-14]) rotate([55,0,270]) cylinder(r=4,h=10,center=true);
+
+			translate([15,-14,-6]) rotate([-55,90,0]) cylinder(r=4,h=10,center=true);
+			translate([15,-14,6]) rotate([-55,90,0]) cylinder(r=4,h=10,center=true);
+
+			translate([-14,15,-6]) rotate([55,270,0]) cylinder(r=4,h=10,center=true);
+			translate([-14,15,6]) rotate([55,270,0]) cylinder(r=4,h=10,center=true);
+
+			//screwHoles
+			translate([2,12.5,0]) cylinder(r=1.55,h=15,center=true);
+			translate([12.5,2,0]) cylinder(r=1.55,h=15,center=true);
+
+			translate([2,12.5,10]) cylinder(r=2,h=12,center=true);
+			translate([12.5,2,10]) cylinder(r=2,h=12,center=true);
+		}
 	}
 	//cornerScrewHole
 	difference(){
@@ -49,6 +68,8 @@ module mirrorSphere_top(){
 				}
 			}
 }
+
+
 
 module mirror_mount_top(){
 	difference(){

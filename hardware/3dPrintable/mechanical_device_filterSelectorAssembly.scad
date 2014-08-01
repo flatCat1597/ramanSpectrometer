@@ -5,6 +5,7 @@ use <rw_mechanical_object_stepperMotor.scad>
 use <rw_mechanical_object_608zBearing.scad>
 
 module main(){
+	union(){
 	//beamEntryTube
 	difference(){
 			intersection(){
@@ -21,6 +22,14 @@ module main(){
 				}
 			}
 	}
+	//beamEntryPort
+	translate([0,-20,0]){
+		rotate([0,0,90]){
+			flangeFace();
+		}
+	}
+	}
+	union(){
 	//beamExitTube
 	translate([0,30,0]){
 		difference(){
@@ -39,16 +48,11 @@ module main(){
 			}
 		}
 	}
-	//beamEntryPort
-	translate([0,-20,0]){
-		rotate([0,0,90]){
-			flangeFace();
-		}
-	}
 	translate([0,27,0]){
 		rotate([0,0,90]){
 			flangeFace();
 		}
+	}
 	}
 }
 
@@ -135,14 +139,20 @@ module box(){
 			cube(size=[14.5,16.5,15.5],center=true);
 		}		
 		//screwHoles
+		union(){
 		translate([-16,18,-50]) rotate([90,0,0]) cylinder(r=2,h=20,center=true);
-		translate([56.5,18,-51.75]) rotate([90,0,0]) cylinder(r=2,h=20,center=true);
-		translate([-18.5,18.5,6]) rotate([90,0,0]) cylinder(r=2,h=20,center=true);
-		translate([58.5,18,6]) rotate([90,0,0]) cylinder(r=2,h=20,center=true);
-		//screwHoleTops
 		translate([-16,24,-50]) rotate([90,0,0]) cylinder(r=3,h=7,center=true);
+		}
+		translate([56.5,18,-51.75]) rotate([90,0,0]) cylinder(r=2,h=20,center=true);
+
+		union(){
+		translate([-18.5,18.5,6]) rotate([90,0,0]) cylinder(r=2,h=20,center=true);
 		translate([-18.5,22,6]) rotate([90,0,0]) cylinder(r=3,h=5,center=true);
+		}
+		union(){
+		translate([58.5,18,6]) rotate([90,0,0]) cylinder(r=2,h=20,center=true);
 		translate([58.5,22,6]) rotate([90,0,0]) cylinder(r=3,h=5,center=true);
+		}
 	}
 }
 
