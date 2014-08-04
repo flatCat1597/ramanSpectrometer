@@ -74,24 +74,6 @@ module screwHoles(){
 	}
 }
 
-
-
-
-
-module filterWheel(){
-	difference(){
-		rotate([90,0,0]) color([.6,.7,.2]) pinion(4,60,4,10);
-		//filterHoles
-		translate([-20,-2,17]) rotate([90,0,0]) cylinder(r=8,h=5,center=true);
-		translate([20,-2,-17]) rotate([90,0,0]) cylinder(r=8,h=5,center=true);
-		translate([-20,-2,-17]) rotate([90,0,0]) cylinder(r=8,h=5,center=true);
-	}
-	union(){
-		//centerHub
-		rotate ([90,0,0]) cylinder(r=10,h=10,center=true);
-		rotate ([90,0,0]) cylinder(r=3.75,h=24,$fn=50,center=true);
-	}
-}
 module gearsAndMotor(){
 	translate([19.25,14.75,-27]){
 		rotate([0,180,180]){
@@ -113,13 +95,13 @@ module gearsAndMotor(){
 difference(){
 	union(){
 		outerCase();
-		translate([-20,0,25]) flangeTube();
+		translate([-18.5,0,26.5]) flangeTube();
 	}
 	centerCutouts();
 	screwHoles();
 
 	//mainTubeInner
-	translate([-20,0,25]){
+	translate([-18.5,0,26.5]){
 		intersection(){
 			cube(size=[25,48,15],center=true);
 			rotate([90,0,0]) cylinder(r=10,h=49,center=true);
