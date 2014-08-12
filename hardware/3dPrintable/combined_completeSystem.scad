@@ -13,6 +13,7 @@ use <rw_electronic_object_tftDisplay.scad>
 use <trim_tftFaceplate_facia.scad>
 
 use <mechanical_device_filterSelectorAssembly.scad>
+use <optics_module_spectrometer.scad>
 
 structural_mount_laser_top();
 structural_mount_laser_bottom();
@@ -74,7 +75,10 @@ translate([85,-206,22]){
 		}
 	}
 }
-
+translate([-30,-60,-60]){
+rotate([-90,-0,90]){
+spectrometer();
+}}
 translate([43,-96,0]){
 	rotate([0,0,90]){
 		main();
