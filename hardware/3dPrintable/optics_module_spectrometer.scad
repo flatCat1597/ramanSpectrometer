@@ -54,6 +54,31 @@ module detectorArray(){
 	translate([-1.5,0,0]) color([0,0,0]) cube(size=[1,35,1],center=true);
 }
 
+module lowerBox(){
+	difference(){
+		difference(){
+			intersection(){
+				translate([5,5.5,0]) cube(size=[130,92,48],center=true);
+				resize(newsize=[160,140,60]) sphere(r=20,$fn=40);  
+			}
+			translate([71,23,0]) rotate([DA_X,DA_Y,DA_Z]) cube(size=[25,70,50],center=true);
+			translate([65,-40,0]) rotate([DG_X,DG_Y,DG_Z]) cube(size=[20,40,50],center=true);
+			translate([-64,-14,0]) rotate([FM_X,FM_Y,FM_Z]) cube(size=[60,20,50],center=true);
+			translate([-28,52,0]) rotate([CM_X,CM_Y,CM_Z]) cube(size=[80,30,50],center=true);
+		}
+		difference(){
+			intersection(){
+			translate([5,5.5,2]) color ([0.4,0.4,0.4]) cube(size=[128,90,45],center=true);		
+				resize(newsize=[158,138,58]) sphere(r=20,$fn=40);  
+}
+			translate([69,25,0]) rotate([DA_X,DA_Y,DA_Z]) cube(size=[25,70,50],center=true);
+			translate([64,-39,0]) rotate([DG_X,DG_Y,DG_Z]) cube(size=[20,40,50],center=true);
+			translate([-63,-13,0]) rotate([FM_X,FM_Y,FM_Z]) cube(size=[60,20,50],center=true);
+			translate([-27,51,0]) rotate([CM_X,CM_Y,CM_Z]) cube(size=[80,30,50],center=true);
+		}
+	}
+}
+
 module spectrometer(){
 	beam();
 	entranceSlit();
@@ -77,6 +102,7 @@ module spectrometer(){
 			detectorArray();
 		}
 	}
+	lowerBox();
 }
 
 spectrometer();
