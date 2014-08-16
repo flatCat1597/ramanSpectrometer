@@ -120,6 +120,43 @@ module lightMountFront(){
 	translate([-18,-20,24.5]) cube(size=[5,5,5],center=true);
 }
 
+module lightMountFrontWithLens(){
+	difference(){
+		translate([0,50,25]) cube(size=[50,2,50],center=true);
+		translate([0,50,25]) cube(size=[5,3,30],center=true);
+		translate([9.25,50,25]) rotate([90,0,0]) cylinder(r=1.5,h=5,$fn=50,center=true);
+		translate([-9.25,50,25]) rotate([90,0,0]) cylinder(r=1.5,h=5,$fn=50,center=true);
+	}
+	translate([20,42,12]) cube(size=[4,15,25],center=true);
+	translate([-20,42,12]) cube(size=[4,15,25],center=true);
+	difference(){
+		union(){
+			translate([0,0,0]) cube(size=[50,102,4],center=true);
+			difference(){
+				translate([0,0,-2]) cylinder(r=22,h=4,$fn=50,center=true);
+				translate([0,22,-2]) cube(size=[20,4,5],center=true);
+			}
+			difference(){
+				translate([0,-50,10.5]) cube(size=[50,10,25],center=true);
+				translate([0,-50,22.5]) rotate([90,0,0]) cylinder(r=11.5,h=12,$fn=50,center=true);
+				translate([18,-50,21.5]) cube(size=[5.5,5.5,5.5],center=true);
+			}
+		}
+		cylinder(r=10.5,h=9,$fn=50,center=true);
+	}
+	translate([-18,-50,24.5]) cube(size=[5,5,5],center=true);
+	translate([-18,-0,24.5]) cube(size=[5,5,5],center=true);
+			difference(){
+				translate([0,0,10.5]) cube(size=[50,10,25],center=true);
+		cylinder(r=10.5,h=9,$fn=50,center=true);
+				union(){
+					translate([0,0,22.5]) rotate([90,0,0]) cylinder(r=11,h=12,$fn=50,center=true);
+					translate([0,0,22.5]) rotate([90,0,0]) cylinder(r=13,h=4,$fn=50,center=true);
+				}
+				translate([18,0,21.5]) cube(size=[5.5,5.5,5.5],center=true);
+			}
+}
+
 module lightMountTop(){
 		translate([0,-20,0]){
 			difference(){
@@ -128,6 +165,20 @@ module lightMountTop(){
 				translate([18,-20,21.5]) cube(size=[5.5,5.5,5.5],center=true);
 			}
 			translate([-18,-20,24.5]) cube(size=[5,5,5],center=true);
+		}
+}
+
+module lightMountTopLens(){
+		translate([0,0,0]){
+			difference(){
+				translate([0,0,10.5]) cube(size=[50,10,25],center=true);
+				union(){
+					translate([0,0,22.5]) rotate([90,0,0]) cylinder(r=11,h=12,$fn=50,center=true);
+					translate([0,0,22.5]) rotate([90,0,0]) cylinder(r=13,h=4,$fn=50,center=true);
+				}
+				translate([18,0,21.5]) cube(size=[5.5,5.5,5.5],center=true);
+			}
+			translate([-18,0,24.5]) cube(size=[5,5,5],center=true);
 		}
 }
 
@@ -140,10 +191,12 @@ module rotator(){
 }
 
 //base();
-rotator();
+//rotator();
 //lightMountFront();
-lightMountRear();
-translate([0,20,60]) rotate([180,0,180]) lightMountTop();
+//lightMountFrontWithLens();
+//lightMountRear();
+//translate([0,20,60]) rotate([180,0,180]) lightMountTop();
+translate([0,0,60]) rotate([180,0,180]) lightMountTopLens();
 //collimatingMirrorMount();
 //FocusingMirrorMount();
 //gratingMount();
