@@ -8,50 +8,158 @@
 //background leading up to a saturated region in the low-numbered rows.)
 //To avoid this problem, the detector is made to clear itself continuously between observations. This is called "idling", and is reported as such on the mimic.
 
-PwmOut shiftGate(PB_8);
-PwmOut icg(PB_3);
 PwmOut masterClock(PB_4);
+PwmOut shiftGate(PB_8);
+InterruptIn shiftGate_int(PC_6);
+//PwmOut icg(PB_3);
+DigitalOut ICG(PB_3);
+//interruptIn icg_int(PB_3);
 AnalogIn imageIn(A0);
-AnalogOut imageOut(A5);
-DigitalOut myled(LED1);
+//AnalogOut imageOut(A5);
+DigitalOut LED(LED1);
 Serial raspi(USBTX, USBRX);
 
-int masterFreq_period = 2;      //microseconds
-int masterFreq_width  = 1;      //microseconds
-int icgFreq_period    = 500000; //microseconds
-int icgFreq_width     = 250000; //microseconds    <------------- LOWER THIS NUMBER TO INCREASE SENSITIVITY
-int shiftGate_delay   = 287;    //microseconds
-int shiftGate_period  = 200;    //microseconds
-int shiftGate_width   = 100;    //microseconds
+int masterFreq_period       = 2;      //microseconds
+int masterFreq_width        = 1;      //microseconds
+int shiftGate_period        = 200;    //microseconds
+int shiftGate_width         = 100;    //microseconds
+
+int veryLow     = 1;
+int low         = 100;
+int medium      = 100000;
+int high        = 1000000;
+int veryHigh    = 10000000;
+
+int sensitivity             = medium;
+int pixelTotal              = 3694;
+int leadingDummyElements    = 16;
+int leadShieldedElements    = 13;
+int headerElements          = 3;
+const int signalElements    = 3648;
+int trailingDummyElements   = 14;
+int pixelCount;
+int readOutTrigger;
+int state;
+
+#define readOut_Begin               1
+#define readOut_ACTIVE              2
+#define readOut_LeadingDummy        3
+#define readOut_LeadingShielded     4
+#define readOut_headerElements      5
+#define readOut_signalElements      6
+#define readOut_trailingDummy       7
+#define readOut_integrationTime     8
+#define readOut_IDLE                9
+#define readOut_Finish              0
 
 #define MV(x) ((0xFFF*x)/3300)
 
-int main()
+float pixelValue[signalElements];
+
+void error()
 {
-    // set the masterClock
-    masterClock.period_us(masterFreq_period);
-    masterClock.pulsewidth_us(masterFreq_width);
-
-    // set the ICG clock and have it start 82.76ms after the shiftGate - this will sync the clocks up so the ICQ is going low slightly before the shiftGate is going high
-    icg.period_us(icgFreq_period);
-    icg.pulsewidth_us(icgFreq_width);  //          <------------- LOWER THIS NUMBER TO INCREASE SENSITIVITY
-
-    // set the shiftGate and have it start 15us after the masterClock - this will sync the clocks up so the shiftGate is going high just as a clock cycle is going high
-    wait_us(shiftGate_delay);
-    shiftGate.period_us(shiftGate_period);
-    shiftGate.pulsewidth_us(shiftGate_width);
-
-    raspi.baud(921600);
-    // do something while it's having fun..
     while(1) {
-//        wait(.0001);
-//        uint16_t meas = imageIn.read_u16();
-//        if (meas < MV(1000)) {
-//            myled = 1;
-//            printf("BINGO: %d \r\n", meas);
-//        }
-//        myled = 0;
-        imageOut.write(imageIn.read());
+        LED = !LED;
+        wait(0.5);
     }
 }
 
+void checkState()
+{
+    if (readOutTrigger == 1) {
+//        state = readOut_LeadingDummy;
+    }
+    switch (state) {
+        case readOut_Begin:
+            readOutTrigger = 1;
+            state = readOut_ACTIVE;
+//            ICG = 1;
+            LED = 1;
+            break;
+        case readOut_ACTIVE:
+            ICG = 1;
+            state = readOut_LeadingDummy;
+            break;
+        case readOut_LeadingDummy:
+            pixelCount++;
+            if (pixelCount == leadingDummyElements) {
+                pixelCount = 0;
+                state = readOut_LeadingShielded;
+            }
+            break;
+        case readOut_LeadingShielded:
+            pixelCount++;
+            if (pixelCount == leadShieldedElements) {
+                pixelCount = 0;
+                state = readOut_headerElements;
+            }
+            break;
+        case readOut_headerElements:
+            pixelCount++;
+            if (pixelCount == headerElements) {
+                pixelCount = 0;
+                state = readOut_signalElements;
+            }
+            break;
+        case readOut_signalElements:
+            pixelCount++;
+//            pixelValue[pixelCount] = imageIn.read();
+            LED = !LED;
+            if (pixelCount == signalElements) {
+                pixelCount = 0;
+                state = readOut_trailingDummy;
+            }
+            break;
+        case readOut_trailingDummy:
+            pixelCount++;
+            if (pixelCount == trailingDummyElements) {
+                pixelCount = 0;
+                state = readOut_integrationTime;
+            }
+            break;
+        case readOut_integrationTime:
+            if (ICG == 1) {
+                ICG = 0;
+            wait_us(sensitivity);
+                state = readOut_Finish;
+            }
+            break;
+        case readOut_Finish:
+            state = readOut_IDLE;
+            LED = 0;
+            ICG = 1;
+            break;
+        case readOut_IDLE:
+            if (ICG == 1) {
+                ICG = 0;
+                state = readOut_Begin;
+            }
+            break;
+        default:
+            break;
+    }
+}
+
+int main()
+{
+    ICG = 1;
+    LED = 0;
+    pixelCount = 0;
+    readOutTrigger = 0;
+    state = readOut_IDLE;
+
+    masterClock.period_us(masterFreq_period);
+    masterClock.pulsewidth_us(masterFreq_width);
+
+    shiftGate.period_us(shiftGate_period);
+    shiftGate.pulsewidth_us(shiftGate_width);
+
+    wait(0.5);
+
+    shiftGate_int.rise(checkState);
+
+    raspi.baud(921600);
+    while(1) {
+        wait(1);
+    }
+}
