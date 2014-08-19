@@ -11,26 +11,26 @@
 PwmOut masterClock(PB_4);
 PwmOut shiftGate(PB_8);
 InterruptIn shiftGate_int(PC_6);
-//PwmOut icg(PB_3);
 DigitalOut ICG(PB_3);
-//interruptIn icg_int(PB_3);
 AnalogIn imageIn(A0);
-//AnalogOut imageOut(A5);
 DigitalOut LED(LED1);
 Serial raspi(USBTX, USBRX);
 
-int masterFreq_period       = 2;      //microseconds
-int masterFreq_width        = 1;      //microseconds
-int shiftGate_period        = 200;    //microseconds
-int shiftGate_width         = 100;    //microseconds
+int masterFreq_period       = 20;      //microseconds
+int masterFreq_width        = 10;      //microseconds
+int shiftGate_period        = 66;    //microseconds
+int shiftGate_width         = 33;    //microseconds
 
+int none        = 0;
 int veryLow     = 1;
 int low         = 100;
+int mediumLow   = 1000;
 int medium      = 100000;
 int high        = 1000000;
 int veryHigh    = 10000000;
 
-int sensitivity             = medium;
+double imageData;
+int sensitivity             = mediumLow;
 int pixelTotal              = 3694;
 int leadingDummyElements    = 16;
 int leadShieldedElements    = 13;
@@ -54,7 +54,7 @@ int state;
 
 #define MV(x) ((0xFFF*x)/3300)
 
-float pixelValue[signalElements];
+double pixelValue[signalElements] = { 0 };
 
 void error()
 {
@@ -73,7 +73,7 @@ void checkState()
         case readOut_Begin:
             readOutTrigger = 1;
             state = readOut_ACTIVE;
-//            ICG = 1;
+//            raspi.printf("+++\r\n");
             LED = 1;
             break;
         case readOut_ACTIVE:
@@ -103,8 +103,8 @@ void checkState()
             break;
         case readOut_signalElements:
             pixelCount++;
-//            pixelValue[pixelCount] = imageIn.read();
-            LED = !LED;
+            pixelValue[pixelCount] = imageIn.read_u16();
+//            raspi.printf("%i\t%4.12f\r\n", pixelCount,(imageIn.read_u16() * 5.0) / 4096.0);
             if (pixelCount == signalElements) {
                 pixelCount = 0;
                 state = readOut_trailingDummy;
@@ -115,24 +115,27 @@ void checkState()
             if (pixelCount == trailingDummyElements) {
                 pixelCount = 0;
                 state = readOut_integrationTime;
+                ICG = 0;
             }
             break;
         case readOut_integrationTime:
-            if (ICG == 1) {
-                ICG = 0;
             wait_us(sensitivity);
-                state = readOut_Finish;
+            state = readOut_Finish;
+            for (int pixelNumber=0; pixelNumber<signalElements; pixelNumber++) {
+                raspi.printf("%i\t%4.12f\r\n", pixelNumber, 5 - ((pixelValue[pixelNumber] * 5) / 4096.0));
             }
+//            raspi.printf("---\r\n");
             break;
         case readOut_Finish:
             state = readOut_IDLE;
+            wait_us(sensitivity);
             LED = 0;
             ICG = 1;
             break;
         case readOut_IDLE:
             if (ICG == 1) {
-                ICG = 0;
-                state = readOut_Begin;
+//                ICG = 0;
+//                state = readOut_Begin;
             }
             break;
         default:
@@ -154,12 +157,21 @@ int main()
     shiftGate.period_us(shiftGate_period);
     shiftGate.pulsewidth_us(shiftGate_width);
 
+    raspi.baud(921600);
     wait(0.5);
 
     shiftGate_int.rise(checkState);
 
     raspi.baud(921600);
     while(1) {
-        wait(1);
+        char c = raspi.getc();
+        switch (c) {
+            case 'r':
+                ICG = 0;
+                state = readOut_Begin;
+                break;
+            default:
+                break;
+        }
     }
 }
