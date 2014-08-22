@@ -1,7 +1,5 @@
-ramanSpectrometer
+ramanPi - the DIY 3D Printable Raman Spectrometer
 =================
-
-A DIY 3D Printable Raman Spectrometer
 
 The following is from wikipedia on Raman Spectroscopy: link
 
