@@ -4,11 +4,12 @@ the DIY 3D Printable Raman Spectrometer
 =================
 
 The URL for this repository will be changing to the new name soon!  It will soon reflect the new name - ramanPi
+---------
 The new url should be https://github.com/flatCat1597/ramanPi
 
 
 
-The following is from wikipedia on Raman Spectroscopy: link
+The following is from wikipedia on Raman Spectroscopy:
 
 Raman spectroscopy
 From Wikipedia, the free encyclopedia
