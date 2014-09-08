@@ -1,5 +1,10 @@
 use <std_mechanical_object_flange3.scad>
 
+
+//  This design is experimental
+//  I am using this to work out the correct geometry and the best mounting methods for the optics
+//  This design will probably change drastically in the final version from what you see here
+
 pi = 3.14159265;	// pi to the 8th
 CM_D = 20;		// coolimatingMirror Diameter
 CM_EFL = 80;		// collimatingMirror Effective Focal Length
@@ -119,6 +124,39 @@ module detectorArray(){
 	}
 }
 
+module accessCover(){
+	intersection(){
+		translate([0,0,20]) sphere(r=30,center=true);
+		translate([0,0,28]) cube(size=[50,50,5],center=true);
+	}
+	translate([0,0,27]) color("lightgrey") cylinder(r=30,h=2,center=true);
+	translate([0,0,30]) {
+		rotate([0,90,0]){
+			for ( i = [0 : 7] ){
+				intersection(){
+					difference(){
+					rotate( i * 360 / 8, [1, 0, 0]) translate([0,0,28]) cube(size=[1,10,20],center=true);
+					rotate( i * 360 / 8, [1, 0, 0]) translate([0,0,34]) rotate([0,90,0]) cylinder(r=2,h=10,center=true);
+					rotate( i * 360 / 8, [1, 0, 0]) translate([0,0,34]) rotate([0,90,0]) translate([0,0,4]) cylinder(r=3.5,h=10,center=true);
+					}
+					rotate( i * 360 / 8, [1, 0, 0]) translate([0,0,28]) sphere(r=10,center=true);
+				}
+			}
+		}
+	}
+	difference(){
+		translate([0,0,28.5]) color("lightgrey") cylinder(r=38.5,h=2,center=true);
+		translate([0,0,30]) {
+			rotate([0,90,0]){
+				for ( i = [0 : 7] ){
+					rotate( i * 360 / 8, [1, 0, 0]) translate([0,0,34]) rotate([0,90,0]) cylinder(r=2.5,h=10);
+				}
+			}
+		}
+	}
+}
+accessCover();
+
 module lowerBox(){
 	intersection(){
 		translate([0,0,25]) cylinder(r=40,h=5,center=true);
@@ -190,6 +228,10 @@ module lowerBox(){
 
 			translate([-33,-34,-22]) rotate([-30,0,0]) cylinder(r=2,h=6,center=true);
 			translate([-50,21,-18]) rotate([6,52,0]) cylinder(r=2,h=8,center=true);
+
+			translate([DA_Xp,DA_Yp,DA_Zp]) {
+					translate([52,21,0]) cube (size=[50,50,15],center=true);
+			}
 		}
 		difference(){
 		color("grey")hull(){
@@ -217,21 +259,6 @@ module screwPost(ext){
 		translate([0,0,5])cylinder(r=1.5,h=32+ext,center=true);
 		translate([0,0,23])color("red") cylinder(r=3,h=32+ext,center=true);
 	}		
-}
-
-module optics(){
-	entranceSlit();
-	collimatingMirror();
-		translate([CM_Xp,CM_Yp,CM_Zp]) CM_Mount();
-	diffractionGrating();
-		translate([DG_Xp,DG_Yp,DG_Zp-16]) DG_Mount();
-	focusingMirror();
-		translate([FM_Xp-2,FM_Yp,FM_Zp]) FM_Mount(); 
-	translate([52,21,0]){
-		rotate([DA_Xr,DA_Yr,DA_Zr-20]){
-			detectorArray();
-		}
-	}
 }
 
 module CM_Mount(){
@@ -326,10 +353,25 @@ module spectrometer(){
 	translate ([0,-54,0]) rotate([0,0,90]) color("red") flangeFace();
 }
 
+module optics(){
+//	entranceSlit();
+//	collimatingMirror();
+//		translate([CM_Xp,CM_Yp,CM_Zp]) CM_Mount();
+//	diffractionGrating();
+//		translate([DG_Xp,DG_Yp,DG_Zp-16]) DG_Mount();
+//	focusingMirror();
+//		translate([FM_Xp-2,FM_Yp,FM_Zp]) FM_Mount(); 
+	translate([52,21,0]){
+		rotate([DA_Xr,DA_Yr,DA_Zr-20]){
+//			detectorArray();
+		}
+	}
+}
+
 module split(){
 	difference(){
 		spectrometer();
-		//translate([0,0,15]) cube(size=[150,120,30],center=true);
+//		translate([0,0,15]) cube(size=[150,120,30],center=true);
 	}
 }
 split();
