@@ -126,10 +126,10 @@ module detectorArray(){
 
 module accessCover(){
 	intersection(){
-		translate([0,0,20]) sphere(r=30,center=true);
+		translate([0,0,20]) sphere(r=29.65,center=true);
 		translate([0,0,28]) cube(size=[50,50,5],center=true);
 	}
-	translate([0,0,27]) color("lightgrey") cylinder(r=30,h=2,center=true);
+	translate([0,0,27]) color("lightgrey") cylinder(r=29,h=2,center=true);
 	translate([0,0,30]) {
 		rotate([0,90,0]){
 			for ( i = [0 : 7] ){
@@ -137,7 +137,7 @@ module accessCover(){
 					difference(){
 					rotate( i * 360 / 8, [1, 0, 0]) translate([0,0,28]) cube(size=[1,10,20],center=true);
 					rotate( i * 360 / 8, [1, 0, 0]) translate([0,0,34]) rotate([0,90,0]) cylinder(r=2,h=10,center=true);
-					rotate( i * 360 / 8, [1, 0, 0]) translate([0,0,34]) rotate([0,90,0]) translate([0,0,4]) cylinder(r=3.5,h=10,center=true);
+					rotate( i * 360 / 8, [1, 0, 0]) translate([0,0,34]) rotate([0,90,0]) translate([0,0,4]) cylinder(r=4,h=10,center=true);
 					}
 					rotate( i * 360 / 8, [1, 0, 0]) translate([0,0,28]) sphere(r=10,center=true);
 				}
@@ -155,7 +155,6 @@ module accessCover(){
 		}
 	}
 }
-accessCover();
 
 module lowerBox(){
 	intersection(){
@@ -228,9 +227,8 @@ module lowerBox(){
 
 			translate([-33,-34,-22]) rotate([-30,0,0]) cylinder(r=2,h=6,center=true);
 			translate([-50,21,-18]) rotate([6,52,0]) cylinder(r=2,h=8,center=true);
-
-			translate([DA_Xp,DA_Yp,DA_Zp]) {
-					translate([52,21,0]) cube (size=[50,50,15],center=true);
+			translate([DA_Xp+15,DA_Yp-15,DA_Zp]) {
+					rotate([0,0,DA_Zr]) translate([52,21,0]) cube (size=[5,50,15],center=true);
 			}
 		}
 		difference(){
@@ -244,11 +242,35 @@ module lowerBox(){
 				resize(newsize=[158,138,50]) sphere(r=20,$fn=50);  
 			}
 		}
+			//detectorArray_BackWall
 			translate([68,25,0]) rotate([DA_Xr,DA_Yr,DA_Zr]) cube(size=[25,80,50],center=true);
+			//diffractionGrating_BackWallDetail
 			translate([63,-39,0]) rotate([DG_Xr,DG_Yr,DG_Zr-25]) cube(size=[20,50,50],center=true);
+			//FocusingMirrorWall
 			translate([-62,-13,0]) rotate([FM_Xr+90,FM_Yr,FM_Zr]) cube(size=[650,20,50],center=true);
+			//collimatingMirror_detail
 			translate([-26,51,0]) rotate([CM_Xr+90,CM_Yr,CM_Zr]) cube(size=[80,30,50],center=true);
+			//lightBaffles
+			translate([52,-1.5,0]) rotate([0,0,40]) cube(size=[1,6,45],center=true);
+			translate([57,-1.5,0]) rotate([0,0,40]) cube(size=[1,10,45],center=true);
 
+			translate([42,43,0]) rotate([0,0,00]) cube(size=[1,13,45],center=true);
+			translate([37,42.75,0]) rotate([0,0,00]) cube(size=[1,14.5,45],center=true);
+			translate([32,42.5,0]) rotate([0,0,00]) cube(size=[1,16,45],center=true);
+			translate([27,42,0]) rotate([0,0,00]) cube(size=[1,17,45],center=true);
+			translate([22,42,0]) rotate([0,0,00]) cube(size=[1,19,45],center=true);
+
+			translate([-22,30.5,0]) rotate([0,0,00]) cube(size=[1,15,45],center=true);
+			translate([-27,29,0]) rotate([0,0,00]) cube(size=[1,12,45],center=true);
+			translate([-32,28,0]) rotate([0,0,00]) cube(size=[1,10.5,45],center=true);
+
+			translate([-20,-37,0]) rotate([0,0,30]) cube(size=[10,1,45],center=true);
+
+			translate([-4,-37,0]) rotate([0,0,30]) cube(size=[5,1,45],center=true);
+			translate([-2.75,-37.5,0]) rotate([0,0,-27]) cube(size=[1,3,45],center=true);
+
+			translate([4,-37,0]) rotate([0,0,-30]) cube(size=[5,1,45],center=true);
+			translate([2.75,-37.5,0]) rotate([0,0,27]) cube(size=[1,3,45],center=true);
 		}
 	}	
 }
@@ -354,16 +376,16 @@ module spectrometer(){
 }
 
 module optics(){
-//	entranceSlit();
-//	collimatingMirror();
-//		translate([CM_Xp,CM_Yp,CM_Zp]) CM_Mount();
-//	diffractionGrating();
-//		translate([DG_Xp,DG_Yp,DG_Zp-16]) DG_Mount();
-//	focusingMirror();
-//		translate([FM_Xp-2,FM_Yp,FM_Zp]) FM_Mount(); 
+	entranceSlit();
+	collimatingMirror();
+		translate([CM_Xp,CM_Yp,CM_Zp]) CM_Mount();
+	diffractionGrating();
+		translate([DG_Xp,DG_Yp,DG_Zp-16]) DG_Mount();
+	focusingMirror();
+		translate([FM_Xp-2,FM_Yp,FM_Zp]) FM_Mount(); 
 	translate([52,21,0]){
 		rotate([DA_Xr,DA_Yr,DA_Zr-20]){
-//			detectorArray();
+			detectorArray();
 		}
 	}
 }
@@ -371,15 +393,15 @@ module optics(){
 module split(){
 	difference(){
 		spectrometer();
-//		translate([0,0,15]) cube(size=[150,120,30],center=true);
+		translate([0,0,15]) cube(size=[150,120,30],center=true);
 	}
 }
-split();
-optics();
+//split();
+//optics();
+//accessCover();
 
 //animate
 function saw(t) = 1 - 2*abs(t-0.5);    
-//rotate([0,0,saw($t)*360,0])  split();
-//rotate([0,0,saw($t)*360,0])  optics();
-
+rotate([0,0,saw($t)*360,0])  split();
+rotate([0,0,saw($t)*360,0])  optics();
 
