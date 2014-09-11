@@ -1,5 +1,5 @@
 use <std_mechanical_object_flange3.scad>
-
+use <std_trim_lib_write.scad>
 
 //  This design is experimental
 //  I am using this to work out the correct geometry and the best mounting methods for the optics
@@ -154,6 +154,7 @@ module accessCover(){
 			}
 		}
 	}
+		translate([0,2,30]) rotate([0,0,0]) color("grey") write("mSci",h=15,t=3,center=true);	
 }
 
 module lowerBox(){
@@ -199,7 +200,7 @@ module lowerBox(){
 
 	difference(){
 		difference(){
-		hull($fn=150){
+		hull($fn=52){
 			//rearFocusingMirrorSpacer
 			intersection(){
 				translate([FM_Xp,FM_Yp,FM_Zp]) rotate([FM_Xr,FM_Yr,FM_Zr])cylinder(r=28,h=10,$fn=50,center=true);
@@ -208,7 +209,7 @@ module lowerBox(){
 			//outerSphericalRounding
 			intersection(){
 				color("lightgrey") translate([5,5.5,0]) cube(size=[130,92,50],center=true);
-				color("lightgrey") resize(newsize=[160,140,58]) sphere(r=20,$fn=150);  
+				color("lightgrey") resize(newsize=[160,140,58]) sphere(r=20,$fn=52);  
 			}
 //			FM_Mount();
 			translate([DG_Xp,DG_Yp,DG_Zp-0]) cylinder(r=18,h=40,center=true);
@@ -251,14 +252,14 @@ module lowerBox(){
 			translate([-6,-40,14]) rotate([90,0,0]) color("blue") cylinder(r=2.5,h=10,center=true);
 			translate([6,-40,14]) rotate([90,0,0]) color("blue") cylinder(r=2.5,h=10,center=true);
 		difference(){
-		color("grey")hull($fn=150){
+		color("grey")hull($fn=52){
 			intersection(){
 				translate([FM_Xp+2,FM_Yp,FM_Zp]) rotate([FM_Xr,FM_Yr,FM_Zr-90]) cube(size=[8,53,38],center=true);
 				translate([FM_Xp,FM_Yp,FM_Zp]) rotate([FM_Xr,FM_Yr,FM_Zr])cylinder(r=26,h=8,center=true);
 			}
 			intersection(){
 				translate([5,5.5,-2]) color ([0.4,0.4,0.4]) cube(size=[128,88,48],center=true);		
-				resize(newsize=[158,138,50]) sphere(r=20,$fn=150);  
+				resize(newsize=[158,138,50]) sphere(r=20,$fn=52);  
 			}
 		}
 			//detectorArray_BackWall
@@ -298,8 +299,6 @@ translate([39.5,15.5,-18]) rotate([0,0,20]) cube(size=[1,42,15],center=true);
 translate([30,11,18]) rotate([0,0,20]) cube(size=[1,46,11],center=true);
 translate([34.5,14,16]) rotate([0,0,20]) cube(size=[1,43,9],center=true);
 translate([39.5,15.5,18]) rotate([0,0,20]) cube(size=[1,42,15],center=true);
-
-
 		}
 	}	
 }
@@ -407,6 +406,13 @@ module spectrometer(){
 	translate([67,-5,10]) rotate([0,90,20]) screwPost(-15);
 	translate([47,49.5,-10]) rotate([0,90,20]) screwPost(-15);
 	translate([47,49.5,10]) rotate([0,90,20]) screwPost(-15);
+	//brandingThankYouVeryMuch
+	translate([47,-18,23]) rotate([0,3,30]) color([0,1,0]) write("meridian",h=6,t=3,center=true);	
+	translate([48,-26,22]) rotate([0,3,30]) color([0,1,0]) write("Scientific",h=6,t=3,center=true);	
+
+	translate([-55,-10,10]) rotate([90,0,-80]) color("grey") write("spectrometer_V1.0",h=4,t=3,center=true);	
+	translate([-55,-10,15]) rotate([90,0,-80]) color("grey") write("fl@c@",h=4,t=3,center=true);	
+	translate([-55,-10,5]) rotate([90,0,-80]) color("grey") write("hackaday.io/project/1279",h=3,t=3,center=true);	
 }
 
 module optics(){
@@ -427,12 +433,12 @@ module optics(){
 module split(){
 	difference(){
 		spectrometer();
-		translate([0,0,-15]) cube(size=[150,120,30],center=true);
+//		translate([0,0,-15]) cube(size=[150,120,30],center=true);
 	}
 }
 split();
-//optics();
-//accessCover();
+optics();
+accessCover();
 
 //animate
 function saw(t) = 1 - 2*abs(t-0.5);    
