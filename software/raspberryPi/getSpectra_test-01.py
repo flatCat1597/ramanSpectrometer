@@ -32,6 +32,7 @@ def readSpectra():
 	f2 = open('spectra.dat', 'r')                                																						# open the spectra.dat file for reading into the graph
 	lines = f2.readlines()                                          																						# read the entire file into a single variable
 	f2.close()                                                          																						# close the spectra.dat file
+	xvMax = 0
 
 #def plotSpectra():
 	x1 = []                                                                 																					# initialize the X coord
@@ -48,10 +49,12 @@ def readSpectra():
 	ax.autoscale_view()
 	plt.title(plot_Title, fontsize=24, color='black')
 	t = plt.xlabel('pixelNumber', fontsize=16, color='red')																				# set the x label on the graph
-	v = plt.ylabel('voltage - inverted', fontsize=16, color='blue')																		# set the y label on the graph
+	v = plt.ylabel('intensity', fontsize=16, color='blue')																					# set the y label on the graph
+	plt.ylim([0.75,4])
+	plt.xlim([0,3648]) 
 	xv = np.array(x1)                                                       																				# set the array for x
 	yv = np.array(y1)                                                       																				# set the array for y
-	plt.plot(xv, yv, color = 'white', lw=1)                                                        													# plot the data
+	plt.plot(xv, yv, color = 'lightGreen', lw=1)                                                        												# plot the data
 	plt.show()                                                              																					# show the graph
 
 def startSpectraCapture(saveOrNot):
@@ -64,10 +67,10 @@ def startSpectraCapture(saveOrNot):
 		print "Done..."
 
 	
-plot_Title = 'meridianScientific DIY 3D Printable RaspberryPi Raman Spectrometer'
+plot_Title = 'ramanPi - DIY 3D Printable RaspberryPi Raman Spectrometer'
 while(1):
 	os.system('cls')
-	print "meridianScientific DIY 3D Printable RaspberryPi Raman Spectrometer"
+	print "ramanPi - DIY 3D Printable RaspberryPi Raman Spectrometer"
 	print "SpectraSide_01  by fl@c@"
 	print ""
 	killOldData()
