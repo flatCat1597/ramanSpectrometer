@@ -1,3 +1,5 @@
+use <std_mechanical_object_flange3.scad>
+
 module base(){
 	difference(){
 		union(){
@@ -190,13 +192,65 @@ module rotator(){
 	translate([0,0,-10]) cylinder(r=30,h=4,$fn=50,center=true);
 }
 
+module laserStand(){
+	translate([0,50,25]) rotate([0,0,90]) flange();
+	difference(){
+		translate([0,50,25]) cube(size=[50,2,50],center=true);
+		translate([0,50,25]) cube(size=[15,3,15],center=true);
+translate([5.5,50,39]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
+translate([-5.5,50,39]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
+translate([5.5,50,12]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
+translate([-5.5,50,12]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
+translate([14,50,19.5]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
+translate([14,50,31]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
+translate([-14,50,19.5]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
+translate([-14,50,31]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
+
+	}
+	difference(){
+		union(){
+			translate([23,42,12]) cube(size=[4,15,25],center=true);
+			translate([-23,42,12]) cube(size=[4,15,25],center=true);
+		}
+		translate([0,44.8,28]) rotate([90,0,0]) cylinder(d=57,h=9,center=true);
+	}
+	difference(){
+		union(){
+			translate([0,-2,0]) cube(size=[50,106,2],center=true);
+			translate([0,-30,-2]) cylinder(r=22,h=4,$fn=50,center=true);
+			translate([0,27,-2]) cylinder(r=22,h=4,$fn=50,center=true);
+			translate([0,27,-3]) cube(size=[80,10,2],center=true);
+			translate([0,-30,-3]) cube(size=[80,10,2],center=true);
+			difference(){
+				translate([0,-50,12.5]) cube(size=[50,10,25],center=true);
+				translate([0,-50,24.5]) rotate([90,0,0]) cylinder(r=12,h=12,$fn=50,center=true);
+				translate([18,-50,22.5]) cube(size=[5.5,5.5,5.5],center=true);
+			}
+		}
+	}
+	translate([-18,-50,24.5]) cube(size=[5,5,5],center=true);
+	translate([-18,-0,24.5]) cube(size=[5,5,5],center=true);
+		difference(){
+			translate([0,0,12.5]) cube(size=[50,10,25],center=true);		
+			translate([0,0,24.5]) rotate([90,0,0]) cylinder(r=12,h=12,$fn=50,center=true);
+			translate([18,0,22.5]) cube(size=[5.5,5.5,5.5],center=true);
+		}	
+	difference(){
+		translate([0,31,16]) cube(size=[20,20,40],center=true);
+		translate([0,31,30]) rotate([0,0,90]) cylinder(r=8,h=30,center=true);
+		translate([0,31,25]) rotate([0,90,90]) cylinder(r=3,h=30,$fn=100,center=true);
+
+	}
+}
+
+laserStand();
 //base();
 //rotator();
 //lightMountFront();
 //lightMountFrontWithLens();
 //lightMountRear();
 //translate([0,20,60]) rotate([180,0,180]) lightMountTop();
-translate([0,0,60]) rotate([180,0,180]) lightMountTopLens();
+//translate([0,0,60]) rotate([180,0,180]) lightMountTopLens();
 //collimatingMirrorMount();
 //FocusingMirrorMount();
 //gratingMount();
