@@ -18,9 +18,11 @@ CM_Xp = 0;		// collimatingMirror X position
 CM_Yp = CM_EFL/2;	// collimatingMirror Y position
 CM_Zp = 0;		// collimatingMirror Z position
 
-ES_w = .5;		// entranceSlit width
-ES_h = 15;			// entranceSlit height
-ES_Xr = 0;			// entranceSlit X rotation
+ES_w = .1;		// entranceSlit width
+ES_h = 3;			// entranceSlit height
+ES_md = 25;		// entranceSlit Mount Diameter
+ES_mt = 1.25;		// entranceSlit Mount Thickness
+ES_Xr = 90;		// entranceSlit X rotation
 ES_Yr = 0;			// entranceSlit Y rotation
 ES_Zr = 0;			// entranceSlit Z rotation
 ES_Xp = 0;			// entranceSlit X position
@@ -67,11 +69,12 @@ DA_Yp = 0;			// detectorArray Y position
 DA_Zp = 0;			// detectorArray Z position
 
 module entranceSlit(){
-	translate([ES_Xp,ES_Yp,ES_Zp]) {
+	translate([ES_Xp,ES_Yp-(ES_mt/2),ES_Zp]) {
 		rotate([ES_Xr,ES_Yr,ES_Zr]){
 			difference(){
-				color("black") cube(size=[20,2,20],center=true);
-				cube(size=[ES_w,3,ES_h],center=true);
+				color("grey") cylinder(d=ES_md,h=ES_mt,$fn=50,center=true);
+				color("white") translate([0,0,.5]) cylinder(r=2,h=1,$fn=50,center=true);
+				cube(size=[ES_w,ES_h,5],center=true);
 			}
 		}
 	}
@@ -200,7 +203,7 @@ module lowerBox(){
 
 	difference(){
 		difference(){
-		hull($fn=52){
+		hull($fn=152){
 			//rearFocusingMirrorSpacer
 			intersection(){
 				translate([FM_Xp,FM_Yp,FM_Zp]) rotate([FM_Xr,FM_Yr,FM_Zr])cylinder(r=28,h=10,$fn=50,center=true);
@@ -209,12 +212,14 @@ module lowerBox(){
 			//outerSphericalRounding
 			intersection(){
 				color("lightgrey") translate([5,5.5,0]) cube(size=[130,92,50],center=true);
-				color("lightgrey") resize(newsize=[160,140,58]) sphere(r=20,$fn=52);  
+				color("lightgrey") resize(newsize=[160,140,58]) sphere(r=20,$fn=152);  
 			}
 //			FM_Mount();
 			translate([DG_Xp,DG_Yp,DG_Zp-0]) cylinder(r=18,h=40,center=true);
 		}
 			color("lightgrey"){
+
+
 			translate([71,23,0]) rotate([DA_Xr,DA_Yr,DA_Zr]) cube(size=[25,80,50],center=true);
 //			translate([65,-40,0]) rotate([DG_Xr,DG_Yr,DG_Zr-25]) cube(size=[20,50,50],center=true);
 			translate([71,-40,0]) rotate([DG_Xr,DG_Yr,DG_Zr-25]) cube(size=[20,50,50],center=true);
@@ -252,14 +257,14 @@ module lowerBox(){
 			translate([-6,-40,14]) rotate([90,0,0]) color("blue") cylinder(r=2.5,h=10,center=true);
 			translate([6,-40,14]) rotate([90,0,0]) color("blue") cylinder(r=2.5,h=10,center=true);
 		difference(){
-		color("grey")hull($fn=52){
+		color("grey")hull($fn=152){
 			intersection(){
 				translate([FM_Xp+2,FM_Yp,FM_Zp]) rotate([FM_Xr,FM_Yr,FM_Zr-90]) cube(size=[8,53,38],center=true);
 				translate([FM_Xp,FM_Yp,FM_Zp]) rotate([FM_Xr,FM_Yr,FM_Zr])cylinder(r=26,h=8,center=true);
 			}
 			intersection(){
 				translate([5,5.5,-2]) color ([0.4,0.4,0.4]) cube(size=[128,88,48],center=true);		
-				resize(newsize=[158,138,50]) sphere(r=20,$fn=52);  
+				resize(newsize=[158,138,50]) sphere(r=20,$fn=152);  
 			}
 		}
 			//detectorArray_BackWall
@@ -384,9 +389,13 @@ module DG_Mount(){
 
 module spectrometer(){
 	difference(){
-		lowerBox();
+		union(){
+			lowerBox();
+			translate ([0,-54,0]) rotate([0,0,90]) color("red") flangeFace();
+		}
 		translate ([0,0,25]) color("red") cylinder(r=30,h=8,center=true);
-		translate([ES_Xp,ES_Yp,ES_Zp]) rotate([ES_Xr,ES_Yr,ES_Zr]) cube(size=[ES_w,3,ES_h],center=true);
+	translate([ES_Xp,ES_Yp-(ES_mt/2),ES_Zp]) rotate([ES_Xr,ES_Yr,ES_Zr]) cylinder(d=ES_md+1.5,h=ES_mt+1,center=true);
+	translate([ES_Xp,ES_Yp-(ES_mt/2),ES_Zp]) rotate([ES_Xr,ES_Yr,ES_Zr]) cylinder(r=3,h=5,$fn=50,center=true);
 		translate([0,0,30]) {
 			rotate([0,90,0]){
 				for ( i = [0 : 7] ){
@@ -400,7 +409,6 @@ module spectrometer(){
 	translate([-45,32,0]) screwPost(0);
 	translate([29,-43,0]) screwPost(0);
 	translate([-29,-43,0]) screwPost(0);
-	translate ([0,-54,0]) rotate([0,0,90]) color("red") flangeFace();
 	//CCDmountingPoints
 	translate([67,-5,-10]) rotate([0,90,20]) screwPost(-15);
 	translate([67,-5,10]) rotate([0,90,20]) screwPost(-15);
@@ -409,10 +417,9 @@ module spectrometer(){
 	//brandingThankYouVeryMuch
 	translate([47,-18,23]) rotate([0,3,30]) color([0,1,0]) write("meridian",h=6,t=3,center=true);	
 	translate([48,-26,22]) rotate([0,3,30]) color([0,1,0]) write("Scientific",h=6,t=3,center=true);	
-
-	translate([-55,-10,10]) rotate([90,0,-80]) color("grey") write("spectrometer_V1.0",h=4,t=3,center=true);	
-	translate([-55,-10,15]) rotate([90,0,-80]) color("grey") write("fl@c@",h=4,t=3,center=true);	
-	translate([-55,-10,5]) rotate([90,0,-80]) color("grey") write("hackaday.io/project/1279",h=3,t=3,center=true);	
+//	translate([-55,-10,10]) rotate([90,0,-80]) color("grey") write("spectrometer_V1.0",h=4,t=3,center=true);	
+//	translate([-55,-10,15]) rotate([90,0,-80]) color("grey") write("fl@c@",h=4,t=3,center=true);	
+//	translate([-55,-10,5]) rotate([90,0,-80]) color("grey") write("hackaday.io/project/1279",h=3,t=3,center=true);	
 }
 
 module optics(){
@@ -433,7 +440,7 @@ module optics(){
 module split(){
 	difference(){
 		spectrometer();
-//		translate([0,0,-15]) cube(size=[150,120,30],center=true);
+		//translate([0,0,-15]) cube(size=[150,120,30],center=true);
 	}
 }
 split();
