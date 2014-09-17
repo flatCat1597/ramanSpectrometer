@@ -104,7 +104,7 @@ module diffractionGrating(){
 			}
 		}
 	}
-	echo ((CM_Zr*2)-(90+DG_Zr));
+//	echo ((CM_Zr*2)-(90+DG_Zr));
 }
 
 module focusingMirror(){
@@ -157,7 +157,7 @@ module accessCover(){
 			}
 		}
 	}
-		translate([0,2,30]) rotate([0,0,0]) color("grey") write("mSci",h=15,t=3,center=true);	
+		translate([0,2,30]) rotate([0,0,0]) color("red") write("mSci",h=15,t=3,center=true);	
 }
 
 module lowerBox(){
@@ -380,17 +380,17 @@ module FM_Mount(){
 
 module DG_Mount(){
 	difference(){
-		translate([0,0,12]) color("grey") cylinder(r=15,h=30,center=true);
-		translate([0,0,-2]) cylinder(r=13,h=5,center=true);
+		translate([0,0,12]) color("grey") cylinder(r=16,h=30,$fn=50,center=true);
+		translate([0,0,-2]) cylinder(r=12,h=5,center=true);
 		rotate([0,0,-38]) translate([-9,0,15]) cube(size=[DG_T*3,DG_W+1,DG_H],center=true);
-		rotate([0,0,-38]) translate([-6,0,15]) cube(size=[5,30,DG_H],center=true);
+		rotate([0,0,-38]) translate([-7,0,15]) cube(size=[6,32,DG_H],center=true);
 	}
 }
 
 module spectrometer(){
 	difference(){
 		union(){
-			lowerBox();
+			color("darkGrey") lowerBox();
 			translate ([0,-54,0]) rotate([0,0,90]) color("red") flangeFace();
 		}
 		translate ([0,0,25]) color("red") cylinder(r=30,h=8,center=true);
@@ -400,7 +400,7 @@ module spectrometer(){
 			rotate([0,90,0]){
 				for ( i = [0 : 7] ){
 					rotate( i * 360 / 8, [1, 0, 0])
-					translate([0,0,34]) rotate([0,90,0]) cylinder(r=2,h=10);
+					translate([0,0,34]) rotate([0,90,0]) cylinder(r=2.45,h=10);
 				}
 			}
 		}
@@ -415,8 +415,8 @@ module spectrometer(){
 	translate([47,49.5,-10]) rotate([0,90,20]) screwPost(-15);
 	translate([47,49.5,10]) rotate([0,90,20]) screwPost(-15);
 	//brandingThankYouVeryMuch
-	translate([47,-18,23]) rotate([0,3,30]) color([0,1,0]) write("meridian",h=6,t=3,center=true);	
-	translate([48,-26,22]) rotate([0,3,30]) color([0,1,0]) write("Scientific",h=6,t=3,center=true);	
+//	translate([47,-18,23]) rotate([0,3,30]) color([0,1,0]) write("meridian",h=6,t=3,center=true);	
+//	translate([48,-26,22]) rotate([0,3,30]) color([0,1,0]) write("Scientific",h=6,t=3,center=true);	
 //	translate([-55,-10,10]) rotate([90,0,-80]) color("grey") write("spectrometer_V1.0",h=4,t=3,center=true);	
 //	translate([-55,-10,15]) rotate([90,0,-80]) color("grey") write("fl@c@",h=4,t=3,center=true);	
 //	translate([-55,-10,5]) rotate([90,0,-80]) color("grey") write("hackaday.io/project/1279",h=3,t=3,center=true);	
@@ -440,7 +440,7 @@ module optics(){
 module split(){
 	difference(){
 		spectrometer();
-		//translate([0,0,-15]) cube(size=[150,120,30],center=true);
+//		translate([0,0,15]) cube(size=[150,120,30],center=true);
 	}
 }
 split();
