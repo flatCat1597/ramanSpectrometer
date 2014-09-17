@@ -194,18 +194,19 @@ module rotator(){
 
 module laserStand(){
 	translate([0,50,25]) rotate([0,0,90]) flange();
+			translate([-22.5,0,3]) cube(size=[5,100,5],center=true);		
+			translate([22.5,0,3]) cube(size=[5,100,5],center=true);		
 	difference(){
-		translate([0,50,25]) cube(size=[50,2,50],center=true);
-		translate([0,50,25]) cube(size=[15,3,15],center=true);
-translate([5.5,50,39]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
-translate([-5.5,50,39]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
-translate([5.5,50,12]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
-translate([-5.5,50,12]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
-translate([14,50,19.5]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
-translate([14,50,31]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
-translate([-14,50,19.5]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
-translate([-14,50,31]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
-
+		translate([0,52,25]) cube(size=[50,5,50],center=true);
+		translate([0,50,25]) cube(size=[15,10,15],center=true);
+translate([5.5,52,39]) rotate([90,0,0]) cylinder(r=4,h=7,center=true);
+translate([-5.5,52,39]) rotate([90,0,0]) cylinder(r=4,h=7,center=true);
+translate([5.5,52,12]) rotate([90,0,0]) cylinder(r=4,h=7,center=true);
+translate([-5.5,52,12]) rotate([90,0,0]) cylinder(r=4,h=7,center=true);
+translate([14,52,19.5]) rotate([90,0,0]) cylinder(r=4,h=7,center=true);
+translate([14,52,31]) rotate([90,0,0]) cylinder(r=4,h=7,center=true);
+translate([-14,52,19.5]) rotate([90,0,0]) cylinder(r=4,h=7,center=true);
+translate([-14,52,31]) rotate([90,0,0]) cylinder(r=4,h=7,center=true);
 	}
 	difference(){
 		union(){
@@ -216,7 +217,7 @@ translate([-14,50,31]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
 	}
 	difference(){
 		union(){
-			translate([0,-2,0]) cube(size=[50,106,2],center=true);
+			translate([0,-2,0]) cube(size=[50,106,4],center=true);
 			translate([0,-30,-2]) cylinder(r=22,h=4,$fn=50,center=true);
 			translate([0,27,-2]) cylinder(r=22,h=4,$fn=50,center=true);
 			translate([0,27,-3]) cube(size=[80,10,2],center=true);
@@ -237,7 +238,7 @@ translate([-14,50,31]) rotate([90,0,0]) cylinder(r=4,h=5,center=true);
 		}	
 	difference(){
 		translate([0,31,16]) cube(size=[20,20,40],center=true);
-		translate([0,31,30]) rotate([0,0,90]) cylinder(r=8,h=30,center=true);
+		translate([0,31,30]) rotate([0,0,90]) cylinder(r=8.5,h=30,center=true);
 		translate([0,31,25]) rotate([0,90,90]) cylinder(r=3,h=30,$fn=100,center=true);
 
 	}
