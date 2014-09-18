@@ -14,23 +14,36 @@ InterruptIn shiftGate_int(PC_6);
 DigitalOut ICG(PB_3);
 AnalogIn imageIn(A0);
 DigitalOut LED(LED1);
+DigitalOut illuminator(PA_8);
+DigitalOut blueLED(PB_5);
+DigitalOut redLED(PB_10);
 Serial raspi(USBTX, USBRX);
 
-int masterFreq_period       = 20;      //microseconds
-int masterFreq_width        = 10;      //microseconds
+/*
+int masterFreq_period       = 20;    //microseconds
+int masterFreq_width        = 10;    //microseconds
 int shiftGate_period        = 66;    //microseconds
 int shiftGate_width         = 33;    //microseconds
+*/
+
+float firmwareVersion = 0.2;
+
+
+int masterFreq_period       = 2;    //microseconds
+int masterFreq_width        = 1;    //microseconds
+int shiftGate_period        = 8;    //microseconds
+int shiftGate_width         = 4;    //microseconds
 
 int none        = 0;
-int veryLow     = 1;
+int veryLow     = 10;
 int low         = 100;
 int mediumLow   = 1000;
 int medium      = 100000;
-int high        = 1000000;
+int high        = 5000000;
 int veryHigh    = 10000000;
 
 double imageData;
-int sensitivity             = mediumLow;
+int sensitivity;
 int pixelTotal              = 3694;
 int leadingDummyElements    = 16;
 int leadShieldedElements    = 13;
@@ -71,6 +84,8 @@ void checkState()
     }
     switch (state) {
         case readOut_Begin:
+            redLED = 1;
+            blueLED = 0;
             readOutTrigger = 1;
             state = readOut_ACTIVE;
 //            raspi.printf("+++\r\n");
@@ -82,21 +97,21 @@ void checkState()
             break;
         case readOut_LeadingDummy:
             pixelCount++;
-            if (pixelCount == leadingDummyElements) {
+            if (pixelCount == leadingDummyElements - 1) {
                 pixelCount = 0;
                 state = readOut_LeadingShielded;
             }
             break;
         case readOut_LeadingShielded:
             pixelCount++;
-            if (pixelCount == leadShieldedElements) {
+            if (pixelCount == leadShieldedElements - 1) {
                 pixelCount = 0;
                 state = readOut_headerElements;
             }
             break;
         case readOut_headerElements:
             pixelCount++;
-            if (pixelCount == headerElements) {
+            if (pixelCount == headerElements - 1) {
                 pixelCount = 0;
                 state = readOut_signalElements;
             }
@@ -105,14 +120,14 @@ void checkState()
             pixelCount++;
             pixelValue[pixelCount] = imageIn.read_u16();
 //            raspi.printf("%i\t%4.12f\r\n", pixelCount,(imageIn.read_u16() * 5.0) / 4096.0);
-            if (pixelCount == signalElements) {
+            if (pixelCount == signalElements - 1) {
                 pixelCount = 0;
                 state = readOut_trailingDummy;
             }
             break;
         case readOut_trailingDummy:
             pixelCount++;
-            if (pixelCount == trailingDummyElements) {
+            if (pixelCount == trailingDummyElements - 1) {
                 pixelCount = 0;
                 state = readOut_integrationTime;
                 ICG = 0;
@@ -122,20 +137,23 @@ void checkState()
             wait_us(sensitivity);
             state = readOut_Finish;
             for (int pixelNumber=0; pixelNumber<signalElements; pixelNumber++) {
-                raspi.printf("%i\t%4.12f\r\n", pixelNumber, 5 - ((pixelValue[pixelNumber] * 5) / 4096.0));
+                raspi.printf("%i\t%4.12f\r\n", pixelNumber, 5 - ((pixelValue[pixelNumber - 1] * 5) / 4096.0));
             }
 //            raspi.printf("---\r\n");
             break;
         case readOut_Finish:
+            redLED = 0;
             state = readOut_IDLE;
             wait_us(sensitivity);
             LED = 0;
+            illuminator = 0;
             ICG = 1;
             break;
         case readOut_IDLE:
             if (ICG == 1) {
 //                ICG = 0;
 //                state = readOut_Begin;
+                blueLED = 1;
             }
             break;
         default:
@@ -143,10 +161,21 @@ void checkState()
     }
 }
 
+void printInfo(){
+    raspi.printf("meridianScientific\r\n");
+    raspi.printf("ramanPi - The DIY 3D Printable RaspberryPi Raman Spectrometer\r\n");
+    raspi.printf("Spectrometer imagingBoard\r\n");
+    raspi.printf("-------------------------------------------------------------\r\n");
+    raspi.printf("Firmware Version: %f\r\n",firmwareVersion);
+    raspi.printf("Current Sensitivity: %d\r\n", sensitivity);
+}
+
 int main()
 {
     ICG = 1;
     LED = 0;
+    blueLED = 0;
+    redLED = 0;
     pixelCount = 0;
     readOutTrigger = 0;
     state = readOut_IDLE;
@@ -163,12 +192,41 @@ int main()
     shiftGate_int.rise(checkState);
 
     raspi.baud(921600);
+    blueLED = 0;
+    sensitivity = low;
     while(1) {
+        if (state != readOut_IDLE)   //reading is top priority
+        {
+         continue;
+        }        
         char c = raspi.getc();
         switch (c) {
             case 'r':
+                illuminator = 1;
+                wait(1);
                 ICG = 0;
                 state = readOut_Begin;
+                break;
+            case 'l':
+                sensitivity = low;
+                break;
+            case 'v':
+                sensitivity = veryLow;
+                break;
+            case 'n':
+                sensitivity = mediumLow;
+                break;
+            case 'm':
+                sensitivity = medium;
+                break;
+            case 'h':
+                sensitivity = high;
+                break;
+            case 'c':
+                sensitivity = veryHigh;
+                break;
+            case 'i':
+                printInfo();
                 break;
             default:
                 break;
