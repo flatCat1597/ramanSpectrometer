@@ -25,17 +25,67 @@ module bodyTubes(){
 		difference(){
 			//crossTubeOuter
 			intersection(){
-				translate([-4.5,-15,0]) cube(size=[51,30,20],center=true);
-				translate([-4.5,-15,0]) rotate([0,90,0]) cylinder(r=15,h=52,center=true);
+				translate([0,-15,0]) cube(size=[46,30,20],center=true);
+				translate([0,-15,0]) rotate([0,90,0]) cylinder(r=15,h=47,center=true);
 			}
 			//crossTubeInner
 			intersection(){
-				translate([-4.5,-15,0]) cube(size=[52,25,15],center=true);
-				translate([-4.5,-15,0]) rotate([0,90,0]) cylinder(r=11,h=53,center=true);
+				translate([0,-15,0]) cube(size=[47,25,15],center=true);
+				translate([0,-15,0]) rotate([0,90,0]) cylinder(r=11,h=48,center=true);
 			}
 			//mainWallCutout
 				cube(size=[25,70,15],center=true);
 		}
+	}
+}
+
+module splitterModule_top(){
+	difference(){
+		intersection(){
+			translate([0,-15,14]) cube(size=[30,30,4],center=true);
+			translate([0,-15,14]) cylinder(r=18.5,h=5,center=true);
+			translate([0,-15,-33]) sphere(r=50,center=true);
+		}
+		translate([0,-15,14]) cylinder(r=2,h=10,$fn=50,center=true);
+		translate([0,-15,19.5]) sphere(r=5,$fn=100,center=true);
+		//accessHoleScrewHoles
+		translate([10.5,-4.5,14]) cylinder(r=2,h=6,$fn=50,center=true);
+		translate([-10.5,-4.5,14]) cylinder(r=2,h=6,$fn=50,center=true);
+		translate([10.5,-25.5,14]) cylinder(r=2,h=6,$fn=50,center=true);
+		translate([-10.5,-25.5,14]) cylinder(r=2,h=6,$fn=50,center=true);
+		//accessHoleScrewHoles
+		translate([10.5,-4.5,16]) cylinder(r=3,h=6,center=true);
+		translate([-10.5,-4.5,16]) cylinder(r=3,h=6,center=true);
+		translate([10.5,-25.5,16]) cylinder(r=3,h=6,center=true);
+		translate([-10.5,-25.5,16]) cylinder(r=3,h=6,center=true);
+	}
+	difference(){
+		translate([0,-15,10]) cylinder(r=12,h=9,$fn=50,center=true);
+		translate([0,-15,0]) cube(size=[13.5,13.5,13.5],center=true);
+		translate([0,-15,10]) cylinder(r=2,h=10,$fn=50,center=true);
+		//screwHoles
+		translate([0,-5.5,9]) cylinder(r=1.5,h=9,$fn=50,center=true);
+		translate([0,-24.5,9]) cylinder(r=1.5,h=9,$fn=50,center=true);
+		translate([9.5,-15,9]) cylinder(r=1.5,h=9,$fn=50,center=true);
+		translate([-9.5,-15,9]) cylinder(r=1.5,h=9,$fn=50,center=true);
+	}
+}
+
+module splitterModule_bottom(){
+	difference(){
+		translate([0,-15,-1]) cube(size=[15,15,13],center=true);
+		translate([0,-15,0]) cube(size=[13.5,13.5,13.5],center=true);
+		translate([0,-15,0]) rotate([90,0,0]) cylinder(r=3,h=20,$fn=50,center=true);
+		translate([0,-15,0]) rotate([90,0,90]) cylinder(r=3,h=20,$fn=50,center=true);
+	}
+	difference(){
+		color("red") translate([0,-15,4.75]) cylinder(r=12,h=1.5,$fn=50,center=true);
+		translate([0,-15,0]) cube(size=[13.5,13.5,13.5],center=true);
+		//screwHoles
+		translate([0,-5.5,4.75]) cylinder(r=1.5,h=2.5,$fn=50,center=true);
+		translate([0,-24.5,4.75]) cylinder(r=1.5,h=2.5,$fn=50,center=true);
+		translate([9.5,-15,4.75]) cylinder(r=1.5,h=2.5,$fn=50,center=true);
+		translate([-9.5,-15,4.75]) cylinder(r=1.5,h=2.5,$fn=50,center=true);
 	}
 }
 
@@ -66,15 +116,15 @@ module centralHub(){
 			flangeFace();
 		}
 	}
-	//beamStopFlange
+	//lensSelectorFlange
 	rotate([0,0,0]){
 		translate([11,-15,0]){
 			flangeFace();
 		}
 	}
-	//lensSelectorFlange
+	//beamStopFlange
 	rotate([0,0,180]){
-		translate([20,15,0]){
+		translate([11,15,0]){
 			flangeFace();
 		}
 	}
@@ -134,12 +184,17 @@ module screwHoleInner(){
 		translate([0,0,11]) cylinder(r=3,h=15,center=true);
 }
 
-module beamSplitterTop(){
+module beamSplitterBottom(){
 	difference(){
 		bodyUnit();
-		//chopBottom
+		//chopTop
 		translate([0,0,10]) cube([100,100,20],center=true);
 	}
 }
 
-beamSplitterTop();
+beamSplitterBottom();
+//translate([0,0,55]) 
+//splitterModule_top();
+//translate([0,0,30]) 
+//splitterModule_bottom();
+//		translate([0,-15,47]) %cube(size=[12.5,12.5,12.5],center=true);
