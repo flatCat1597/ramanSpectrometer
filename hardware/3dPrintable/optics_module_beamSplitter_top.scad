@@ -60,32 +60,32 @@ module splitterModule_top(){
 		translate([-10.5,-25.5,16]) cylinder(r=3,h=6,center=true);
 	}
 	difference(){
-		translate([0,-15,10]) cylinder(r=12,h=9,$fn=50,center=true);
+		translate([0,-15,10]) cylinder(r=11,h=9,$fn=50,center=true);
 		translate([0,-15,0]) cube(size=[13.5,13.5,13.5],center=true);
 		translate([0,-15,10]) cylinder(r=2,h=10,$fn=50,center=true);
 		//screwHoles
-		translate([0,-5.5,9]) cylinder(r=1.5,h=9,$fn=50,center=true);
-		translate([0,-24.5,9]) cylinder(r=1.5,h=9,$fn=50,center=true);
-		translate([9.5,-15,9]) cylinder(r=1.5,h=9,$fn=50,center=true);
-		translate([-9.5,-15,9]) cylinder(r=1.5,h=9,$fn=50,center=true);
+		translate([0,-5.5,9]) cylinder(r=1,h=9,$fn=50,center=true);
+		translate([0,-24.5,9]) cylinder(r=1,h=9,$fn=50,center=true);
+		translate([9.5,-15,9]) cylinder(r=1,h=9,$fn=50,center=true);
+		translate([-9.5,-15,9]) cylinder(r=1,h=9,$fn=50,center=true);
 	}
 }
 
 module splitterModule_bottom(){
 	difference(){
-		translate([0,-15,-1]) cube(size=[15,15,13],center=true);
+		translate([0,-15,-1]) cube(size=[16,16,13],center=true);
 		translate([0,-15,0]) cube(size=[13.5,13.5,13.5],center=true);
 		translate([0,-15,0]) rotate([90,0,0]) cylinder(r=3,h=20,$fn=50,center=true);
 		translate([0,-15,0]) rotate([90,0,90]) cylinder(r=3,h=20,$fn=50,center=true);
 	}
 	difference(){
-		color("red") translate([0,-15,4.75]) cylinder(r=12,h=1.5,$fn=50,center=true);
+		color("red") translate([0,-15,4.75]) cylinder(r=11,h=1.5,$fn=50,center=true);
 		translate([0,-15,0]) cube(size=[13.5,13.5,13.5],center=true);
 		//screwHoles
-		translate([0,-5.5,4.75]) cylinder(r=1.5,h=2.5,$fn=50,center=true);
-		translate([0,-24.5,4.75]) cylinder(r=1.5,h=2.5,$fn=50,center=true);
-		translate([9.5,-15,4.75]) cylinder(r=1.5,h=2.5,$fn=50,center=true);
-		translate([-9.5,-15,4.75]) cylinder(r=1.5,h=2.5,$fn=50,center=true);
+		translate([0,-5.5,4.75]) cylinder(r=1,h=2.5,$fn=50,center=true);
+		translate([0,-24.5,4.75]) cylinder(r=1,h=2.5,$fn=50,center=true);
+		translate([9.5,-15,4.75]) cylinder(r=1,h=2.5,$fn=50,center=true);
+		translate([-9.5,-15,4.75]) cylinder(r=1,h=2.5,$fn=50,center=true);
 	}
 }
 

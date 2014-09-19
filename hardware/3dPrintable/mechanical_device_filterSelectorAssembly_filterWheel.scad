@@ -63,18 +63,22 @@ module 550nmSP_cover(){
 			translate([0,-5,-17]) rotate([90,0,0]) cylinder(r=20,h=3,center=true);
 		}
 		//centerHole
-		translate([0,-5,-26.25]) rotate([90,0,0]) cylinder(r=4,h=3,center=true);
+		translate([0,-5,-26.25]) rotate([90,0,0]) cylinder(r=6,h=3,center=true);
 		//screwHoles
 		translate([8,-5,-18]) rotate([90,0,0]) cylinder(r=2,h=5,center=true);
 		translate([-8,-5,-18]) rotate([90,0,0]) cylinder(r=2,h=5,center=true);
 		translate([-11,-5,-30]) rotate([90,0,0]) cylinder(r=2,h=5,center=true);
 		translate([11,-5,-30]) rotate([90,0,0]) cylinder(r=2,h=5,center=true);
 	}
+	difference(){
+		translate([0,-7,-26.25]) rotate([90,0,0]) cylinder(r=8,h=3,center=true);
+		translate([0,-7,-26.25]) rotate([90,0,0]) cylinder(r=4,h=4,center=true);
+	}
 }
 
 filterWheel();
-//centerHubFront();
-centerHubBack();
+translate([0,-3,0]) rotate([180,0,0]) centerHubFront();
+//centerHubBack();
 
 522nmSP_cover();
 550nmSP_cover();
