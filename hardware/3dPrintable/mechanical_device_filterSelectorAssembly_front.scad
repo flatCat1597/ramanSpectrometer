@@ -46,17 +46,17 @@ module centerCutouts(){
 		//pinionGearCutout
 		translate([19.25,0,-35]) rotate([90,0,0])	color([0.2,0.6,0.9]) cylinder(r=12,h=10,center=true);
 	}
-	//mainPinionCutout
-	translate([0,0,8]) rotate([90,0,0]) color([0.2,0.6,0.9]) cylinder(r=42,h=10,center=true);
-	//bearingMountCutout
-	translate([0,0,8]) rotate ([90,0,0]) cylinder(r=11.5,h=25,center=true);
-
-	difference(){
-		//filterClearance
-		translate([0,5,8]) rotate ([90,0,0]) cylinder(r=38,h=25,center=true);
-		translate([0,5,8]) rotate ([90,0,0]) cylinder(r=14,h=25,center=true);
+	union(){
+		//mainPinionCutout
+		translate([0,0,8]) rotate([90,0,0]) color([0.2,0.6,0.9]) cylinder(r=42,h=10,center=true);
+		//bearingMountCutout
+		translate([0,0,8]) rotate ([90,0,0]) cylinder(r=11.5,h=25,center=true);
+		difference(){
+			//filterClearance
+			translate([0,-5,8]) rotate ([90,0,0]) cylinder(r=38,h=5,center=true);
+			translate([0,-5,8]) rotate ([90,0,0]) cylinder(r=14,h=5,center=true);
+		}
 	}
-
 	//opticalEncoderPinionCutout
 	translate([-19.25,0,-35]) rotate([90,0,0]) color([0.2,0.6,0.9]) cylinder(r=12,h=10,center=true);
 	//opticalEncoderCutout

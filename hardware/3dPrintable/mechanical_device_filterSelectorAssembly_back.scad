@@ -46,14 +46,16 @@ module centerCutouts(){
 		//pinionGearCutout
 		translate([19.25,0,-35]) rotate([90,0,0])	color([0.2,0.6,0.9]) cylinder(r=12,h=10,center=true);
 	}
-	//mainPinionCutout
-	translate([0,0,8]) rotate([90,0,0]) color([0.2,0.6,0.9]) cylinder(r=42,h=10,center=true);
-	//bearingMountCutout
-	translate([0,0,8]) rotate ([90,0,0]) cylinder(r=11.5,h=25,center=true);
-	//opticalEncoderPinionCutout
-	translate([-19.25,0,-35]) rotate([90,0,0]) color([0.2,0.6,0.9]) cylinder(r=12,h=10,center=true);
-	//opticalEncoderCutout
-	translate([-19.25,10,-35]) cube(size=[14.5,16.5,15.5],center=true);		
+	union(){
+		//mainPinionCutout
+		translate([0,0,8]) rotate([90,0,0]) color([0.2,0.6,0.9]) cylinder(r=42,h=10,center=true);
+		//bearingMountCutout
+		translate([0,0,8]) rotate ([90,0,0]) cylinder(r=11.5,h=25,center=true);
+		//opticalEncoderPinionCutout
+		translate([-19.25,0,-35]) rotate([90,0,0]) color([0.2,0.6,0.9]) cylinder(r=12,h=10,center=true);
+		//opticalEncoderCutout
+		translate([-19.25,10,-35]) cube(size=[14.5,16.5,15.5],center=true);		
+	}
 }
 
 module screwHoles(){
