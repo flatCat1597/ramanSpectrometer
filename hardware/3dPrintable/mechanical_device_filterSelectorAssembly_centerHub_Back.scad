@@ -3,7 +3,7 @@ module centerHubBack(){
 	difference(){
 		union(){
 			translate([0,-5,0]) rotate ([90,0,0]) cylinder(r=10,h=2,center=true);
-			translate([0,-7.5,0]) rotate ([90,0,0]) cylinder(r=3.75,h=9,$fn=50,center=true);
+			translate([0,-8,0]) rotate ([90,0,0]) cylinder(r=3.75,h=8,$fn=50,center=true);
 		}
 		//screwHoles
 		translate([0,-5,6.5]) rotate ([90,0,0]) cylinder(r=1.5,h=5,center=true);
