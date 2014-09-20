@@ -28,11 +28,11 @@ module outerCase(){
 
 module flangeTube(){
 	intersection(){
-		cube(size=[30,47,20],center=true);
+		cube(size=[30,40,20],center=true);
 		rotate([90,0,0]) cylinder(r=15,h=48,center=true);
 	}
 	translate ([0,10,0]) rotate([0,0,90]) flangeFace();
-	translate ([0,-34,0]) rotate([0,0,90]) flangeFace();
+	translate ([0,-30,0]) rotate([0,0,90]) flangeFace();
 }
 
 module centerCutouts(){
@@ -50,6 +50,13 @@ module centerCutouts(){
 	translate([0,0,8]) rotate([90,0,0]) color([0.2,0.6,0.9]) cylinder(r=42,h=10,center=true);
 	//bearingMountCutout
 	translate([0,0,8]) rotate ([90,0,0]) cylinder(r=11.5,h=25,center=true);
+
+	difference(){
+		//filterClearance
+		translate([0,5,8]) rotate ([90,0,0]) cylinder(r=38,h=25,center=true);
+		translate([0,5,8]) rotate ([90,0,0]) cylinder(r=14,h=25,center=true);
+	}
+
 	//opticalEncoderPinionCutout
 	translate([-19.25,0,-35]) rotate([90,0,0]) color([0.2,0.6,0.9]) cylinder(r=12,h=10,center=true);
 	//opticalEncoderCutout
@@ -90,7 +97,7 @@ module gearsAndMotor(){
 	}
 }
 	
-translate([0,-12.5,-15]) rotate([90,0,0]) color([0,1,0]) write("meridianScientific",h=5,t=3,center=true);	
+//translate([0,-12.5,-15]) rotate([90,0,0]) color([0,1,0]) write("meridianScientific",h=5,t=3,center=true);	
 
 difference(){
 	union(){

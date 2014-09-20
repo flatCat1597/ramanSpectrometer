@@ -28,10 +28,10 @@ module outerCase(){
 
 module flangeTube(){
 	intersection(){
-		cube(size=[30,47,20],center=true);
+		cube(size=[30,40,20],center=true);
 		rotate([90,0,0]) cylinder(r=15,h=48,center=true);
 	}
-	translate ([0,10,0]) rotate([0,0,90]) flangeFace();
+	translate ([0,7,0]) rotate([0,0,90]) flangeFace();
 	translate ([0,-34,0]) rotate([0,0,90]) flangeFace();
 }
 
