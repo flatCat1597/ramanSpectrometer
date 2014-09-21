@@ -1,5 +1,9 @@
 use <std_mechanical_object_flange3.scad>
 
+module passFilter(){
+	translate ([56,0,0]) rotate([0,90,0]) color([0,.5,0]) cylinder(r=13,h=5,$fn=100,center=true);
+}
+
 module outerCasing_top(){
 	union(){
 		difference(){
@@ -71,17 +75,35 @@ module outerCasing_top(){
 	}
 }
 
+module passFilterMount(){
+	difference(){
+		intersection(){
+			//outerNeck
+			color("blue") translate([56,0,0]) cube(size=[10,32,32],center=true);
+			//roundedEdge
+			translate([56,0,0]) rotate([0,90,0]) cylinder(r=18,h=20,center=true);
+		}
+		//beamPath
+		translate([56,0,0]) rotate([0,90,0]) cylinder(r=10,h=20,center=true);
+		passFilter();
+		//screwHoles
+		translate([56,5.75,14]) rotate([0,90,0]) cylinder(r=1.5,h=11,center=true);
+		translate([56,-5.75,14]) rotate([0,90,0]) cylinder(r=1.5,h=11,center=true);
+		translate([56,13.85,5.75]) rotate([0,90,0]) cylinder(r=1.5,h=11,center=true);
+		translate([56,-13.85,5.75]) rotate([0,90,0]) cylinder(r=1.5,h=11,center=true);
+	}
+}
+
 module structural_mount_laser_top(){
 	union(){
 		outerCasing_top();
 		difference(){
-			translate([50,0,0]){
-				flange();
+			union(){
+				translate([50,0,0]) flangeFace();
+				passFilterMount();
 			}
 			//bottomHalfCutoff
-			translate([55,0,-12.5]){
-				cube(size=[20,50,25],center=true);
-			}
+			translate([60,0,-12.5]) cube(size=[20,50,25],center=true);
 		}
 	}
 }
