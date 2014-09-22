@@ -13,16 +13,19 @@ module objectiveMount(){
 		difference(){
 			//mainBody
 			intersection(){
-				translate([0,3,0]) color([0,.6,.5]) cube(size=[30,30,25],center=true);
-				translate([0,3,0]) rotate([90,0,0]) cylinder(r=18,h=35,center=true);
+				translate([0,3,0]) color([0,.6,.5]) cube(size=[30,32,25],center=true);
+				translate([0,4,0]) rotate([90,0,0]) cylinder(r=18,h=35,center=true);
 			}
 			translate([-15,-4,0]) screwHoleInner();
 			translate([15,-4,0]) screwHoleInner();
 			//lensHole
 			union(){
-				translate([0,7,0]) rotate([90,0,0]) cylinder(h=13,r=12.25,center=true);
-				translate([0,-6,0]) rotate([90,0,0]) cylinder(h=18,r=10.25,center=true);
-				translate([0,15,0]) rotate([90,0,0]) cylinder(h=4.5,r=10.5,center=true);
+				//mainBody
+				translate([0,-6,0]) rotate([90,0,0]) cylinder(r=10.5,h=18,center=true);
+				//largeThumbWheel
+				translate([0,7,0]) rotate([90,0,0]) cylinder(r=13,h=13,center=true);
+				//threads
+				translate([0,16,0]) rotate([90,0,0]) cylinder(r=11,h=6,center=true);
 			}
 			intersection(){
 				translate([0,14,0]) cube(size=[20,10,15],center=true);
@@ -41,6 +44,10 @@ module objectiveTube(){
 			}
 		}
 		intersection(){
+			translate([0,24,-11]) cube(size=[14,10,2],center=true);
+			translate([0,13,-11]) cylinder(r=10,h=3,center=true);
+		}
+		intersection(){
 			union(){
 				difference(){
 					translate([0,48,0]) cube(size=[30,60,20],center=true);
@@ -49,7 +56,9 @@ module objectiveTube(){
 							translate([0,48,0]) cube(size=[28,61,10],center=true);
 							translate([0,48,0]) rotate([90,0,0]) cylinder(r=7,h=62,center=true);
 						}
-						translate([0,48,0]) rotate([0,0,0]) cube(size=[27.5,40,14],center=true);
+						//centralTubeInnerBody
+						translate([0,48,0]) rotate([0,0,0]) cube(size=[24.5,40,14],center=true);
+						translate([0,16,0]) rotate([90,0,0]) cylinder(r=11,h=6,center=true);
 					}
 					//mainScrewHoles
 					translate([-12,70,0]) screwHoleInner();
@@ -146,7 +155,7 @@ module screwHoleInner(){
 module screwHoleInner2(){
 	union(){
 		translate([0,0,5]) cylinder(r=1.5,h=35,center=true);
-		translate([0,0,11]) cylinder(r=3,h=15,center=true);
+		translate([0,0,11]) cylinder(r=3,h=30,center=true);
 	}
 }
 module screwHoleOuter(){
