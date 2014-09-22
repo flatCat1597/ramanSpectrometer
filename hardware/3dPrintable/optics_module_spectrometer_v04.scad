@@ -34,11 +34,11 @@ DG_W = 25;		// diffractionGrating width
 DG_GD = 1200;		// diffractionGrating Groove Density
 DG_T = 9.5;		// diffractionGrating Thickness
 DG_1st = -12.03;	// 1st order - based on a 90deg incident, 1200g/mm, 55nm
-DG_2nd = 18.6629;	// 2nd order - based on a 90deg incident, 1200g/mm, 55nm
+DG_2nd = -18.6629;	// 2nd order - based on a 90deg incident, 1200g/mm, 55nm
 DG_3rd = 78.5217;	// 3rd order - based on a 90deg incident, 1200g/mm, 55nm
 DG_Xr = 0;			// diffractionGrating X rotation
 DG_Yr = 0;			// diffractionGratingY rotation
-DG_Zr = DG_1st;;	// diffractionGrating Z rotation
+DG_Zr = DG_1st;		// diffractionGrating Z rotation
 				// diffractionGrating X position calculated from collimatingMirror angle and distance
 DG_Xp = CM_Xp + CM_EFL * cos((CM_Zr*2) - 90);		
 				// diffractionGratingY position calculated from collimatingMirror angle and distance
@@ -391,7 +391,7 @@ module spectrometer(){
 	difference(){
 		union(){
 			color("darkGrey") lowerBox();
-			translate ([0,-54,0]) rotate([0,0,90]) color("red") flangeFace();
+			translate ([0,-54,0]) rotate([90,0,90]) color("red") flangeFace();
 		}
 		translate ([0,0,25]) color("red") cylinder(r=30,h=8,center=true);
 	translate([ES_Xp,ES_Yp-(ES_mt/2),ES_Zp]) rotate([ES_Xr,ES_Yr,ES_Zr]) cylinder(d=ES_md+1.5,h=ES_mt+1,center=true);
@@ -440,12 +440,12 @@ module optics(){
 module split(){
 	difference(){
 		spectrometer();
-//		translate([0,0,15]) cube(size=[150,120,30],center=true);
+		translate([0,0,15]) cube(size=[150,120,30],center=true);
 	}
 }
 split();
 optics();
-accessCover();
+//accessCover();
 
 //animate
 function saw(t) = 1 - 2*abs(t-0.5);    
