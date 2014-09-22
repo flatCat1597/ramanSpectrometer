@@ -13,8 +13,9 @@ use <rw_electronic_object_tftDisplay.scad>
 use <trim_tftFaceplate_facia.scad>
 
 use <mechanical_device_filterSelectorAssembly.scad>
-use <optics_module_spectrometer.scad>
+use <optics_module_spectrometer_v04.scad>
 
+module ramanSystem(){
 structural_mount_laser_top();
 structural_mount_laser_bottom();
 laserEmitter();
@@ -29,7 +30,7 @@ color([0.4,0.6,0]){
 }
 translate([110,-46,0]){
 	 rotate([90,0,270]){
-		9g_motor();
+		color("blue") 9g_motor();
 	}
 }
 
@@ -45,7 +46,7 @@ translate([85,0,0]){
 translate([85,-206,22]){
 	stepperMotorPinion();
 }
-translate([50,0,30]) color([1,0,0]) cube(size=[200,1,1],center=true);
+//translate([50,0,30]) color([1,0,0]) cube(size=[200,1,1],center=true);
 
 translate([85,-111,0]){
 	rotate([0,0,180]){
@@ -54,11 +55,11 @@ translate([85,-111,0]){
 }
 
 translate([85,-206,22]){
-	mainBox();
+//	mainBox();
 	translate([0,-35,-22]){
 		objectiveMount();
 	}
-	translate([0,-70,-60]){
+	translate([0,-10,-60]){
 		tray();
 		traySupports();
 		%translate([0,-60,35]) cube(size=[12,12,45],center=true);
@@ -66,22 +67,24 @@ translate([85,-206,22]){
 	translate([-50,-101,53.75]){
 		translate([-25.25,-11.5,11.5]){
 			rotate([45,0,0]){
-				screen();
+//				screen();
 			}
 		}
 		rotate([-45,0,180]){
-			displayPlate();
-			trim_tftFacePlate_facia();
+//			displayPlate();
+//			trim_tftFacePlate_facia();
 		}
 	}
 }
-translate([-30,-60,-60]){
-rotate([-90,-0,90]){
-spectrometer();
-}}
-translate([43,-96,0]){
+translate([-35,-96,-0]) rotate([-90,-90,180]) spectrometer();
+translate([50,-96,0]){
 	rotate([0,0,90]){
 		main();
-		box();
+color("orange")		box();
 	}
 }
+}
+
+//animate
+function saw(t) = 1 - 2*abs(t-0.5);    
+rotate([0,0,saw($t)*360,0])  ramanSystem();
