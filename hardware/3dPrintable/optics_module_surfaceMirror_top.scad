@@ -38,7 +38,7 @@ module mirrorSphere_top(){
 
 			//screwHoles
 //			translate([2,12.5,0]) cylinder(r=1.55,h=15,center=true);
-			translate([9,9,0]) cylinder(r=2,h=15,center=true);
+			translate([9,9,0]) cylinder(r=1.5,h=20,center=true);
 
 //			translate([2,12.5,10]) cylinder(r=2,h=12,center=true);
 			translate([9,9,10]) cylinder(r=3,h=12,center=true);
@@ -46,16 +46,16 @@ module mirrorSphere_top(){
 			translate([-14,-14,0]) cylinder(r=2,h=21,center=true);
 
 			//adjustmentScrews
-			translate([15,5,5]) rotate([0,90,45]) cylinder(r=2,h=30,center=true);
+			translate([15,5,5]) rotate([0,90,45]) cylinder(r=1.5,h=30,center=true);
 			translate([15,5,5]) rotate([0,90,45]) cylinder(r=3,h=5,center=true);
 
-			translate([5,15,5]) rotate([0,90,45]) cylinder(r=2,h=30,center=true);
+			translate([5,15,5]) rotate([0,90,45]) cylinder(r=1.5,h=30,center=true);
 			translate([5,15,5]) rotate([0,90,45]) cylinder(r=3,h=5,center=true);
 
-			translate([15,5,-5]) rotate([0,90,45]) cylinder(r=2,h=30,center=true);
+			translate([15,5,-5]) rotate([0,90,45]) cylinder(r=1.5,h=30,center=true);
 			translate([15,5,-5]) rotate([0,90,45]) cylinder(r=3,h=5,center=true);
 
-			translate([5,15,-5]) rotate([0,90,45]) cylinder(r=2,h=30,center=true);
+			translate([5,15,-5]) rotate([0,90,45]) cylinder(r=1.5,h=30,center=true);
 			translate([5,15,-5]) rotate([0,90,45]) cylinder(r=3,h=5,center=true);
 
 		}
@@ -63,7 +63,8 @@ module mirrorSphere_top(){
 	//cornerScrewHole
 	difference(){
 		translate([-15,-15,0]) cube(size=[10,10,20],center=true);
-		translate([-14,-14,0]) cylinder(r=2,h=21,center=true);
+		translate([-14,-14,0]) cylinder(r=1.5,h=21,center=true);
+		translate([-14,-14,8]) cylinder(r=3,h=10,center=true);
 	}
 			//flange
 			rotate([0,180,0]){ 
@@ -84,8 +85,6 @@ module mirrorSphere_top(){
 				}
 			}
 }
-
-
 
 module mirror_mount_top(){
 	difference(){
