@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="no"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="no"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="no"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
+<libraries>
+<library name="nucleoF401RE">
+<packages>
+<package name="F401-RE">
+<pad name="PC_3-ANALOGIN-MOSI" x="2.54" y="3.81" drill="0.8" shape="square"/>
+<pad name="PC_2-ANALOGIN-MISO" x="2.54" y="6.35" drill="0.8" shape="square"/>
+<pad name="VBAT" x="2.54" y="8.89" drill="0.8" shape="square"/>
+<pad name="PH_1" x="2.54" y="11.43" drill="0.8" shape="square"/>
+<pad name="PH_0" x="2.54" y="13.97" drill="0.8" shape="square"/>
+<pad name="PC_15" x="2.54" y="16.51" drill="0.8" shape="square"/>
+<pad name="PC_14" x="2.54" y="19.05" drill="0.8" shape="square"/>
+<pad name="PC_13-USERBUTTON" x="2.54" y="21.59" drill="0.8" shape="square"/>
+<pad name="PB_7-PWM4/2" x="2.54" y="24.13" drill="0.8" shape="square"/>
+<pad name="GND" x="2.54" y="26.67" drill="0.8" shape="square"/>
+<pad name="PA_15-PWM1/2" x="2.54" y="29.21" drill="0.8" shape="square"/>
+<pad name="PA_14" x="2.54" y="31.75" drill="0.8" shape="square"/>
+<pad name="PA_13" x="2.54" y="34.29" drill="0.8" shape="square"/>
+<pad name="NC2" x="2.54" y="36.83" drill="0.8" shape="square"/>
+<pad name="NC" x="2.54" y="39.37" drill="0.8" shape="square"/>
+<pad name="BOOT0" x="2.54" y="41.91" drill="0.8" shape="square"/>
+<pad name="3.3V" x="2.54" y="44.45" drill="0.8" shape="square"/>
+<pad name="PC_12-MOSI" x="2.54" y="46.99" drill="0.8" shape="square"/>
+<pad name="PC_10-SCK" x="2.54" y="49.53" drill="0.8" shape="square"/>
+<pad name="PC_0" x="5.08" y="3.81" drill="0.8" shape="square"/>
+<pad name="PC_1" x="5.08" y="6.35" drill="0.8" shape="square"/>
+<pad name="PB_0" x="5.08" y="8.89" drill="0.8" shape="square"/>
+<pad name="PA_4" x="5.08" y="11.43" drill="0.8" shape="square"/>
+<pad name="PA_1" x="5.08" y="13.97" drill="0.8" shape="square"/>
+<pad name="PA_0" x="5.08" y="16.51" drill="0.8" shape="square"/>
+<pad name="NC4" x="5.08" y="19.05" drill="0.8" shape="square"/>
+<pad name="GND4" x="5.08" y="24.13" drill="0.8" shape="square"/>
+<pad name="VIN" x="5.08" y="21.59" drill="0.8" shape="square"/>
+<pad name="GND3" x="5.08" y="26.67" drill="0.8" shape="square"/>
+<pad name="+5V" x="5.08" y="29.21" drill="0.8" shape="square"/>
+<pad name="+3V3" x="5.08" y="31.75" drill="0.8" shape="square"/>
+<pad name="NRST" x="5.08" y="34.29" drill="0.8" shape="square"/>
+<pad name="NC3" x="5.08" y="39.37" drill="0.8" shape="square"/>
+<pad name="IOREF" x="5.08" y="36.83" drill="0.8" shape="square"/>
+<pad name="GND2" x="5.08" y="41.91" drill="0.8" shape="square"/>
+<pad name="E5V" x="5.08" y="44.45" drill="0.8" shape="square"/>
+<pad name="PD_2" x="5.08" y="46.99" drill="0.8" shape="square"/>
+<pad name="PC_11-MISO" x="5.08" y="49.53" drill="0.8" shape="square"/>
+<pad name="PA_3" x="64.77" y="3.81" drill="0.8" shape="square"/>
+<pad name="NC8" x="67.31" y="3.81" drill="0.8" shape="square"/>
+<pad name="NC7" x="67.31" y="6.35" drill="0.8" shape="square"/>
+<pad name="PA_2" x="64.77" y="6.35" drill="0.8" shape="square"/>
+<pad name="PA_10" x="64.77" y="8.89" drill="0.8" shape="square"/>
+<pad name="PC_4-ANALOGIN" x="67.31" y="8.89" drill="0.8" shape="square"/>
+<pad name="AGND" x="67.31" y="11.43" drill="0.8" shape="square"/>
+<pad name="PB_3" x="64.77" y="11.43" drill="0.8" shape="square"/>
+<pad name="PB_5" x="64.77" y="13.97" drill="0.8" shape="square"/>
+<pad name="PB_13-PWM1/1N-SCK" x="67.31" y="13.97" drill="0.8" shape="square"/>
+<pad name="PB_14-PWM1/2N-MISO" x="67.31" y="16.51" drill="0.8" shape="square"/>
+<pad name="PB_4" x="64.77" y="16.51" drill="0.8" shape="square"/>
+<pad name="PB_10" x="64.77" y="19.05" drill="0.8" shape="square"/>
+<pad name="PB_15-PWM1/3N-MOSI" x="67.31" y="19.05" drill="0.8" shape="square"/>
+<pad name="PB_1-PWM1/3N-ANALOGIN" x="67.31" y="21.59" drill="0.8" shape="square"/>
+<pad name="PA_8" x="64.77" y="21.59" drill="0.8" shape="square"/>
+<pad name="PA_9" x="64.77" y="24.13" drill="0.8" shape="square"/>
+<pad name="PB_2" x="67.31" y="24.13" drill="0.8" shape="square"/>
+<pad name="GND6" x="67.31" y="26.67" drill="0.8" shape="square"/>
+<pad name="PC_7" x="64.77" y="26.67" drill="0.8" shape="square"/>
+<pad name="PB_6" x="64.77" y="29.21" drill="0.8" shape="square"/>
+<pad name="NC6" x="67.31" y="29.21" drill="0.8" shape="square"/>
+<pad name="PB_12" x="67.31" y="31.75" drill="0.8" shape="square"/>
+<pad name="PA_7" x="64.77" y="31.75" drill="0.8" shape="square"/>
+<pad name="PA_6" x="64.77" y="34.29" drill="0.8" shape="square"/>
+<pad name="PA_11-PWM1/4" x="67.31" y="34.29" drill="0.8" shape="square"/>
+<pad name="PA_12" x="67.31" y="36.83" drill="0.8" shape="square"/>
+<pad name="PA_5" x="64.77" y="36.83" drill="0.8" shape="square"/>
+<pad name="GND5" x="64.77" y="39.37" drill="0.8" shape="square"/>
+<pad name="NC5" x="67.31" y="39.37" drill="0.8" shape="square"/>
+<pad name="U5V" x="67.31" y="41.91" drill="0.8" shape="square"/>
+<pad name="AVDD" x="64.77" y="41.91" drill="0.8" shape="square"/>
+<pad name="PB_9" x="64.77" y="44.45" drill="0.8" shape="square"/>
+<pad name="PC_5-ANALOGIN" x="67.31" y="44.45" drill="0.8" shape="square"/>
+<pad name="PC_6-PWM3/1" x="67.31" y="46.99" drill="0.8" shape="square"/>
+<pad name="PB_8" x="64.77" y="46.99" drill="0.8" shape="square"/>
+<pad name="PC_9" x="64.77" y="49.53" drill="0.8" shape="square"/>
+<pad name="PC_8-PWM3/3" x="67.31" y="49.53" drill="0.8" shape="square"/>
+<wire x1="0" y1="82.55" x2="0" y2="55.88" width="0.127" layer="21"/>
+<wire x1="0" y1="55.88" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="69.85" y2="0" width="0.127" layer="21"/>
+<wire x1="69.85" y1="0" x2="69.85" y2="55.88" width="0.127" layer="21"/>
+<wire x1="69.85" y1="55.88" x2="69.85" y2="82.55" width="0.127" layer="21"/>
+<wire x1="0" y1="82.55" x2="69.85" y2="82.55" width="0.127" layer="21"/>
+<wire x1="0" y1="55.88" x2="69.85" y2="55.88" width="0.127" layer="21"/>
+<hole x="46.99" y="1.27" drill="0.6"/>
+<hole x="10.16" y="54.61" drill="0.6"/>
+<hole x="59.69" y="52.07" drill="0.6"/>
+<pad name="P$1" x="66.04" y="77.47" drill="0.8" shape="square"/>
+<pad name="P$2" x="66.04" y="74.93" drill="0.8" shape="square"/>
+<pad name="P$3" x="2.54" y="77.47" drill="0.8" shape="square"/>
+<pad name="P$4" x="2.54" y="74.93" drill="0.8" shape="square"/>
+<text x="6.35" y="76.2" size="1.27" layer="21" font="vector">ST NUCLEO F401-RE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="STNUCLEOF401-RE">
+<pin name="PC_10-SCK" x="-22.86" y="20.32" length="middle"/>
+<pin name="PC_12-MOSI" x="-22.86" y="17.78" length="middle"/>
+<pin name="+3.3V" x="-22.86" y="15.24" length="middle" direction="pwr"/>
+<pin name="BOOT0" x="-22.86" y="12.7" length="middle"/>
+<pin name="NC" x="-22.86" y="10.16" length="middle" direction="nc"/>
+<pin name="NC2" x="-22.86" y="7.62" length="middle" direction="nc"/>
+<pin name="PA_13" x="-22.86" y="5.08" length="middle"/>
+<pin name="PA_14" x="-22.86" y="2.54" length="middle"/>
+<pin name="PA_15-PWM2/1" x="-22.86" y="0" length="middle"/>
+<pin name="GND" x="-22.86" y="-2.54" length="middle" direction="pwr"/>
+<pin name="PB_7-PWM4/2" x="-22.86" y="-5.08" length="middle"/>
+<pin name="PC_13-USERBUTTON" x="-22.86" y="-7.62" length="middle"/>
+<pin name="PC_14" x="-22.86" y="-10.16" length="middle"/>
+<pin name="PC_15" x="-22.86" y="-12.7" length="middle"/>
+<pin name="PH_0" x="-22.86" y="-15.24" length="middle"/>
+<pin name="PH_1" x="-22.86" y="-17.78" length="middle"/>
+<pin name="VBAT" x="-22.86" y="-20.32" length="middle" direction="pwr"/>
+<pin name="PC_2-ANALOGIN" x="-22.86" y="-22.86" length="middle"/>
+<pin name="PC_3-ANALOGIN" x="-22.86" y="-25.4" length="middle"/>
+<pin name="PC_8-PWM3/3" x="38.1" y="20.32" length="middle" rot="R180"/>
+<pin name="PC_6-PWM3/1" x="38.1" y="17.78" length="middle" rot="R180"/>
+<pin name="PC_5-ANALOGIN" x="38.1" y="15.24" length="middle" rot="R180"/>
+<pin name="U5V" x="38.1" y="12.7" length="middle" rot="R180"/>
+<pin name="NC5" x="38.1" y="10.16" length="middle" rot="R180"/>
+<pin name="PA_12" x="38.1" y="7.62" length="middle" rot="R180"/>
+<pin name="PA_11-PWM1/4" x="38.1" y="5.08" length="middle" rot="R180"/>
+<pin name="PB_12" x="38.1" y="2.54" length="middle" rot="R180"/>
+<pin name="NC6" x="38.1" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND5" x="38.1" y="-2.54" length="middle" rot="R180"/>
+<pin name="PB_2" x="38.1" y="-5.08" length="middle" rot="R180"/>
+<pin name="PB_1-PWM1/3N-ANALOGIN" x="38.1" y="-7.62" length="middle" rot="R180"/>
+<pin name="PB_15-PWM1/3N-MOSI" x="38.1" y="-10.16" length="middle" rot="R180"/>
+<pin name="PB_14-PWM1/2N-MISO" x="38.1" y="-12.7" length="middle" rot="R180"/>
+<pin name="PB_13-PWM1/1N-SCK" x="38.1" y="-15.24" length="middle" rot="R180"/>
+<pin name="AGND" x="38.1" y="-17.78" length="middle" direction="pwr" rot="R180"/>
+<pin name="PC_4-ANALOGIN" x="38.1" y="-20.32" length="middle" rot="R180"/>
+<pin name="NC7" x="38.1" y="-22.86" length="middle" rot="R180"/>
+<pin name="NC8" x="38.1" y="-25.4" length="middle" rot="R180"/>
+<pin name="PC_11" x="-15.24" y="27.94" length="middle" rot="R270"/>
+<pin name="PD_2" x="-12.7" y="27.94" length="middle" rot="R270"/>
+<pin name="E5V" x="-10.16" y="27.94" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND2" x="-7.62" y="27.94" length="middle" direction="pwr" rot="R270"/>
+<pin name="NC3" x="-5.08" y="27.94" length="middle" direction="nc" rot="R270"/>
+<pin name="IOREF" x="-2.54" y="27.94" length="middle" rot="R270"/>
+<pin name="NRST" x="0" y="27.94" length="middle" rot="R270"/>
+<pin name="+3V3" x="2.54" y="27.94" length="middle" rot="R270"/>
+<pin name="+5V" x="5.08" y="27.94" length="middle" rot="R270"/>
+<pin name="GND3" x="7.62" y="27.94" length="middle" rot="R270"/>
+<pin name="GND4" x="10.16" y="27.94" length="middle" rot="R270"/>
+<pin name="VIN" x="12.7" y="27.94" length="middle" rot="R270"/>
+<pin name="NC4" x="15.24" y="27.94" length="middle" rot="R270"/>
+<pin name="PA_0" x="17.78" y="27.94" length="middle" rot="R270"/>
+<pin name="PA_1" x="20.32" y="27.94" length="middle" rot="R270"/>
+<pin name="PA_4" x="22.86" y="27.94" length="middle" rot="R270"/>
+<pin name="PB_0" x="25.4" y="27.94" length="middle" rot="R270"/>
+<pin name="PC_1" x="27.94" y="27.94" length="middle" rot="R270"/>
+<pin name="PC_0" x="30.48" y="27.94" length="middle" rot="R270"/>
+<pin name="PC_9-PWM3/4" x="-15.24" y="-33.02" length="middle" rot="R90"/>
+<pin name="PB_8" x="-12.7" y="-33.02" length="middle" rot="R90"/>
+<pin name="PB_9" x="-10.16" y="-33.02" length="middle" rot="R90"/>
+<pin name="AVDD" x="-7.62" y="-33.02" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND6" x="-5.08" y="-33.02" length="middle" rot="R90"/>
+<pin name="PA_5" x="-2.54" y="-33.02" length="middle" rot="R90"/>
+<pin name="PA_6" x="0" y="-33.02" length="middle" rot="R90"/>
+<pin name="PA_7" x="2.54" y="-33.02" length="middle" rot="R90"/>
+<pin name="PB_6" x="5.08" y="-33.02" length="middle" rot="R90"/>
+<pin name="PC_7" x="7.62" y="-33.02" length="middle" rot="R90"/>
+<pin name="PA_9" x="10.16" y="-33.02" length="middle" rot="R90"/>
+<pin name="PA_8" x="12.7" y="-33.02" length="middle" rot="R90"/>
+<pin name="PB_10" x="15.24" y="-33.02" length="middle" rot="R90"/>
+<pin name="PB_4" x="17.78" y="-33.02" length="middle" rot="R90"/>
+<pin name="PB_5" x="20.32" y="-33.02" length="middle" rot="R90"/>
+<pin name="PB_3" x="22.86" y="-33.02" length="middle" rot="R90"/>
+<pin name="PA_10" x="25.4" y="-33.02" length="middle" rot="R90"/>
+<pin name="PA_2" x="27.94" y="-33.02" length="middle" rot="R90"/>
+<pin name="PA_3" x="30.48" y="-33.02" length="middle" rot="R90"/>
+<wire x1="-17.78" y1="22.86" x2="-17.78" y2="-27.94" width="0.254" layer="97"/>
+<wire x1="-17.78" y1="-27.94" x2="33.02" y2="-27.94" width="0.254" layer="97"/>
+<wire x1="33.02" y1="-27.94" x2="33.02" y2="22.86" width="0.254" layer="97"/>
+<wire x1="33.02" y1="22.86" x2="-17.78" y2="22.86" width="0.254" layer="97"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="STNUCLEOF401RE">
+<gates>
+<gate name="G$1" symbol="STNUCLEOF401-RE" x="-10.16" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="F401-RE">
+<connects>
+<connect gate="G$1" pin="+3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="+3V3" pad="+3V3"/>
+<connect gate="G$1" pin="+5V" pad="+5V"/>
+<connect gate="G$1" pin="AGND" pad="AGND"/>
+<connect gate="G$1" pin="AVDD" pad="AVDD"/>
+<connect gate="G$1" pin="BOOT0" pad="BOOT0"/>
+<connect gate="G$1" pin="E5V" pad="E5V"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="GND3" pad="GND3"/>
+<connect gate="G$1" pin="GND4" pad="GND4"/>
+<connect gate="G$1" pin="GND5" pad="GND5"/>
+<connect gate="G$1" pin="GND6" pad="GND6"/>
+<connect gate="G$1" pin="IOREF" pad="IOREF"/>
+<connect gate="G$1" pin="NC" pad="NC"/>
+<connect gate="G$1" pin="NC2" pad="NC2"/>
+<connect gate="G$1" pin="NC3" pad="NC3"/>
+<connect gate="G$1" pin="NC4" pad="NC4"/>
+<connect gate="G$1" pin="NC5" pad="NC5"/>
+<connect gate="G$1" pin="NC6" pad="NC6"/>
+<connect gate="G$1" pin="NC7" pad="NC7"/>
+<connect gate="G$1" pin="NC8" pad="NC8"/>
+<connect gate="G$1" pin="NRST" pad="NRST"/>
+<connect gate="G$1" pin="PA_0" pad="PA_0"/>
+<connect gate="G$1" pin="PA_1" pad="PA_1"/>
+<connect gate="G$1" pin="PA_10" pad="PA_10"/>
+<connect gate="G$1" pin="PA_11-PWM1/4" pad="PA_11-PWM1/4"/>
+<connect gate="G$1" pin="PA_12" pad="PA_12"/>
+<connect gate="G$1" pin="PA_13" pad="PA_13"/>
+<connect gate="G$1" pin="PA_14" pad="PA_14"/>
+<connect gate="G$1" pin="PA_15-PWM2/1" pad="PA_15-PWM1/2"/>
+<connect gate="G$1" pin="PA_2" pad="PA_2"/>
+<connect gate="G$1" pin="PA_3" pad="PA_3"/>
+<connect gate="G$1" pin="PA_4" pad="PA_4"/>
+<connect gate="G$1" pin="PA_5" pad="PA_5"/>
+<connect gate="G$1" pin="PA_6" pad="PA_6"/>
+<connect gate="G$1" pin="PA_7" pad="PA_7"/>
+<connect gate="G$1" pin="PA_8" pad="PA_8"/>
+<connect gate="G$1" pin="PA_9" pad="PA_9"/>
+<connect gate="G$1" pin="PB_0" pad="PB_0"/>
+<connect gate="G$1" pin="PB_1-PWM1/3N-ANALOGIN" pad="PB_1-PWM1/3N-ANALOGIN"/>
+<connect gate="G$1" pin="PB_10" pad="PB_10"/>
+<connect gate="G$1" pin="PB_12" pad="PB_12"/>
+<connect gate="G$1" pin="PB_13-PWM1/1N-SCK" pad="PB_13-PWM1/1N-SCK"/>
+<connect gate="G$1" pin="PB_14-PWM1/2N-MISO" pad="PB_14-PWM1/2N-MISO"/>
+<connect gate="G$1" pin="PB_15-PWM1/3N-MOSI" pad="PB_15-PWM1/3N-MOSI"/>
+<connect gate="G$1" pin="PB_2" pad="PB_2"/>
+<connect gate="G$1" pin="PB_3" pad="PB_3"/>
+<connect gate="G$1" pin="PB_4" pad="PB_4"/>
+<connect gate="G$1" pin="PB_5" pad="PB_5"/>
+<connect gate="G$1" pin="PB_6" pad="PB_6"/>
+<connect gate="G$1" pin="PB_7-PWM4/2" pad="PB_7-PWM4/2"/>
+<connect gate="G$1" pin="PB_8" pad="PB_8"/>
+<connect gate="G$1" pin="PB_9" pad="PB_9"/>
+<connect gate="G$1" pin="PC_0" pad="PC_0"/>
+<connect gate="G$1" pin="PC_1" pad="PC_1"/>
+<connect gate="G$1" pin="PC_10-SCK" pad="PC_10-SCK"/>
+<connect gate="G$1" pin="PC_11" pad="PC_11-MISO"/>
+<connect gate="G$1" pin="PC_12-MOSI" pad="PC_12-MOSI"/>
+<connect gate="G$1" pin="PC_13-USERBUTTON" pad="PC_13-USERBUTTON"/>
+<connect gate="G$1" pin="PC_14" pad="PC_14"/>
+<connect gate="G$1" pin="PC_15" pad="PC_15"/>
+<connect gate="G$1" pin="PC_2-ANALOGIN" pad="PC_2-ANALOGIN-MISO"/>
+<connect gate="G$1" pin="PC_3-ANALOGIN" pad="PC_3-ANALOGIN-MOSI"/>
+<connect gate="G$1" pin="PC_4-ANALOGIN" pad="PC_4-ANALOGIN"/>
+<connect gate="G$1" pin="PC_5-ANALOGIN" pad="PC_5-ANALOGIN"/>
+<connect gate="G$1" pin="PC_6-PWM3/1" pad="PC_6-PWM3/1"/>
+<connect gate="G$1" pin="PC_7" pad="PC_7"/>
+<connect gate="G$1" pin="PC_8-PWM3/3" pad="PC_8-PWM3/3"/>
+<connect gate="G$1" pin="PC_9-PWM3/4" pad="PC_9"/>
+<connect gate="G$1" pin="PD_2" pad="PD_2"/>
+<connect gate="G$1" pin="PH_0" pad="PH_0"/>
+<connect gate="G$1" pin="PH_1" pad="PH_1"/>
+<connect gate="G$1" pin="U5V" pad="U5V"/>
+<connect gate="G$1" pin="VBAT" pad="VBAT"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</libraries>
+<attributes>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="default" width="0" drill="0">
+</class>
+</classes>
+<parts>
+<part name="U$1" library="nucleoF401RE" deviceset="STNUCLEOF401RE" device=""/>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+<instance part="U$1" gate="G$1" x="160.02" y="203.2"/>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</schematic>
+</drawing>
+</eagle>
