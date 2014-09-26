@@ -1,0 +1,69 @@
+1x Raspberry Pi Model B+ 512MB RAM								(Adafruit 1914)	$39.95
+3x ARM Nucleo Board STM32F4 STM32F401RE 512K 										$30
+1x Tosbia TCD1304DG Linear CCD Array Detector 										$14.99
+1800x grams or so of ABS black plastic filament 									$50-$90
+1x Set of ramanPi PCB Kit (3x prototype boards, some solder and a long weekend)
+1x 532nm 150mw Green Laser Module with Thermoelectric Cooling and TTL Modulated						$89.99
+1x Edmund Optics 1200 Grooves/mm, 25mm Square, VIS Holographic Grating  Stock No. #43-216 				$135.00
+1x Edmund Optics 20mm Dia x 80mm Focal Length, Spherical Mirror Stock No. #46-239 					$37.50
+1x Edmund Optics 50mm Dia. x 100mm FL Protected Aluminum, Concave Mirror Stock No. #43-471  				$42.50
+1x Edmund Optics 10µm x 3mm, Mounted, Precision Air Slit Stock No. #58-540 						$115.00
+1x CVI 532nm bandpass interference filter one inch dia. # F10-532-4 							$30.00
+1x Beam Splitter (preferably 532nm)											$48.00
+1x 100x Microscope Objective Lens (Try not to pay more than $50 for one)						$11.99
+1x Optical Filter 522SP, 5mm X 40mm X 2.4mm thick									$16.00
+1x Optical Filter, 550LP, 10.1mm dia. X 3mm thick									$12.00
+1x 1 Newport Pyrex First Surface Laser Mirror 1" Model# 10R08 ER1							$22.50
+1x BitFenix Mini-ITX Tower Case Without Power Supply, Midnight Black BFC-PRO-300-KKXSK-RP					$69.99
+1x Stereo 2.8W Class D Audio Amplifier - I2C Control AGC - TPA2016				(Adafruit 1712)	$9.95
+1x Adafruit 12-Key Capacitive Touch Sensor Breakout - MPR121					(Adafruit 1982)	$7.95
+1x BMP180 Barometric Pressure/Temperature/Altitude Sensor- 5V ready 				(Adafruit 1603)	$9.95
+1x RGB Color Sensor with IR filter and White LED - TCS34725 					(Adafruit 1334)	$7.95
+1x SI1145 Digital UV Index / IR / Visible Light Sensor						(Adafruit 1777)	$9.95
+2x Photo Interrupter - GP1A57HRJ00F							(SparkFun SEN-09299)	$1.95
+2x Photo Interrupter Breakout Board - GP1A57HRJ00F					(SparkFun BOB-09322)	$1.50
+1x 10pcs OPTICAL GLASS CUVETTE CUVETTE CELL 10mm 3.5ml #U5B								$28.00
+2x 2pcs DC 5V Stepper Motor + ULN2003 Driver Test Module Board 28BYJ-48 for Arduino					$5.48
+2x 3103 3.6V 3.3A 12W TEC TEC1-03103 Thermoelectric Cooler Peltier 3V 2pcs						$12.99
+1x Arduino Pro Mini 													$3.00
+1x FTDI USB Controller 3.3V 5V Female Firmware Loader and Programmer Arduino						$11.99
+1x NeoPixel Ring - 24 x WS2812 5050 RGB LED with Integrated Drivers				(Adafruit 1586) $$19.95
+1x 2.2 inch 2.2" SPI TFT LCD Display module 240x320 ILI9341 51/AVR/STM32/ARM/PIC					$5.57
+1x 1pcs KY-040 Rotary Encoder Module for Arduino AVR PIC								$0.99
+1x Edimax EW-7811Un 150 Mbps Wireless 11n Nano Size USB Adapter 								$8.70
+1x Ushoppingcart White Cotton Gloves Gloves, film, coins, CD/DVD, Handling Gloves (12pairs)					$10.76
+1x Kinivo BTD-400 Bluetooth 4.0 USB adapter 											$7.99
+1x Kimtech Science KimWipes Delicate Task Wipers 1-ply 280 count  (For the optics)						$5.91
+1x Dynarex Black Nitrile Exam Gloves, Box/100  (More for the optics)								$9.98
+1x Plastic Transfer Pipettes 3ml, Gradulated, Pack of 100  (For putting our sample in the cuvette)				$5.50
+1x Glass Vials, 1 Dram, Pack of 12												$5.49
+1x SD/MicroSD Memory Card (4 GB SDHC)												$5.49
+1x Apevia ITX-AP250W 250W Flex ATX Power Supply											$35.35
+1x M2.5 x 12 Metric Socket Head Cap Screw 2.5mm thread x 12mm length Qty 100						$11.50
+1x Bag of 20x M4 16mm Socket Cap Screws												$7.10
+1x SG90 9g Micro Servos For RC Airplane											$2.97
+1x Dual H Bridge DC Stepper Motor Drive Controller Board Module Arduino L298N CY					$7.25
+1x 5× 24-POSITION ATX POWER SUPPLY CONNECTOR VERTICAL PCB • AMP-DUAC • MINI FIT JR					$0.99
+1x 1-Channel 5V Relay Expansion Board Module Low Level Triger for Arduino AVR PIC					$1.80
+1x 10 PCS USB Type-A Female PCB Mount Socket Plug Connector Right Angle 4 Pin New					$1.49
+1x 30PC 2 Pin Plug-in Screw Terminal Block 5.0mm Pitch Connector PCB Mount Panel					$4.36
+1x 2S JST-XH 7.4V Connector Adapter Plug & Cable 10pcs EM#01								$3.42
+1x (4x) 4S- 5 Pin JST-XH LiPo Balance Connectors w/ Pins								$5.60
+1x Premium 0.5m 1.5Ft HDMI male to female panel mount extension Gold Head Cable							$3.98
+1x Cable Matters Combo, 270 Degree Right and 90 Degree Left Vertical Flat HDMI Adapter						$7.99
+1x 5 x 40 Pin DIP SIP IC Sockets Adaptor Solder Type - USA SELLER - Free Shipping					$4.99
+1x D-Link Hi-Speed USB 2.0 7-Port Powered Hub (DUB-H7)										$24.99
+2x YCS Basics 6 Inch USB 2.0 Mini B Male to Right Angle Mini B Female Extension Cable						$5.29
+2x 1 foot mini usb cable													$7.00
+1x Blue GPU CPU Heatsink Cooling Thermal Conductive Silicone Pad 100mmx100mmx1mm					$4.99
+1x Nashua Aluminum Multi-Purpose Foil Tape, 3.2 mil Thick, 9 m Length, 48 mm Width					$9.64
+1x Cast Acrylic Sheet, Transparent Gray, 12" x 12" x 0.118" Size							$5.25
+10x 10-1000pcs WS2812B LED With Heatsink 5050 SMD RGB WS2811S IC Built-in 5V						$5.54
+1x NEW Vktech 5pcs DS18b20 Waterproof Temperature Sensors Temperature Transmitter					$13.81
+1x 30A Range Current Sensor Module ACS712 ACS712ELCTR-30A For Arduino Module D3						$4.92
+1x Blank Arduino Shield Prototype Board											$7.20
+1x 2x5 Pin IDC Ribbon Cable								(SparkFun PRT-08535)	$1.50
+1x 10 Pcs 2.54mm 2x5 Pin 10 Pin Straight Male Shrouded PCB Box header IDC Socket					#3.99
+1x Aspen Aerogel SPACELOFT Insulation Hydrophobic Mat, 10" x 14" Sample 5mm						$7.00
+1x Car Vehicle 19mm 12V Blue LED Angel Eye Push Power Button Metal Switch Latching					$4.99
+1x Neon gas ampoule, purity 99.999% element sample									$9.86
