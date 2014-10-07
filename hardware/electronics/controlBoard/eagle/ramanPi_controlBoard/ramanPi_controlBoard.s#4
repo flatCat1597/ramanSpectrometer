@@ -4856,6 +4856,7 @@ type 0309, grid 2.5 mm</description>
 <part name="CUVETTE_SENSE" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="CUVETTE_STEPPER_PWR" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="FILTER_STEPPER_PWR" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="POWER_IN" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -4868,7 +4869,7 @@ type 0309, grid 2.5 mm</description>
 <instance part="CUVETTE_TEMP" gate="G$1" x="241.3" y="132.08" rot="R180"/>
 <instance part="LASER_TEMP" gate="G$1" x="241.3" y="116.84" rot="R180"/>
 <instance part="R1" gate="G$1" x="213.36" y="124.46"/>
-<instance part="POWER_CONTROL_BOARD" gate="G$1" x="40.64" y="83.82" rot="R90"/>
+<instance part="POWER_CONTROL_BOARD" gate="G$1" x="40.64" y="86.36" rot="R90"/>
 <instance part="LASER_TTL" gate="G$1" x="241.3" y="147.32" rot="R180"/>
 <instance part="SHUTTER_SERVO" gate="G$1" x="241.3" y="101.6" rot="R180"/>
 <instance part="LASER_GOOD" gate="G$1" x="241.3" y="86.36" rot="R180"/>
@@ -4878,6 +4879,7 @@ type 0309, grid 2.5 mm</description>
 <instance part="CUVETTE_SENSE" gate="G$1" x="241.3" y="160.02" rot="R180"/>
 <instance part="CUVETTE_STEPPER_PWR" gate="G$1" x="76.2" y="185.42" rot="R270"/>
 <instance part="FILTER_STEPPER_PWR" gate="G$1" x="76.2" y="15.24" rot="R90"/>
+<instance part="POWER_IN" gate="G$1" x="139.7" y="185.42" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -4945,6 +4947,10 @@ type 0309, grid 2.5 mm</description>
 <wire x1="35.56" y1="78.74" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="63.5" x2="76.2" y2="63.5" width="0.1524" layer="91"/>
 <junction x="76.2" y="63.5"/>
+<pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="1"/>
+<pinref part="POWER_IN" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="157.48" x2="139.7" y2="177.8" width="0.1524" layer="91"/>
+<junction x="139.7" y="157.48"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -4977,7 +4983,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="154.94" y1="137.16" x2="154.94" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="154.94" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="4"/>
-<wire x1="38.1" y1="154.94" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="154.94" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -4995,7 +5001,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="190.5" y1="99.06" x2="190.5" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="3"/>
 <wire x1="190.5" y1="53.34" x2="38.1" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="53.34" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="53.34" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -5005,7 +5011,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="187.96" y1="101.6" x2="187.96" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="5"/>
 <wire x1="187.96" y1="55.88" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="55.88" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="55.88" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -5015,7 +5021,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="185.42" y1="96.52" x2="185.42" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="7"/>
 <wire x1="185.42" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="58.42" x2="43.18" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="58.42" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -5025,7 +5031,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="182.88" y1="93.98" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="9"/>
 <wire x1="182.88" y1="60.96" x2="45.72" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="60.96" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="60.96" x2="45.72" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -5035,7 +5041,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="187.96" y1="124.46" x2="187.96" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="8"/>
 <wire x1="187.96" y1="152.4" x2="43.18" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="152.4" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="152.4" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -5142,9 +5148,11 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<wire x1="175.26" y1="127" x2="198.12" y2="127" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="127" x2="198.12" y2="127" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="127" x2="198.12" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="162.56" x2="236.22" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="162.56" x2="233.68" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="CUVETTE_SENSE" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="PC_6-PWM3/1"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -5224,8 +5232,10 @@ type 0309, grid 2.5 mm</description>
 <junction x="200.66" y="99.06"/>
 <junction x="200.66" y="132.08"/>
 <pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="91.44" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="93.98" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="POWER_IN" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="149.86" x2="142.24" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

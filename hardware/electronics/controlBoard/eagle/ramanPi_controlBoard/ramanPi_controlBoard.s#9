@@ -170,51 +170,51 @@
 <pad name="E5V" x="5.08" y="44.45" drill="0.8" shape="square"/>
 <pad name="PD_2" x="5.08" y="46.99" drill="0.8" shape="square"/>
 <pad name="PC_11-MISO" x="5.08" y="49.53" drill="0.8" shape="square"/>
-<pad name="PA_3" x="63.5" y="3.81" drill="0.8" shape="square"/>
-<pad name="NC8" x="66.04" y="3.81" drill="0.8" shape="square"/>
-<pad name="NC7" x="66.04" y="6.35" drill="0.8" shape="square"/>
-<pad name="PA_2" x="63.5" y="6.35" drill="0.8" shape="square"/>
-<pad name="PA_10" x="63.5" y="8.89" drill="0.8" shape="square"/>
-<pad name="PC_4-ANALOGIN" x="66.04" y="8.89" drill="0.8" shape="square"/>
-<pad name="AGND" x="66.04" y="11.43" drill="0.8" shape="square"/>
-<pad name="PB_3" x="63.5" y="11.43" drill="0.8" shape="square"/>
-<pad name="PB_5" x="63.5" y="13.97" drill="0.8" shape="square"/>
-<pad name="PB_13-PWM1/1N-SCK" x="66.04" y="13.97" drill="0.8" shape="square"/>
-<pad name="PB_14-PWM1/2N-MISO" x="66.04" y="16.51" drill="0.8" shape="square"/>
-<pad name="PB_4" x="63.5" y="16.51" drill="0.8" shape="square"/>
-<pad name="PB_10" x="63.5" y="19.05" drill="0.8" shape="square"/>
-<pad name="PB_15-PWM1/3N-MOSI" x="66.04" y="19.05" drill="0.8" shape="square"/>
-<pad name="PB_1-PWM1/3N-ANALOGIN" x="66.04" y="21.59" drill="0.8" shape="square"/>
-<pad name="PA_8" x="63.5" y="21.59" drill="0.8" shape="square"/>
-<pad name="PA_9" x="63.5" y="24.13" drill="0.8" shape="square"/>
-<pad name="PB_2" x="66.04" y="24.13" drill="0.8" shape="square"/>
-<pad name="GND6" x="66.04" y="26.67" drill="0.8" shape="square"/>
-<pad name="PC_7" x="63.5" y="26.67" drill="0.8" shape="square"/>
-<pad name="PB_6" x="63.5" y="29.21" drill="0.8" shape="square"/>
-<pad name="NC6" x="66.04" y="29.21" drill="0.8" shape="square"/>
-<pad name="PB_12" x="66.04" y="31.75" drill="0.8" shape="square"/>
-<pad name="PA_7" x="63.5" y="31.75" drill="0.8" shape="square"/>
-<pad name="PA_6" x="63.5" y="34.29" drill="0.8" shape="square"/>
-<pad name="PA_11-PWM1/4" x="66.04" y="34.29" drill="0.8" shape="square"/>
-<pad name="PA_12" x="66.04" y="36.83" drill="0.8" shape="square"/>
-<pad name="PA_5" x="63.5" y="36.83" drill="0.8" shape="square"/>
-<pad name="GND5" x="63.5" y="39.37" drill="0.8" shape="square"/>
-<pad name="NC5" x="66.04" y="39.37" drill="0.8" shape="square"/>
-<pad name="U5V" x="66.04" y="41.91" drill="0.8" shape="square"/>
-<pad name="AVDD" x="63.5" y="41.91" drill="0.8" shape="square"/>
-<pad name="PB_9" x="63.5" y="44.45" drill="0.8" shape="square"/>
-<pad name="PC_5-ANALOGIN" x="66.04" y="44.45" drill="0.8" shape="square"/>
-<pad name="PC_6-PWM3/1" x="66.04" y="46.99" drill="0.8" shape="square"/>
-<pad name="PB_8" x="63.5" y="46.99" drill="0.8" shape="square"/>
-<pad name="PC_9" x="63.5" y="49.53" drill="0.8" shape="square"/>
-<pad name="PC_8-PWM3/3" x="66.04" y="49.53" drill="0.8" shape="square"/>
+<pad name="PA_3" x="64.77" y="3.81" drill="0.8" shape="square"/>
+<pad name="NC8" x="67.31" y="3.81" drill="0.8" shape="square"/>
+<pad name="NC7" x="67.31" y="6.35" drill="0.8" shape="square"/>
+<pad name="PA_2" x="64.77" y="6.35" drill="0.8" shape="square"/>
+<pad name="PA_10" x="64.77" y="8.89" drill="0.8" shape="square"/>
+<pad name="PC_4-ANALOGIN" x="67.31" y="8.89" drill="0.8" shape="square"/>
+<pad name="AGND" x="67.31" y="11.43" drill="0.8" shape="square"/>
+<pad name="PB_3" x="64.77" y="11.43" drill="0.8" shape="square"/>
+<pad name="PB_5" x="64.77" y="13.97" drill="0.8" shape="square"/>
+<pad name="PB_13-PWM1/1N-SCK" x="67.31" y="13.97" drill="0.8" shape="square"/>
+<pad name="PB_14-PWM1/2N-MISO" x="67.31" y="16.51" drill="0.8" shape="square"/>
+<pad name="PB_4" x="64.77" y="16.51" drill="0.8" shape="square"/>
+<pad name="PB_10" x="64.77" y="19.05" drill="0.8" shape="square"/>
+<pad name="PB_15-PWM1/3N-MOSI" x="67.31" y="19.05" drill="0.8" shape="square"/>
+<pad name="PB_1-PWM1/3N-ANALOGIN" x="67.31" y="21.59" drill="0.8" shape="square"/>
+<pad name="PA_8" x="64.77" y="21.59" drill="0.8" shape="square"/>
+<pad name="PA_9" x="64.77" y="24.13" drill="0.8" shape="square"/>
+<pad name="PB_2" x="67.31" y="24.13" drill="0.8" shape="square"/>
+<pad name="GND6" x="67.31" y="26.67" drill="0.8" shape="square"/>
+<pad name="PC_7" x="64.77" y="26.67" drill="0.8" shape="square"/>
+<pad name="PB_6" x="64.77" y="29.21" drill="0.8" shape="square"/>
+<pad name="NC6" x="67.31" y="29.21" drill="0.8" shape="square"/>
+<pad name="PB_12" x="67.31" y="31.75" drill="0.8" shape="square"/>
+<pad name="PA_7" x="64.77" y="31.75" drill="0.8" shape="square"/>
+<pad name="PA_6" x="64.77" y="34.29" drill="0.8" shape="square"/>
+<pad name="PA_11-PWM1/4" x="67.31" y="34.29" drill="0.8" shape="square"/>
+<pad name="PA_12" x="67.31" y="36.83" drill="0.8" shape="square"/>
+<pad name="PA_5" x="64.77" y="36.83" drill="0.8" shape="square"/>
+<pad name="GND5" x="64.77" y="39.37" drill="0.8" shape="square"/>
+<pad name="NC5" x="67.31" y="39.37" drill="0.8" shape="square"/>
+<pad name="U5V" x="67.31" y="41.91" drill="0.8" shape="square"/>
+<pad name="AVDD" x="64.77" y="41.91" drill="0.8" shape="square"/>
+<pad name="PB_9" x="64.77" y="44.45" drill="0.8" shape="square"/>
+<pad name="PC_5-ANALOGIN" x="67.31" y="44.45" drill="0.8" shape="square"/>
+<pad name="PC_6-PWM3/1" x="67.31" y="46.99" drill="0.8" shape="square"/>
+<pad name="PB_8" x="64.77" y="46.99" drill="0.8" shape="square"/>
+<pad name="PC_9" x="64.77" y="49.53" drill="0.8" shape="square"/>
+<pad name="PC_8-PWM3/3" x="67.31" y="49.53" drill="0.8" shape="square"/>
 <wire x1="0" y1="82.55" x2="0" y2="55.88" width="0.127" layer="21"/>
 <wire x1="0" y1="55.88" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="68.58" y2="0" width="0.127" layer="21"/>
-<wire x1="68.58" y1="0" x2="68.58" y2="55.88" width="0.127" layer="21"/>
-<wire x1="68.58" y1="55.88" x2="68.58" y2="82.55" width="0.127" layer="21"/>
-<wire x1="0" y1="82.55" x2="68.58" y2="82.55" width="0.127" layer="21"/>
-<wire x1="0" y1="55.88" x2="68.58" y2="55.88" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="69.85" y2="0" width="0.127" layer="21"/>
+<wire x1="69.85" y1="0" x2="69.85" y2="55.88" width="0.127" layer="21"/>
+<wire x1="69.85" y1="55.88" x2="69.85" y2="82.55" width="0.127" layer="21"/>
+<wire x1="0" y1="82.55" x2="69.85" y2="82.55" width="0.127" layer="21"/>
+<wire x1="0" y1="55.88" x2="69.85" y2="55.88" width="0.127" layer="21"/>
 <hole x="46.99" y="1.27" drill="0.6"/>
 <hole x="10.16" y="54.61" drill="0.6"/>
 <hole x="59.69" y="52.07" drill="0.6"/>
@@ -222,7 +222,7 @@
 <pad name="P$2" x="66.04" y="74.93" drill="0.8" shape="square"/>
 <pad name="P$3" x="2.54" y="77.47" drill="0.8" shape="square"/>
 <pad name="P$4" x="2.54" y="74.93" drill="0.8" shape="square"/>
-<text x="44.45" y="58.42" size="1.27" layer="21" font="vector">ST NUCLEO F401-RE</text>
+<text x="6.35" y="76.2" size="1.27" layer="21" font="vector">ST NUCLEO F401-RE</text>
 </package>
 </packages>
 <symbols>
@@ -249,13 +249,13 @@
 <pin name="PC_8-PWM3/3" x="38.1" y="20.32" length="middle" rot="R180"/>
 <pin name="PC_6-PWM3/1" x="38.1" y="17.78" length="middle" rot="R180"/>
 <pin name="PC_5-ANALOGIN" x="38.1" y="15.24" length="middle" rot="R180"/>
-<pin name="U5V" x="38.1" y="12.7" length="middle" direction="pwr" rot="R180"/>
-<pin name="NC5" x="38.1" y="10.16" length="middle" direction="nc" rot="R180"/>
+<pin name="U5V" x="38.1" y="12.7" length="middle" rot="R180"/>
+<pin name="NC5" x="38.1" y="10.16" length="middle" rot="R180"/>
 <pin name="PA_12" x="38.1" y="7.62" length="middle" rot="R180"/>
 <pin name="PA_11-PWM1/4" x="38.1" y="5.08" length="middle" rot="R180"/>
 <pin name="PB_12" x="38.1" y="2.54" length="middle" rot="R180"/>
-<pin name="NC6" x="38.1" y="0" length="middle" direction="nc" rot="R180"/>
-<pin name="GND5" x="38.1" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="NC6" x="38.1" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND5" x="38.1" y="-2.54" length="middle" rot="R180"/>
 <pin name="PB_2" x="38.1" y="-5.08" length="middle" rot="R180"/>
 <pin name="PB_1-PWM1/3N-ANALOGIN" x="38.1" y="-7.62" length="middle" rot="R180"/>
 <pin name="PB_15-PWM1/3N-MOSI" x="38.1" y="-10.16" length="middle" rot="R180"/>
@@ -272,11 +272,11 @@
 <pin name="NC3" x="-5.08" y="27.94" length="middle" direction="nc" rot="R270"/>
 <pin name="IOREF" x="-2.54" y="27.94" length="middle" rot="R270"/>
 <pin name="NRST" x="0" y="27.94" length="middle" rot="R270"/>
-<pin name="+3V3" x="2.54" y="27.94" length="middle" direction="pwr" rot="R270"/>
-<pin name="+5V" x="5.08" y="27.94" length="middle" direction="pwr" rot="R270"/>
-<pin name="GND3" x="7.62" y="27.94" length="middle" direction="pwr" rot="R270"/>
-<pin name="GND4" x="10.16" y="27.94" length="middle" direction="pwr" rot="R270"/>
-<pin name="VIN" x="12.7" y="27.94" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3" x="2.54" y="27.94" length="middle" rot="R270"/>
+<pin name="+5V" x="5.08" y="27.94" length="middle" rot="R270"/>
+<pin name="GND3" x="7.62" y="27.94" length="middle" rot="R270"/>
+<pin name="GND4" x="10.16" y="27.94" length="middle" rot="R270"/>
+<pin name="VIN" x="12.7" y="27.94" length="middle" rot="R270"/>
 <pin name="NC4" x="15.24" y="27.94" length="middle" rot="R270"/>
 <pin name="PA_0" x="17.78" y="27.94" length="middle" rot="R270"/>
 <pin name="PA_1" x="20.32" y="27.94" length="middle" rot="R270"/>
@@ -288,7 +288,7 @@
 <pin name="PB_8" x="-12.7" y="-33.02" length="middle" rot="R90"/>
 <pin name="PB_9" x="-10.16" y="-33.02" length="middle" rot="R90"/>
 <pin name="AVDD" x="-7.62" y="-33.02" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND6" x="-5.08" y="-33.02" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND6" x="-5.08" y="-33.02" length="middle" rot="R90"/>
 <pin name="PA_5" x="-2.54" y="-33.02" length="middle" rot="R90"/>
 <pin name="PA_6" x="0" y="-33.02" length="middle" rot="R90"/>
 <pin name="PA_7" x="2.54" y="-33.02" length="middle" rot="R90"/>
@@ -4856,9 +4856,6 @@ type 0309, grid 2.5 mm</description>
 <part name="CUVETTE_SENSE" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="CUVETTE_STEPPER_PWR" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="FILTER_STEPPER_PWR" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
-<part name="POWER_IN" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
-<part name="JP1" library="SparkFun-Connectors" deviceset="M07" device=""/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M07" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4871,7 +4868,7 @@ type 0309, grid 2.5 mm</description>
 <instance part="CUVETTE_TEMP" gate="G$1" x="241.3" y="132.08" rot="R180"/>
 <instance part="LASER_TEMP" gate="G$1" x="241.3" y="116.84" rot="R180"/>
 <instance part="R1" gate="G$1" x="213.36" y="124.46"/>
-<instance part="POWER_CONTROL_BOARD" gate="G$1" x="40.64" y="86.36" rot="R90"/>
+<instance part="POWER_CONTROL_BOARD" gate="G$1" x="40.64" y="83.82" rot="R90"/>
 <instance part="LASER_TTL" gate="G$1" x="241.3" y="147.32" rot="R180"/>
 <instance part="SHUTTER_SERVO" gate="G$1" x="241.3" y="101.6" rot="R180"/>
 <instance part="LASER_GOOD" gate="G$1" x="241.3" y="86.36" rot="R180"/>
@@ -4881,9 +4878,6 @@ type 0309, grid 2.5 mm</description>
 <instance part="CUVETTE_SENSE" gate="G$1" x="241.3" y="160.02" rot="R180"/>
 <instance part="CUVETTE_STEPPER_PWR" gate="G$1" x="76.2" y="185.42" rot="R270"/>
 <instance part="FILTER_STEPPER_PWR" gate="G$1" x="76.2" y="15.24" rot="R90"/>
-<instance part="POWER_IN" gate="G$1" x="139.7" y="185.42" rot="R270"/>
-<instance part="JP1" gate="G$1" x="121.92" y="17.78" rot="R90"/>
-<instance part="JP2" gate="G$1" x="116.84" y="182.88" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -4904,7 +4898,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="149.86" y1="66.04" x2="149.86" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="N$3" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="+5V"/>
 <wire x1="139.7" y1="137.16" x2="139.7" y2="144.78" width="0.1524" layer="91"/>
@@ -4951,10 +4945,6 @@ type 0309, grid 2.5 mm</description>
 <wire x1="35.56" y1="78.74" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="63.5" x2="76.2" y2="63.5" width="0.1524" layer="91"/>
 <junction x="76.2" y="63.5"/>
-<pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="1"/>
-<pinref part="POWER_IN" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="157.48" x2="139.7" y2="177.8" width="0.1524" layer="91"/>
-<junction x="139.7" y="157.48"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -4978,7 +4968,6 @@ type 0309, grid 2.5 mm</description>
 <wire x1="223.52" y1="124.46" x2="223.52" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="124.46" x2="223.52" y2="124.46" width="0.1524" layer="91"/>
 <junction x="223.52" y="124.46"/>
-<junction x="223.52" y="129.54"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -4987,7 +4976,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="154.94" y1="137.16" x2="154.94" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="154.94" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="4"/>
-<wire x1="38.1" y1="154.94" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="154.94" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -5005,7 +4994,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="190.5" y1="99.06" x2="190.5" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="3"/>
 <wire x1="190.5" y1="53.34" x2="38.1" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="53.34" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="53.34" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -5015,7 +5004,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="187.96" y1="101.6" x2="187.96" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="5"/>
 <wire x1="187.96" y1="55.88" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="55.88" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="55.88" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -5025,7 +5014,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="185.42" y1="96.52" x2="185.42" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="7"/>
 <wire x1="185.42" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="58.42" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="58.42" x2="43.18" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -5035,7 +5024,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="182.88" y1="93.98" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="9"/>
 <wire x1="182.88" y1="60.96" x2="45.72" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="60.96" x2="45.72" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="60.96" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -5045,7 +5034,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="187.96" y1="124.46" x2="187.96" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="8"/>
 <wire x1="187.96" y1="152.4" x2="43.18" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="152.4" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="152.4" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -5152,14 +5141,12 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<wire x1="172.72" y1="127" x2="198.12" y2="127" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="127" x2="198.12" y2="127" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="127" x2="198.12" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="162.56" x2="233.68" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="CUVETTE_SENSE" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="PC_6-PWM3/1"/>
+<wire x1="198.12" y1="162.56" x2="236.22" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GROUND" class="0">
+<net name="N$27" class="0">
 <segment>
 <pinref part="FILTER_STEPPER_PWR" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="GND"/>
@@ -5236,21 +5223,13 @@ type 0309, grid 2.5 mm</description>
 <junction x="200.66" y="99.06"/>
 <junction x="200.66" y="132.08"/>
 <pinref part="POWER_CONTROL_BOARD" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="93.98" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="91.44" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="POWER_IN" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="149.86" x2="142.24" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="204,1,111.76,124.46,U$1,+3.3V,,,,"/>
-<approved hash="204,1,111.76,88.9,U$1,VBAT,,,,"/>
-<approved hash="204,1,137.16,137.16,U$1,+3V3,,,,"/>
-<approved hash="204,1,127,76.2,U$1,AVDD,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>
