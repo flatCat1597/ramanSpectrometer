@@ -775,11 +775,9 @@ polygon.l254 {fill:#000000; }
 <line class='l16' x1='96.520000' y1='-57.150000' x2='96.520000' y2='-55.880000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='96.520000' y1='-55.880000' x2='92.710000' y2='-52.070000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='92.710000' y1='-52.070000' x2='92.710000' y2='-39.370000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<line class='l16' x1='92.710000' y1='-39.370000' x2='95.250000' y2='-36.830000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<line class='l16' x1='95.250000' y1='-36.830000' x2='96.520000' y2='-36.830000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<line class='l16' x1='96.520000' y1='-36.830000' x2='97.790000' y2='-35.560000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<line class='l16' x1='97.790000' y1='-35.560000' x2='97.790000' y2='-34.290000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<line class='l16' x1='97.790000' y1='-7.620000' x2='97.790000' y2='-8.890000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='92.710000' y1='-39.370000' x2='97.790000' y2='-34.290000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='97.790000' y1='-34.290000' x2='97.790000' y2='-33.020000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='97.790000' y1='-6.350000' x2='97.790000' y2='-8.890000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='97.790000' y1='-8.890000' x2='96.520000' y2='-10.160000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='96.520000' y1='-10.160000' x2='96.520000' y2='-25.400000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='119.380000' y1='-54.610000' x2='102.870000' y2='-38.100000' style='stroke-width:0.406400; stroke-linecap:round'/>
@@ -800,9 +798,9 @@ polygon.l254 {fill:#000000; }
 <line class='l16' x1='134.620000' y1='-26.670000' x2='138.430000' y2='-30.480000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='138.430000' y1='-30.480000' x2='140.970000' y2='-30.480000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='96.520000' y1='-25.400000' x2='96.520000' y2='-26.670000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<circle class='j16' cx='96.520000' cy='-25.400000' r='0.553200'/>
-<circle class='j16' cx='119.380000' cy='-54.610000' r='0.553200'/>
-<circle class='j16' cx='140.970000' cy='-30.480000' r='0.553200'/>
+<circle class='j16' cx='96.520000' cy='-25.400000' r='0.604000'/>
+<circle class='j16' cx='119.380000' cy='-54.610000' r='0.604000'/>
+<circle class='j16' cx='140.970000' cy='-30.480000' r='0.604000'/>
 <line class='l16' x1='143.510000' y1='-26.670000' x2='138.430000' y2='-26.670000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='138.430000' y1='-26.670000' x2='135.890000' y2='-24.130000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='135.890000' y1='-24.130000' x2='134.620000' y2='-24.130000' style='stroke-width:0.406400; stroke-linecap:round'/>
@@ -811,9 +809,9 @@ polygon.l254 {fill:#000000; }
 <line class='l16' x1='137.160000' y1='-55.880000' x2='137.160000' y2='-44.450000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='137.160000' y1='-44.450000' x2='140.970000' y2='-40.640000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='140.970000' y1='-40.640000' x2='143.510000' y2='-40.640000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<line class='l16' x1='95.250000' y1='-34.290000' x2='91.440000' y2='-38.100000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<line class='l16' x1='91.440000' y1='-38.100000' x2='91.440000' y2='-57.150000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<line class='l16' x1='95.250000' y1='-7.620000' x2='95.250000' y2='-24.130000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='95.250000' y1='-33.020000' x2='91.440000' y2='-36.830000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='91.440000' y1='-36.830000' x2='91.440000' y2='-57.150000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='95.250000' y1='-6.350000' x2='95.250000' y2='-24.130000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='45.720000' y1='-68.580000' x2='48.260000' y2='-66.040000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='48.260000' y1='-66.040000' x2='82.550000' y2='-66.040000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='82.550000' y1='-66.040000' x2='83.820000' y2='-67.310000' style='stroke-width:0.406400; stroke-linecap:round'/>
@@ -834,8 +832,9 @@ polygon.l254 {fill:#000000; }
 <line class='l16' x1='144.780000' y1='-40.640000' x2='146.050000' y2='-39.370000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='146.050000' y1='-39.370000' x2='146.050000' y2='-29.210000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='146.050000' y1='-29.210000' x2='143.510000' y2='-26.670000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<circle class='j16' cx='95.250000' cy='-24.130000' r='0.553200'/>
-<circle class='j16' cx='39.370000' cy='-74.930000' r='0.553200'/>
+<circle class='j16' cx='95.250000' cy='-24.130000' r='0.604000'/>
+<circle class='j16' cx='39.370000' cy='-74.930000' r='0.604000'/>
+<line class='l16' x1='13.970000' y1='-48.260000' x2='13.970000' y2='-24.130000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='38.100000' y1='-71.120000' x2='38.100000' y2='-72.390000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='38.100000' y1='-72.390000' x2='34.290000' y2='-72.390000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='34.290000' y1='-72.390000' x2='31.750000' y2='-69.850000' style='stroke-width:0.406400; stroke-linecap:round'/>
@@ -843,15 +842,15 @@ polygon.l254 {fill:#000000; }
 <line class='l16' x1='31.750000' y1='-59.690000' x2='60.960000' y2='-30.480000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='60.960000' y1='-30.480000' x2='88.900000' y2='-30.480000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='88.900000' y1='-30.480000' x2='90.170000' y2='-29.210000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<line class='l16' x1='90.170000' y1='-29.210000' x2='95.250000' y2='-29.210000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<line class='l16' x1='95.250000' y1='-29.210000' x2='96.520000' y2='-30.480000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<circle class='j16' cx='96.520000' cy='-30.480000' r='0.553200'/>
+<line class='l16' x1='90.170000' y1='-29.210000' x2='96.520000' y2='-29.210000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='96.520000' y1='-29.210000' x2='97.790000' y2='-30.480000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<circle class='j16' cx='97.790000' cy='-30.480000' r='0.604000'/>
 <line class='l16' x1='35.560000' y1='-71.120000' x2='34.290000' y2='-71.120000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='34.290000' y1='-71.120000' x2='33.020000' y2='-69.850000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='33.020000' y1='-69.850000' x2='33.020000' y2='-67.310000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='33.020000' y1='-67.310000' x2='35.560000' y2='-64.770000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='35.560000' y1='-64.770000' x2='99.060000' y2='-64.770000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<circle class='j16' cx='99.060000' cy='-64.770000' r='0.553200'/>
+<circle class='j16' cx='99.060000' cy='-64.770000' r='0.604000'/>
 <line class='l16' x1='140.970000' y1='-72.390000' x2='134.620000' y2='-72.390000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='100.330000' y1='-38.100000' x2='97.790000' y2='-38.100000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='71.120000' y1='-10.160000' x2='71.120000' y2='-20.320000' style='stroke-width:0.406400; stroke-linecap:round'/>
@@ -862,18 +861,18 @@ polygon.l254 {fill:#000000; }
 <line class='l16' x1='123.190000' y1='-64.770000' x2='120.650000' y2='-62.230000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='100.330000' y1='-38.100000' x2='118.110000' y2='-55.880000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='118.110000' y1='-55.880000' x2='118.110000' y2='-57.150000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<circle class='j16' cx='82.550000' cy='-24.130000' r='0.553200'/>
-<circle class='j16' cx='97.790000' cy='-38.100000' r='0.553200'/>
-<circle class='j16' cx='120.650000' cy='-62.230000' r='0.553200'/>
-<circle class='j16' cx='118.110000' cy='-57.150000' r='0.553200'/>
+<circle class='j16' cx='82.550000' cy='-24.130000' r='0.604000'/>
+<circle class='j16' cx='97.790000' cy='-38.100000' r='0.604000'/>
+<circle class='j16' cx='120.650000' cy='-62.230000' r='0.604000'/>
+<circle class='j16' cx='118.110000' cy='-57.150000' r='0.604000'/>
 <line class='l16' x1='134.620000' y1='-38.100000' x2='132.080000' y2='-35.560000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<line class='l16' x1='132.080000' y1='-35.560000' x2='132.080000' y2='-30.480000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<line class='l16' x1='132.080000' y1='-30.480000' x2='120.650000' y2='-19.050000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<line class='l16' x1='120.650000' y1='-19.050000' x2='97.790000' y2='-19.050000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='132.080000' y1='-35.560000' x2='132.080000' y2='-31.750000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='132.080000' y1='-31.750000' x2='119.380000' y2='-19.050000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='119.380000' y1='-19.050000' x2='97.790000' y2='-19.050000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='68.580000' y1='-29.210000' x2='87.630000' y2='-29.210000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<circle class='j16' cx='68.580000' cy='-29.210000' r='0.553200'/>
-<circle class='j16' cx='87.630000' cy='-29.210000' r='0.553200'/>
-<circle class='j16' cx='97.790000' cy='-19.050000' r='0.553200'/>
+<circle class='j16' cx='68.580000' cy='-29.210000' r='0.604000'/>
+<circle class='j16' cx='87.630000' cy='-29.210000' r='0.604000'/>
+<circle class='j16' cx='97.790000' cy='-19.050000' r='0.604000'/>
 <line class='l19' x1='143.510000' y1='-72.390000' x2='144.780000' y2='-72.390000' style='stroke-width:0.000000; stroke-linecap:round'/>
 <line class='l16' x1='143.510000' y1='-74.930000' x2='144.780000' y2='-74.930000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='144.780000' y1='-74.930000' x2='147.320000' y2='-77.470000' style='stroke-width:0.406400; stroke-linecap:round'/>
@@ -934,13 +933,21 @@ polygon.l254 {fill:#000000; }
 <line class='l16' x1='85.090000' y1='-12.700000' x2='86.360000' y2='-13.970000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='86.360000' y1='-13.970000' x2='88.900000' y2='-13.970000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='66.040000' y1='-26.670000' x2='83.820000' y2='-26.670000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<circle class='j16' cx='66.040000' cy='-26.670000' r='0.553200'/>
-<circle class='j16' cx='83.820000' cy='-26.670000' r='0.553200'/>
+<circle class='j16' cx='66.040000' cy='-26.670000' r='0.604000'/>
+<circle class='j16' cx='83.820000' cy='-26.670000' r='0.604000'/>
 <line class='l16' x1='100.330000' y1='-30.480000' x2='97.790000' y2='-27.940000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='97.790000' y1='-27.940000' x2='50.800000' y2='-27.940000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='50.800000' y1='-27.940000' x2='38.100000' y2='-15.240000' style='stroke-width:0.406400; stroke-linecap:round'/>
 <line class='l16' x1='38.100000' y1='-15.240000' x2='38.100000' y2='-10.160000' style='stroke-width:0.406400; stroke-linecap:round'/>
-<circle class='j16' cx='100.330000' cy='-30.480000' r='0.553200'/>
+<circle class='j16' cx='100.330000' cy='-30.480000' r='0.604000'/>
+<line class='l16' x1='15.240000' y1='-22.860000' x2='17.780000' y2='-22.860000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='13.970000' y1='-21.590000' x2='13.970000' y2='-20.320000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='12.700000' y1='-22.860000' x2='10.160000' y2='-22.860000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='15.240000' y1='-24.130000' x2='17.780000' y2='-26.670000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='12.700000' y1='-21.590000' x2='10.160000' y2='-19.050000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='15.240000' y1='-21.590000' x2='20.320000' y2='-16.510000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<line class='l16' x1='12.700000' y1='-24.130000' x2='10.160000' y2='-26.670000' style='stroke-width:0.406400; stroke-linecap:round'/>
+<circle class='l16' cx='13.970000' cy='-22.860000' r='1.270000' style='stroke-width:0.406400'/>
 <line class='l20' x1='0.000000' y1='0.000000' x2='149.840000' y2='0.000000' style='stroke-width:0.000000; stroke-linecap:round'/>
 <line class='l20' x1='149.840000' y1='0.000000' x2='149.840000' y2='-89.840000' style='stroke-width:0.000000; stroke-linecap:round'/>
 <line class='l20' x1='149.840000' y1='-89.840000' x2='0.000000' y2='-89.840000' style='stroke-width:0.000000; stroke-linecap:round'/>
@@ -967,8 +974,8 @@ polygon.l254 {fill:#000000; }
 <circle class='j16' cx='88.900000' cy='-33.020000' r='0.939800'/>
 </g>
 <g><title>PART CUVETTE_STEPPER_PWR</title>
-<circle class='j16' cx='97.790000' cy='-34.290000' r='0.939800'/>
-<circle class='j16' cx='95.250000' cy='-34.290000' r='0.939800'/>
+<circle class='j16' cx='97.790000' cy='-33.020000' r='0.939800'/>
+<circle class='j16' cx='95.250000' cy='-33.020000' r='0.939800'/>
 </g>
 <g><title>PART CUVETTE_TEMP</title>
 <circle class='j16' cx='143.510000' cy='-54.610000' r='0.939800'/>
@@ -985,8 +992,8 @@ polygon.l254 {fill:#000000; }
 <circle class='j16' cx='88.900000' cy='-6.350000' r='0.939800'/>
 </g>
 <g><title>PART FILTER_STEPPER_PWR</title>
-<circle class='j16' cx='97.790000' cy='-7.620000' r='0.939800'/>
-<circle class='j16' cx='95.250000' cy='-7.620000' r='0.939800'/>
+<circle class='j16' cx='97.790000' cy='-6.350000' r='0.939800'/>
+<circle class='j16' cx='95.250000' cy='-6.350000' r='0.939800'/>
 </g>
 <g><title>PART HIH-4030</title>
 <circle class='j16' cx='91.440000' cy='-57.150000' r='0.939800'/>
@@ -994,22 +1001,22 @@ polygon.l254 {fill:#000000; }
 <circle class='j16' cx='96.520000' cy='-57.150000' r='0.939800'/>
 </g>
 <g><title>PART JP1</title>
-<circle class='j16' cx='127.000000' cy='-21.590000' r='0.939800'/>
-<circle class='j16' cx='127.000000' cy='-19.050000' r='0.939800'/>
-<circle class='j16' cx='127.000000' cy='-16.510000' r='0.939800'/>
-<circle class='j16' cx='127.000000' cy='-13.970000' r='0.939800'/>
-<circle class='j16' cx='127.000000' cy='-11.430000' r='0.939800'/>
-<circle class='j16' cx='127.000000' cy='-8.890000' r='0.939800'/>
-<circle class='j16' cx='127.000000' cy='-6.350000' r='0.939800'/>
+<circle class='j16' cx='125.730000' cy='-21.590000' r='0.939800'/>
+<circle class='j16' cx='125.730000' cy='-19.050000' r='0.939800'/>
+<circle class='j16' cx='125.730000' cy='-16.510000' r='0.939800'/>
+<circle class='j16' cx='125.730000' cy='-13.970000' r='0.939800'/>
+<circle class='j16' cx='125.730000' cy='-11.430000' r='0.939800'/>
+<circle class='j16' cx='125.730000' cy='-8.890000' r='0.939800'/>
+<circle class='j16' cx='125.730000' cy='-6.350000' r='0.939800'/>
 </g>
 <g><title>PART JP2</title>
-<circle class='j16' cx='127.000000' cy='-48.260000' r='0.939800'/>
-<circle class='j16' cx='127.000000' cy='-45.720000' r='0.939800'/>
-<circle class='j16' cx='127.000000' cy='-43.180000' r='0.939800'/>
-<circle class='j16' cx='127.000000' cy='-40.640000' r='0.939800'/>
-<circle class='j16' cx='127.000000' cy='-38.100000' r='0.939800'/>
-<circle class='j16' cx='127.000000' cy='-35.560000' r='0.939800'/>
-<circle class='j16' cx='127.000000' cy='-33.020000' r='0.939800'/>
+<circle class='j16' cx='125.730000' cy='-48.260000' r='0.939800'/>
+<circle class='j16' cx='125.730000' cy='-45.720000' r='0.939800'/>
+<circle class='j16' cx='125.730000' cy='-43.180000' r='0.939800'/>
+<circle class='j16' cx='125.730000' cy='-40.640000' r='0.939800'/>
+<circle class='j16' cx='125.730000' cy='-38.100000' r='0.939800'/>
+<circle class='j16' cx='125.730000' cy='-35.560000' r='0.939800'/>
+<circle class='j16' cx='125.730000' cy='-33.020000' r='0.939800'/>
 </g>
 <g><title>PART LASER_GOOD</title>
 <circle class='j16' cx='143.510000' cy='-38.100000' r='0.939800'/>
@@ -1042,10 +1049,6 @@ polygon.l254 {fill:#000000; }
 <circle class='j16' cx='143.510000' cy='-9.850000' r='1.016000'/>
 </g>
 <g><title>PART R1</title>
-<line class='l39' x1='124.527000' y1='-63.713000' x2='129.473000' y2='-63.713000' style='stroke-width:0.050800; stroke-linecap:round'/>
-<line class='l39' x1='129.473000' y1='-60.747000' x2='124.527000' y2='-60.747000' style='stroke-width:0.050800; stroke-linecap:round'/>
-<line class='l39' x1='124.527000' y1='-60.747000' x2='124.527000' y2='-63.713000' style='stroke-width:0.050800; stroke-linecap:round'/>
-<line class='l39' x1='129.473000' y1='-63.713000' x2='129.473000' y2='-60.747000' style='stroke-width:0.050800; stroke-linecap:round'/>
 </g>
 <g><title>PART ROTARY_ENCODER</title>
 <circle class='j16' cx='143.510000' cy='-21.590000' r='0.939800'/>
@@ -1058,92 +1061,91 @@ polygon.l254 {fill:#000000; }
 <circle class='j16' cx='134.620000' cy='-11.430000' r='0.939800'/>
 </g>
 <g><title>PART U$1</title>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(53.340000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(55.880000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(40.640000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(73.660000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(43.180000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(43.180000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(40.640000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(58.420000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(43.180000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(58.420000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(60.960000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(45.720000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(58.420000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(48.260000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(45.720000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(48.260000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(45.720000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(66.040000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(45.720000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(55.880000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(78.740000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(81.280000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(50.800000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(7.620000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(10.160000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(7.620000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(10.160000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(68.580000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(71.120000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(78.740000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(81.280000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(73.660000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(48.260000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(50.800000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(53.340000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(63.500000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(60.960000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(76.200000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(50.800000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(48.260000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(50.800000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(53.340000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(55.880000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(76.200000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(63.500000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(60.960000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(73.660000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(68.580000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(71.120000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(55.880000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(60.960000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(38.100000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(40.640000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(66.040000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(53.340000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(71.120000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(68.580000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(66.040000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(81.280000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(78.740000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(78.740000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(81.280000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(76.200000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(40.640000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(38.100000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(58.420000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(35.560000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(35.560000,-68.580000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(35.560000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(35.560000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(38.100000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(63.500000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(66.040000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(68.580000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(38.100000,-10.160000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(71.120000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(73.660000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(43.180000,-71.120000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(76.200000,-7.620000) rotate(-90.000000)'/>
-<rect class='l16' x='-0.654000' y='-0.654000' width='1.308000' height='1.308000' transform='translate(63.500000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(53.340000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(55.880000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(40.640000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(73.660000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(43.180000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(43.180000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(40.640000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(58.420000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(43.180000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(58.420000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(60.960000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(45.720000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(58.420000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(48.260000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(45.720000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(48.260000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(45.720000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(66.040000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(45.720000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(55.880000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(78.740000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(81.280000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(50.800000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(7.620000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(10.160000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(7.620000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(10.160000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(68.580000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(71.120000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(78.740000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(81.280000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(73.660000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(48.260000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(50.800000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(53.340000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(63.500000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(60.960000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(76.200000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(50.800000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(48.260000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(50.800000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(53.340000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(55.880000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(76.200000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(63.500000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(60.960000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(73.660000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(68.580000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(71.120000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(55.880000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(60.960000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(38.100000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(40.640000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(66.040000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(53.340000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(71.120000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(68.580000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(66.040000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(81.280000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(78.740000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(78.740000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(81.280000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(76.200000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(40.640000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(38.100000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(58.420000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(35.560000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(35.560000,-68.580000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(35.560000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(35.560000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(38.100000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(63.500000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(66.040000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(68.580000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(38.100000,-10.160000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(71.120000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(73.660000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(43.180000,-71.120000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(76.200000,-7.620000) rotate(-90.000000)'/>
+<rect class='l16' x='-0.704800' y='-0.704800' width='1.409600' height='1.409600' transform='translate(63.500000,-10.160000) rotate(-90.000000)'/>
 <circle class='l20' cx='83.820000' cy='-52.070000' r='0.300000' style='stroke-width:0.000003'/>
-<circle class='l45' cx='83.820000' cy='-52.070000' r='0.025000' style='stroke-width:0.000125'/>
 <circle class='l20' cx='30.480000' cy='-15.240000' r='0.300000' style='stroke-width:0.000003'/>
-<circle class='l45' cx='30.480000' cy='-15.240000' r='0.025000' style='stroke-width:0.000125'/>
 <circle class='l20' cx='33.020000' cy='-64.770000' r='0.300000' style='stroke-width:0.000003'/>
-<circle class='l45' cx='33.020000' cy='-64.770000' r='0.025000' style='stroke-width:0.000125'/>
+</g>
+<g><title>PART U$2</title>
 </g>
 </g>
 </svg>
