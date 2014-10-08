@@ -41,8 +41,8 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -437,6 +437,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.27" y="2.54" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.27" y="1.27" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="JST-2-PTH-VERT">
+<wire x1="-2.95" y1="-2.25" x2="-2.95" y2="2.25" width="0.2032" layer="21"/>
+<wire x1="-2.95" y1="2.25" x2="2.95" y2="2.25" width="0.2032" layer="21"/>
+<wire x1="2.95" y1="2.25" x2="2.95" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="2.95" y1="-2.25" x2="1" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-2.25" x2="-2.95" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-1.75" x2="1" y2="-1.75" width="0.2032" layer="21"/>
+<wire x1="1" y1="-1.75" x2="1" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-1.75" x2="-1" y2="-2.25" width="0.2032" layer="21"/>
+<pad name="1" x="-1" y="-0.55" drill="0.7" diameter="1.6256"/>
+<pad name="2" x="1" y="-0.55" drill="0.7" diameter="1.6256"/>
+<text x="-1.984" y="3" size="0.4064" layer="25">&gt;Name</text>
+<text x="2.016" y="3" size="0.4064" layer="27">&gt;Value</text>
+<text x="0.616" y="0.75" size="1.27" layer="51">+</text>
+<text x="-1.384" y="0.75" size="1.27" layer="51">-</text>
+</package>
 </packages>
 </library>
 <library name="adafruit">
@@ -735,6 +751,12 @@ design rules under a new name.</description>
 <element name="TCS34725" library="SparkFun-Connectors" package="1X07" value="" x="88.9" y="69.85" rot="R270"/>
 <element name="JP1" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-2" value="M023.5MM" x="93.98" y="5.08" rot="R90"/>
 <element name="U$2" library="SparkFun-Aesthetics" package="OSHW-LOGO-L" value="" x="50.41369375" y="75.050134375"/>
+<element name="LED_STATUS" library="SparkFun-Connectors" package="JST-2-PTH-VERT" value="M02JST-PTH-VERT" x="3.81" y="-3.81"/>
+<element name="LED_BUSY" library="SparkFun-Connectors" package="JST-2-PTH-VERT" value="M02JST-PTH-VERT" x="3.81" y="-10.16"/>
+<element name="LED_TEST" library="SparkFun-Connectors" package="JST-2-PTH-VERT" value="M02JST-PTH-VERT" x="3.81" y="-16.51"/>
+<element name="R2" library="adafruit" package="M1206" value="220ohm" x="2.54" y="-22.86"/>
+<element name="R3" library="adafruit" package="M1206" value="220ohm" x="2.54" y="-29.21"/>
+<element name="R4" library="adafruit" package="M1206" value="220ohm" x="2.54" y="-35.56"/>
 </elements>
 <signals>
 <signal name="+3.3V">
@@ -882,6 +904,12 @@ design rules under a new name.</description>
 <wire x1="93.98" y1="53.34" x2="93.98" y2="55.88" width="0.4064" layer="16"/>
 <wire x1="93.98" y1="55.88" x2="95.25" y2="57.15" width="0.4064" layer="16"/>
 <wire x1="95.25" y1="57.15" x2="96.647" y2="57.15" width="0.4064" layer="16"/>
+<contactref element="LED_TEST" pad="2"/>
+<contactref element="LED_STATUS" pad="2"/>
+<contactref element="LED_BUSY" pad="2"/>
+<wire x1="4.81" y1="-4.36" x2="43.18" y2="6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="4.81" y1="-10.71" x2="4.81" y2="-4.36" width="0" layer="19" extent="1-1"/>
+<wire x1="4.81" y1="-17.06" x2="4.81" y2="-10.71" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V">
 <contactref element="U$1" pad="+5V"/>
@@ -968,6 +996,36 @@ design rules under a new name.</description>
 <wire x1="92.71" y1="54.61" x2="90.17" y2="52.07" width="0.4064" layer="16"/>
 <wire x1="90.17" y1="52.07" x2="72.39" y2="52.07" width="0.4064" layer="16"/>
 <wire x1="72.39" y1="52.07" x2="71.12" y2="53.34" width="0.4064" layer="16"/>
+</signal>
+<signal name="N$13">
+<contactref element="LED_BUSY" pad="1"/>
+<contactref element="R2" pad="1"/>
+<wire x1="2.81" y1="-10.71" x2="1.14" y2="-22.86" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$14">
+<contactref element="R3" pad="1"/>
+<contactref element="LED_STATUS" pad="1"/>
+<wire x1="2.81" y1="-4.36" x2="1.14" y2="-29.21" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$15">
+<contactref element="R4" pad="1"/>
+<contactref element="LED_TEST" pad="1"/>
+<wire x1="2.81" y1="-17.06" x2="1.14" y2="-35.56" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$16">
+<contactref element="U$1" pad="PA_12"/>
+<contactref element="R2" pad="2"/>
+<wire x1="3.94" y1="-22.86" x2="48.26" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$17">
+<contactref element="U$1" pad="PA_11-PWM1/4"/>
+<contactref element="R3" pad="2"/>
+<wire x1="3.94" y1="-29.21" x2="50.8" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$18">
+<contactref element="U$1" pad="PB_13-PWM1/1N-SCK"/>
+<contactref element="R4" pad="2"/>
+<wire x1="3.94" y1="-35.56" x2="71.12" y2="68.58" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>

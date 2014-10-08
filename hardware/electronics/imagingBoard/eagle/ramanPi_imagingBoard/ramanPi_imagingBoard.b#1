@@ -41,8 +41,8 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -144,6 +144,9 @@
 <text x="105.41" y="19.05" size="1.27" layer="21" font="vector" rot="R90">CCD_Board</text>
 <text x="105.41" y="3.81" size="1.27" layer="21" font="vector" rot="R90">PWR_In</text>
 <text x="93.98" y="2.54" size="1.27" layer="21" font="vector" rot="R90">laserTemp</text>
+<text x="88.9" y="46.99" size="1.27" layer="21" font="vector" rot="R90">status</text>
+<text x="95.25" y="46.99" size="1.27" layer="21" font="vector" rot="R90">busy</text>
+<text x="101.6" y="46.99" size="1.27" layer="21" font="vector" rot="R90">test</text>
 </plain>
 <libraries>
 <library name="nucleoF401RE">
