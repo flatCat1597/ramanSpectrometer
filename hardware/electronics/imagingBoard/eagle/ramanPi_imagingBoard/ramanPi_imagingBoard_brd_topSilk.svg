@@ -790,6 +790,16 @@ polygon.l254 {fill:#000000; }
 <line class='l20' x1='107.930000' y1='0.000000' x2='107.930000' y2='-79.680000' style='stroke-width:0.000000; stroke-linecap:round'/>
 <line class='l20' x1='107.930000' y1='-79.680000' x2='0.000000' y2='-79.680000' style='stroke-width:0.000000; stroke-linecap:round'/>
 <line class='l20' x1='0.000000' y1='-79.680000' x2='0.000000' y2='0.000000' style='stroke-width:0.000000; stroke-linecap:round'/>
+<g><title>PART C1</title>
+<line class='l21' x1='52.400000' y1='-10.130000' x2='49.200000' y2='-10.130000' style='stroke-width:0.203200; stroke-linecap:round'/>
+<line class='l21' x1='52.400000' y1='-12.730000' x2='49.200000' y2='-12.730000' style='stroke-width:0.203200; stroke-linecap:round'/>
+</g>
+<g><title>PART C2</title>
+<line class='l21' x1='64.440000' y1='-12.730000' x2='67.640000' y2='-12.730000' style='stroke-width:0.203200; stroke-linecap:round'/>
+<line class='l21' x1='64.440000' y1='-10.130000' x2='67.640000' y2='-10.130000' style='stroke-width:0.203200; stroke-linecap:round'/>
+</g>
+<g><title>PART C3</title>
+</g>
 <g><title>PART CCD_BOARD</title>
 <line class='l21' x1='96.285000' y1='-29.845000' x2='96.285000' y2='-28.575000' style='stroke-width:0.203200; stroke-linecap:round'/>
 <line class='l21' x1='103.560000' y1='-34.230000' x2='103.560000' y2='-14.030000' style='stroke-width:0.203200; stroke-linecap:round'/>

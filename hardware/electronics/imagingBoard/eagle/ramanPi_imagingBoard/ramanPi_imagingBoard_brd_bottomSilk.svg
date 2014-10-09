@@ -776,6 +776,14 @@ polygon.l254 {fill:#000000; }
 <line class='l20' x1='107.930000' y1='0.000000' x2='107.930000' y2='-79.680000' style='stroke-width:0.000000; stroke-linecap:round'/>
 <line class='l20' x1='107.930000' y1='-79.680000' x2='0.000000' y2='-79.680000' style='stroke-width:0.000000; stroke-linecap:round'/>
 <line class='l20' x1='0.000000' y1='-79.680000' x2='0.000000' y2='0.000000' style='stroke-width:0.000000; stroke-linecap:round'/>
+<g><title>PART C1</title>
+</g>
+<g><title>PART C2</title>
+</g>
+<g><title>PART C3</title>
+<line class='l22' x1='95.280000' y1='-25.070000' x2='95.280000' y2='-28.270000' style='stroke-width:0.203200; stroke-linecap:round'/>
+<line class='l22' x1='92.680000' y1='-25.070000' x2='92.680000' y2='-28.270000' style='stroke-width:0.203200; stroke-linecap:round'/>
+</g>
 <g><title>PART CCD_BOARD</title>
 </g>
 <g><title>PART DS18B20</title>

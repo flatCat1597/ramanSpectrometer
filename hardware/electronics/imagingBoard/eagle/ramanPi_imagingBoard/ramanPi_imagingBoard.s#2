@@ -3996,6 +3996,12 @@ type 0309, grid 2.5 mm</description>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="TCS34725" library="SparkFun-Connectors" deviceset="M07" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
+<part name="LED_STATUS" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-VERT"/>
+<part name="LED_BUSY" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-VERT"/>
+<part name="LED_TEST" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-VERT"/>
+<part name="R2" library="adafruit" deviceset="R-US_" device="M1206" value="220ohm"/>
+<part name="R3" library="adafruit" deviceset="R-US_" device="M1206" value="220ohm"/>
+<part name="R4" library="adafruit" deviceset="R-US_" device="M1206" value="220ohm"/>
 </parts>
 <sheets>
 <sheet>
@@ -4013,6 +4019,12 @@ type 0309, grid 2.5 mm</description>
 <instance part="GND3" gate="1" x="139.7" y="7.62"/>
 <instance part="TCS34725" gate="G$1" x="25.4" y="35.56"/>
 <instance part="JP1" gate="G$1" x="187.96" y="114.3" rot="R180"/>
+<instance part="LED_STATUS" gate="G$1" x="187.96" y="134.62" rot="R180"/>
+<instance part="LED_BUSY" gate="G$1" x="187.96" y="149.86" rot="R180"/>
+<instance part="LED_TEST" gate="G$1" x="187.96" y="35.56" rot="R180"/>
+<instance part="R2" gate="G$1" x="167.64" y="149.86" rot="R180"/>
+<instance part="R3" gate="G$1" x="167.64" y="134.62" rot="R180"/>
+<instance part="R4" gate="G$1" x="170.18" y="35.56" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -4095,16 +4107,19 @@ type 0309, grid 2.5 mm</description>
 <pinref part="U$1" gate="G$1" pin="AGND"/>
 <wire x1="127" y1="96.52" x2="152.4" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="96.52" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="68.58" x2="152.4" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="68.58" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GND5"/>
+<wire x1="152.4" y1="33.02" x2="152.4" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="127" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="111.76" x2="152.4" y2="96.52" width="0.1524" layer="91"/>
 <junction x="152.4" y="96.52"/>
 <wire x1="99.06" y1="152.4" x2="152.4" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="152.4" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="152.4" x2="152.4" y2="147.32" width="0.1524" layer="91"/>
 <junction x="99.06" y="152.4"/>
 <junction x="152.4" y="111.76"/>
 <pinref part="SI1145_DIGITAL_UV_INDEX" gate="G$1" pin="2"/>
+<wire x1="152.4" y1="147.32" x2="152.4" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="132.08" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="68.58" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
 <junction x="152.4" y="68.58"/>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -4150,6 +4165,15 @@ type 0309, grid 2.5 mm</description>
 <wire x1="165.1" y1="111.76" x2="180.34" y2="111.76" width="0.1524" layer="91"/>
 <junction x="165.1" y="111.76"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="LED_TEST" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="33.02" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="LED_STATUS" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="132.08" x2="152.4" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="LED_BUSY" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="147.32" x2="152.4" y2="147.32" width="0.1524" layer="91"/>
+<junction x="152.4" y="33.02"/>
+<junction x="152.4" y="132.08"/>
+<junction x="152.4" y="147.32"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -4230,6 +4254,54 @@ type 0309, grid 2.5 mm</description>
 <pinref part="U$1" gate="G$1" pin="PA_8"/>
 <wire x1="180.34" y1="63.5" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="63.5" x2="101.6" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="LED_BUSY" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="149.86" x2="172.72" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="LED_STATUS" gate="G$1" pin="1"/>
+<wire x1="172.72" y1="134.62" x2="180.34" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="LED_TEST" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="35.56" x2="180.34" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA_12"/>
+<wire x1="127" y1="121.92" x2="157.48" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="121.92" x2="157.48" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="149.86" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA_11-PWM1/4"/>
+<wire x1="127" y1="119.38" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="119.38" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="134.62" x2="162.56" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB_13-PWM1/1N-SCK"/>
+<wire x1="127" y1="99.06" x2="147.32" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="99.06" x2="147.32" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="35.56" x2="165.1" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
