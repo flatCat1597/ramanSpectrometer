@@ -4968,6 +4968,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="223.52" y1="124.46" x2="223.52" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="124.46" x2="223.52" y2="124.46" width="0.1524" layer="91"/>
 <junction x="223.52" y="124.46"/>
+<junction x="223.52" y="129.54"/>
 </segment>
 </net>
 <net name="N$7" class="0">

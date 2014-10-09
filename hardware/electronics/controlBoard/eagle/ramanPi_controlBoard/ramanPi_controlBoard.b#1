@@ -806,7 +806,6 @@ design rules under a new name.</description>
 <element name="JP1" library="SparkFun-Connectors" package="1X07" value="" x="125.73" y="21.59" rot="R270"/>
 <element name="JP2" library="SparkFun-Connectors" package="1X07" value="" x="125.73" y="48.26" rot="R270"/>
 <element name="U$2" library="SparkFun-Aesthetics" package="OSHW-LOGO-L" value="" x="46.99" y="83.82"/>
-<element name="U$3" library="SparkFun-Aesthetics" package="OSHW-LOGO-L" value="" x="13.97" y="22.86" rot="R270"/>
 </elements>
 <signals>
 <signal name="+3.3V">

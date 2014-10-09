@@ -132,97 +132,99 @@
 <library name="nucleoF401RE">
 <packages>
 <package name="F401-RE">
-<pad name="PC_3-ANALOGIN-MOSI" x="2.54" y="3.81" drill="0.8" shape="square"/>
-<pad name="PC_2-ANALOGIN-MISO" x="2.54" y="6.35" drill="0.8" shape="square"/>
-<pad name="VBAT" x="2.54" y="8.89" drill="0.8" shape="square"/>
-<pad name="PH_1" x="2.54" y="11.43" drill="0.8" shape="square"/>
-<pad name="PH_0" x="2.54" y="13.97" drill="0.8" shape="square"/>
-<pad name="PC_15" x="2.54" y="16.51" drill="0.8" shape="square"/>
-<pad name="PC_14" x="2.54" y="19.05" drill="0.8" shape="square"/>
-<pad name="PC_13-USERBUTTON" x="2.54" y="21.59" drill="0.8" shape="square"/>
-<pad name="PB_7-PWM4/2" x="2.54" y="24.13" drill="0.8" shape="square"/>
-<pad name="GND" x="2.54" y="26.67" drill="0.8" shape="square"/>
-<pad name="PA_15-PWM1/2" x="2.54" y="29.21" drill="0.8" shape="square"/>
-<pad name="PA_14" x="2.54" y="31.75" drill="0.8" shape="square"/>
-<pad name="PA_13" x="2.54" y="34.29" drill="0.8" shape="square"/>
-<pad name="NC2" x="2.54" y="36.83" drill="0.8" shape="square"/>
-<pad name="NC" x="2.54" y="39.37" drill="0.8" shape="square"/>
-<pad name="BOOT0" x="2.54" y="41.91" drill="0.8" shape="square"/>
-<pad name="3.3V" x="2.54" y="44.45" drill="0.8" shape="square"/>
-<pad name="PC_12-MOSI" x="2.54" y="46.99" drill="0.8" shape="square"/>
-<pad name="PC_10-SCK" x="2.54" y="49.53" drill="0.8" shape="square"/>
-<pad name="PC_0" x="5.08" y="3.81" drill="0.8" shape="square"/>
-<pad name="PC_1" x="5.08" y="6.35" drill="0.8" shape="square"/>
-<pad name="PB_0" x="5.08" y="8.89" drill="0.8" shape="square"/>
-<pad name="PA_4" x="5.08" y="11.43" drill="0.8" shape="square"/>
-<pad name="PA_1" x="5.08" y="13.97" drill="0.8" shape="square"/>
-<pad name="PA_0" x="5.08" y="16.51" drill="0.8" shape="square"/>
-<pad name="NC4" x="5.08" y="19.05" drill="0.8" shape="square"/>
-<pad name="GND4" x="5.08" y="24.13" drill="0.8" shape="square"/>
-<pad name="VIN" x="5.08" y="21.59" drill="0.8" shape="square"/>
-<pad name="GND3" x="5.08" y="26.67" drill="0.8" shape="square"/>
-<pad name="+5V" x="5.08" y="29.21" drill="0.8" shape="square"/>
-<pad name="+3V3" x="5.08" y="31.75" drill="0.8" shape="square"/>
-<pad name="NRST" x="5.08" y="34.29" drill="0.8" shape="square"/>
-<pad name="NC3" x="5.08" y="39.37" drill="0.8" shape="square"/>
-<pad name="IOREF" x="5.08" y="36.83" drill="0.8" shape="square"/>
-<pad name="GND2" x="5.08" y="41.91" drill="0.8" shape="square"/>
-<pad name="E5V" x="5.08" y="44.45" drill="0.8" shape="square"/>
-<pad name="PD_2" x="5.08" y="46.99" drill="0.8" shape="square"/>
-<pad name="PC_11-MISO" x="5.08" y="49.53" drill="0.8" shape="square"/>
-<pad name="PA_3" x="64.77" y="3.81" drill="0.8" shape="square"/>
-<pad name="NC8" x="67.31" y="3.81" drill="0.8" shape="square"/>
-<pad name="NC7" x="67.31" y="6.35" drill="0.8" shape="square"/>
-<pad name="PA_2" x="64.77" y="6.35" drill="0.8" shape="square"/>
-<pad name="PA_10" x="64.77" y="8.89" drill="0.8" shape="square"/>
-<pad name="PC_4-ANALOGIN" x="67.31" y="8.89" drill="0.8" shape="square"/>
-<pad name="AGND" x="67.31" y="11.43" drill="0.8" shape="square"/>
-<pad name="PB_3" x="64.77" y="11.43" drill="0.8" shape="square"/>
-<pad name="PB_5" x="64.77" y="13.97" drill="0.8" shape="square"/>
-<pad name="PB_13-PWM1/1N-SCK" x="67.31" y="13.97" drill="0.8" shape="square"/>
-<pad name="PB_14-PWM1/2N-MISO" x="67.31" y="16.51" drill="0.8" shape="square"/>
-<pad name="PB_4" x="64.77" y="16.51" drill="0.8" shape="square"/>
-<pad name="PB_10" x="64.77" y="19.05" drill="0.8" shape="square"/>
-<pad name="PB_15-PWM1/3N-MOSI" x="67.31" y="19.05" drill="0.8" shape="square"/>
-<pad name="PB_1-PWM1/3N-ANALOGIN" x="67.31" y="21.59" drill="0.8" shape="square"/>
-<pad name="PA_8" x="64.77" y="21.59" drill="0.8" shape="square"/>
-<pad name="PA_9" x="64.77" y="24.13" drill="0.8" shape="square"/>
-<pad name="PB_2" x="67.31" y="24.13" drill="0.8" shape="square"/>
-<pad name="GND6" x="67.31" y="26.67" drill="0.8" shape="square"/>
-<pad name="PC_7" x="64.77" y="26.67" drill="0.8" shape="square"/>
-<pad name="PB_6" x="64.77" y="29.21" drill="0.8" shape="square"/>
-<pad name="NC6" x="67.31" y="29.21" drill="0.8" shape="square"/>
-<pad name="PB_12" x="67.31" y="31.75" drill="0.8" shape="square"/>
-<pad name="PA_7" x="64.77" y="31.75" drill="0.8" shape="square"/>
-<pad name="PA_6" x="64.77" y="34.29" drill="0.8" shape="square"/>
-<pad name="PA_11-PWM1/4" x="67.31" y="34.29" drill="0.8" shape="square"/>
-<pad name="PA_12" x="67.31" y="36.83" drill="0.8" shape="square"/>
-<pad name="PA_5" x="64.77" y="36.83" drill="0.8" shape="square"/>
-<pad name="GND5" x="64.77" y="39.37" drill="0.8" shape="square"/>
-<pad name="NC5" x="67.31" y="39.37" drill="0.8" shape="square"/>
-<pad name="U5V" x="67.31" y="41.91" drill="0.8" shape="square"/>
-<pad name="AVDD" x="64.77" y="41.91" drill="0.8" shape="square"/>
-<pad name="PB_9" x="64.77" y="44.45" drill="0.8" shape="square"/>
-<pad name="PC_5-ANALOGIN" x="67.31" y="44.45" drill="0.8" shape="square"/>
-<pad name="PC_6-PWM3/1" x="67.31" y="46.99" drill="0.8" shape="square"/>
-<pad name="PB_8" x="64.77" y="46.99" drill="0.8" shape="square"/>
-<pad name="PC_9" x="64.77" y="49.53" drill="0.8" shape="square"/>
-<pad name="PC_8-PWM3/3" x="67.31" y="49.53" drill="0.8" shape="square"/>
+<description>ST Microelectronics STM32
+ST Nucleo F401-RE</description>
+<pad name="PC_3-ANALOGIN-MOSI" x="2.54" y="3.81" drill="1" shape="square"/>
+<pad name="PC_2-ANALOGIN-MISO" x="2.54" y="6.35" drill="1" shape="square"/>
+<pad name="VBAT" x="2.54" y="8.89" drill="1" shape="square"/>
+<pad name="PH_1" x="2.54" y="11.43" drill="1" shape="square"/>
+<pad name="PH_0" x="2.54" y="13.97" drill="1" shape="square"/>
+<pad name="PC_15" x="2.54" y="16.51" drill="1" shape="square"/>
+<pad name="PC_14" x="2.54" y="19.05" drill="1" shape="square"/>
+<pad name="PC_13-USERBUTTON" x="2.54" y="21.59" drill="1" shape="square"/>
+<pad name="PB_7-PWM4/2" x="2.54" y="24.13" drill="1" shape="square"/>
+<pad name="GND" x="2.54" y="26.67" drill="1" shape="square"/>
+<pad name="PA_15-PWM1/2" x="2.54" y="29.21" drill="1" shape="square"/>
+<pad name="PA_14" x="2.54" y="31.75" drill="1" shape="square"/>
+<pad name="PA_13" x="2.54" y="34.29" drill="1" shape="square"/>
+<pad name="NC2" x="2.54" y="36.83" drill="1" shape="square"/>
+<pad name="NC" x="2.54" y="39.37" drill="1" shape="square"/>
+<pad name="BOOT0" x="2.54" y="41.91" drill="1" shape="square"/>
+<pad name="3.3V" x="2.54" y="44.45" drill="1" shape="square"/>
+<pad name="PC_12-MOSI" x="2.54" y="46.99" drill="1" shape="square"/>
+<pad name="PC_10-SCK" x="2.54" y="49.53" drill="1" shape="square" rot="R90"/>
+<pad name="PC_0" x="5.08" y="3.81" drill="1" shape="square"/>
+<pad name="PC_1" x="5.08" y="6.35" drill="1" shape="square"/>
+<pad name="PB_0" x="5.08" y="8.89" drill="1" shape="square"/>
+<pad name="PA_4" x="5.08" y="11.43" drill="1" shape="square"/>
+<pad name="PA_1" x="5.08" y="13.97" drill="1" shape="square"/>
+<pad name="PA_0" x="5.08" y="16.51" drill="1" shape="square"/>
+<pad name="NC4" x="5.08" y="19.05" drill="1" shape="square"/>
+<pad name="GND4" x="5.08" y="24.13" drill="1" shape="square"/>
+<pad name="VIN" x="5.08" y="21.59" drill="1" shape="square"/>
+<pad name="GND3" x="5.08" y="26.67" drill="1" shape="square"/>
+<pad name="+5V" x="5.08" y="29.21" drill="1" shape="square"/>
+<pad name="+3V3" x="5.08" y="31.75" drill="1" shape="square"/>
+<pad name="NRST" x="5.08" y="34.29" drill="1" shape="square"/>
+<pad name="NC3" x="5.08" y="39.37" drill="1" shape="square"/>
+<pad name="IOREF" x="5.08" y="36.83" drill="1" shape="square"/>
+<pad name="GND2" x="5.08" y="41.91" drill="1" shape="square"/>
+<pad name="E5V" x="5.08" y="44.45" drill="1" shape="square"/>
+<pad name="PD_2" x="5.08" y="46.99" drill="1" shape="square"/>
+<pad name="PC_11-MISO" x="5.08" y="49.53" drill="1" shape="square"/>
+<pad name="PA_3" x="63.5" y="3.81" drill="1" shape="square"/>
+<pad name="NC8" x="66.04" y="3.81" drill="1" shape="square"/>
+<pad name="NC7" x="66.04" y="6.35" drill="1" shape="square"/>
+<pad name="PA_2" x="63.5" y="6.35" drill="1" shape="square"/>
+<pad name="PA_10" x="63.5" y="8.89" drill="1" shape="square"/>
+<pad name="PC_4-ANALOGIN" x="66.04" y="8.89" drill="1" shape="square"/>
+<pad name="AGND" x="66.04" y="11.43" drill="1" shape="square"/>
+<pad name="PB_3" x="63.5" y="11.43" drill="1" shape="square"/>
+<pad name="PB_5" x="63.5" y="13.97" drill="1" shape="square"/>
+<pad name="PB_13-PWM1/1N-SCK" x="66.04" y="13.97" drill="1" shape="square"/>
+<pad name="PB_14-PWM1/2N-MISO" x="66.04" y="16.51" drill="1" shape="square"/>
+<pad name="PB_4" x="63.5" y="16.51" drill="1" shape="square"/>
+<pad name="PB_10" x="63.5" y="19.05" drill="1" shape="square"/>
+<pad name="PB_15-PWM1/3N-MOSI" x="66.04" y="19.05" drill="1" shape="square"/>
+<pad name="PB_1-PWM1/3N-ANALOGIN" x="66.04" y="21.59" drill="1" shape="square"/>
+<pad name="PA_8" x="63.5" y="21.59" drill="1" shape="square"/>
+<pad name="PA_9" x="63.5" y="24.13" drill="1" shape="square"/>
+<pad name="PB_2" x="66.04" y="24.13" drill="1" shape="square"/>
+<pad name="GND6" x="66.04" y="26.67" drill="1" shape="square"/>
+<pad name="PC_7" x="63.5" y="26.67" drill="1" shape="square"/>
+<pad name="PB_6" x="63.5" y="29.21" drill="1" shape="square"/>
+<pad name="NC6" x="66.04" y="29.21" drill="1" shape="square"/>
+<pad name="PB_12" x="66.04" y="31.75" drill="1" shape="square"/>
+<pad name="PA_7" x="63.5" y="31.75" drill="1" shape="square"/>
+<pad name="PA_6" x="63.5" y="34.29" drill="1" shape="square"/>
+<pad name="PA_11-PWM1/4" x="66.04" y="34.29" drill="1" shape="square"/>
+<pad name="PA_12" x="66.04" y="36.83" drill="1" shape="square"/>
+<pad name="PA_5" x="63.5" y="36.83" drill="1" shape="square"/>
+<pad name="GND5" x="63.5" y="39.37" drill="1" shape="square"/>
+<pad name="NC5" x="66.04" y="39.37" drill="1" shape="square"/>
+<pad name="U5V" x="66.04" y="41.91" drill="1" shape="square"/>
+<pad name="AVDD" x="63.5" y="41.91" drill="1" shape="square"/>
+<pad name="PB_9" x="63.5" y="44.45" drill="1" shape="square"/>
+<pad name="PC_5-ANALOGIN" x="66.04" y="44.45" drill="1" shape="square"/>
+<pad name="PC_6-PWM3/1" x="66.04" y="46.99" drill="1" shape="square"/>
+<pad name="PB_8" x="63.5" y="46.99" drill="1" shape="square"/>
+<pad name="PC_9" x="63.5" y="49.53" drill="1" shape="square"/>
+<pad name="PC_8-PWM3/3" x="66.04" y="49.53" drill="1" shape="square"/>
 <wire x1="0" y1="82.55" x2="0" y2="55.88" width="0.127" layer="21"/>
 <wire x1="0" y1="55.88" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="69.85" y2="0" width="0.127" layer="21"/>
-<wire x1="69.85" y1="0" x2="69.85" y2="55.88" width="0.127" layer="21"/>
-<wire x1="69.85" y1="55.88" x2="69.85" y2="82.55" width="0.127" layer="21"/>
-<wire x1="0" y1="82.55" x2="69.85" y2="82.55" width="0.127" layer="21"/>
-<wire x1="0" y1="55.88" x2="69.85" y2="55.88" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="68.58" y2="0" width="0.127" layer="21"/>
+<wire x1="68.58" y1="0" x2="68.58" y2="55.88" width="0.127" layer="21"/>
+<wire x1="68.58" y1="55.88" x2="68.58" y2="82.55" width="0.127" layer="21"/>
+<wire x1="0" y1="82.55" x2="68.58" y2="82.55" width="0.127" layer="21"/>
+<wire x1="0" y1="55.88" x2="68.58" y2="55.88" width="0.127" layer="21"/>
 <hole x="46.99" y="1.27" drill="0.6"/>
 <hole x="10.16" y="54.61" drill="0.6"/>
 <hole x="59.69" y="52.07" drill="0.6"/>
-<pad name="P$1" x="66.04" y="77.47" drill="0.8" shape="square"/>
-<pad name="P$2" x="66.04" y="74.93" drill="0.8" shape="square"/>
-<pad name="P$3" x="2.54" y="77.47" drill="0.8" shape="square"/>
-<pad name="P$4" x="2.54" y="74.93" drill="0.8" shape="square"/>
-<text x="6.35" y="76.2" size="1.27" layer="21" font="vector">ST NUCLEO F401-RE</text>
+<pad name="P$1" x="66.04" y="77.47" drill="1" shape="square"/>
+<pad name="P$2" x="66.04" y="74.93" drill="1" shape="square"/>
+<pad name="P$3" x="2.54" y="77.47" drill="1" shape="square"/>
+<pad name="P$4" x="2.54" y="74.93" drill="1" shape="square"/>
+<text x="44.45" y="58.42" size="1.27" layer="21" font="vector">ST NUCLEO F401-RE</text>
 </package>
 </packages>
 <symbols>
@@ -249,13 +251,13 @@
 <pin name="PC_8-PWM3/3" x="38.1" y="20.32" length="middle" rot="R180"/>
 <pin name="PC_6-PWM3/1" x="38.1" y="17.78" length="middle" rot="R180"/>
 <pin name="PC_5-ANALOGIN" x="38.1" y="15.24" length="middle" rot="R180"/>
-<pin name="U5V" x="38.1" y="12.7" length="middle" rot="R180"/>
-<pin name="NC5" x="38.1" y="10.16" length="middle" rot="R180"/>
+<pin name="U5V" x="38.1" y="12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="NC5" x="38.1" y="10.16" length="middle" direction="nc" rot="R180"/>
 <pin name="PA_12" x="38.1" y="7.62" length="middle" rot="R180"/>
 <pin name="PA_11-PWM1/4" x="38.1" y="5.08" length="middle" rot="R180"/>
 <pin name="PB_12" x="38.1" y="2.54" length="middle" rot="R180"/>
-<pin name="NC6" x="38.1" y="0" length="middle" direction="pwr" rot="R180"/>
-<pin name="GND5" x="38.1" y="-2.54" length="middle" rot="R180"/>
+<pin name="NC6" x="38.1" y="0" length="middle" direction="nc" rot="R180"/>
+<pin name="GND5" x="38.1" y="-2.54" length="middle" direction="pwr" rot="R180"/>
 <pin name="PB_2" x="38.1" y="-5.08" length="middle" rot="R180"/>
 <pin name="PB_1-PWM1/3N-ANALOGIN" x="38.1" y="-7.62" length="middle" rot="R180"/>
 <pin name="PB_15-PWM1/3N-MOSI" x="38.1" y="-10.16" length="middle" rot="R180"/>
@@ -272,11 +274,11 @@
 <pin name="NC3" x="-5.08" y="27.94" length="middle" direction="nc" rot="R270"/>
 <pin name="IOREF" x="-2.54" y="27.94" length="middle" rot="R270"/>
 <pin name="NRST" x="0" y="27.94" length="middle" rot="R270"/>
-<pin name="+3V3" x="2.54" y="27.94" length="middle" rot="R270"/>
-<pin name="+5V" x="5.08" y="27.94" length="middle" rot="R270"/>
-<pin name="GND3" x="7.62" y="27.94" length="middle" rot="R270"/>
-<pin name="GND4" x="10.16" y="27.94" length="middle" rot="R270"/>
-<pin name="VIN" x="12.7" y="27.94" length="middle" rot="R270"/>
+<pin name="+3V3" x="2.54" y="27.94" length="middle" direction="pwr" rot="R270"/>
+<pin name="+5V" x="5.08" y="27.94" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND3" x="7.62" y="27.94" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND4" x="10.16" y="27.94" length="middle" direction="pwr" rot="R270"/>
+<pin name="VIN" x="12.7" y="27.94" length="middle" direction="pwr" rot="R270"/>
 <pin name="NC4" x="15.24" y="27.94" length="middle" rot="R270"/>
 <pin name="PA_0" x="17.78" y="27.94" length="middle" rot="R270"/>
 <pin name="PA_1" x="20.32" y="27.94" length="middle" rot="R270"/>
@@ -288,7 +290,7 @@
 <pin name="PB_8" x="-12.7" y="-33.02" length="middle" rot="R90"/>
 <pin name="PB_9" x="-10.16" y="-33.02" length="middle" rot="R90"/>
 <pin name="AVDD" x="-7.62" y="-33.02" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND6" x="-5.08" y="-33.02" length="middle" rot="R90"/>
+<pin name="GND6" x="-5.08" y="-33.02" length="middle" direction="pwr" rot="R90"/>
 <pin name="PA_5" x="-2.54" y="-33.02" length="middle" rot="R90"/>
 <pin name="PA_6" x="0" y="-33.02" length="middle" rot="R90"/>
 <pin name="PA_7" x="2.54" y="-33.02" length="middle" rot="R90"/>

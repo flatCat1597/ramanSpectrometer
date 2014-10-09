@@ -5143,10 +5143,11 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<wire x1="175.26" y1="127" x2="198.12" y2="127" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="127" x2="198.12" y2="127" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="127" x2="198.12" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="162.56" x2="233.68" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="CUVETTE_SENSE" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="PC_6-PWM3/1"/>
 </segment>
 </net>
 <net name="N$27" class="0">

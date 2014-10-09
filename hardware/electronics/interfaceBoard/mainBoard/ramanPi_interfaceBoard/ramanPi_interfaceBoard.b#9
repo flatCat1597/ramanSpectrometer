@@ -880,12 +880,12 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="U$1" library="nucleoF401RE" package="F401-RE" value="STNUCLEOF401RE" x="85.09" y="5.08" rot="R90"/>
-<element name="MPR121_TOUCHPADS" library="SparkFun-Connectors" package="1X13" value="M13" x="113.03" y="53.34" rot="R90"/>
+<element name="MPR121_TOUCHPADS" library="SparkFun-Connectors" package="1X13" value="M13" x="106.68" y="53.34" rot="R90"/>
 <element name="U$2" library="SparkFun-Boards" package="ARDUINO_MINI" value="ARDUINO_MINI" x="99.06" y="21.59"/>
-<element name="ARDUINO_FTDI" library="SparkFun-Connectors" package="1X06" value="" x="118.11" y="45.72"/>
+<element name="ARDUINO_FTDI" library="SparkFun-Connectors" package="1X06" value="" x="115.57" y="36.83"/>
 <element name="TOUCH_PAD" library="SparkFun-Connectors" package="1X12" value="M12PTH" x="144.78" y="53.34" rot="R90"/>
 <element name="NEOPIXEL_RING" library="SparkFun-Connectors" package="JST-3-PTH-VERT" value="" x="144.78" y="17.78" rot="R90"/>
-<element name="ARDUINO_FTDI_HOLES" library="SparkFun-Connectors" package="1X06" value="" x="92.71" y="35.56"/>
+<element name="ARDUINO_FTDI_HOLES" library="SparkFun-Connectors" package="1X06" value="" x="92.71" y="36.83"/>
 <element name="TFT_LCD" library="SparkFun-Connectors" package="1X09" value="M09" x="144.78" y="25.4" rot="R90"/>
 <element name="MPR121_SIGNAL" library="SparkFun-Connectors" package="1X07" value="" x="91.44" y="60.96" rot="R90"/>
 <element name="POWER_IN" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-2" value="M023.5MM" x="144.78" y="5.08" rot="R90"/>
@@ -915,62 +915,62 @@ design rules under a new name.</description>
 <signal name="N$2">
 <contactref element="TOUCH_PAD" pad="1"/>
 <contactref element="MPR121_TOUCHPADS" pad="1"/>
-<wire x1="144.78" y1="53.34" x2="113.03" y2="53.34" width="0" layer="19" extent="1-1"/>
+<wire x1="144.78" y1="53.34" x2="106.68" y2="53.34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="TOUCH_PAD" pad="2"/>
 <contactref element="MPR121_TOUCHPADS" pad="2"/>
-<wire x1="144.78" y1="55.88" x2="113.03" y2="55.88" width="0" layer="19" extent="1-1"/>
+<wire x1="144.78" y1="55.88" x2="106.68" y2="55.88" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="TOUCH_PAD" pad="3"/>
 <contactref element="MPR121_TOUCHPADS" pad="3"/>
-<wire x1="144.78" y1="58.42" x2="113.03" y2="58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="144.78" y1="58.42" x2="106.68" y2="58.42" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="TOUCH_PAD" pad="4"/>
 <contactref element="MPR121_TOUCHPADS" pad="4"/>
-<wire x1="144.78" y1="60.96" x2="113.03" y2="60.96" width="0" layer="19" extent="1-1"/>
+<wire x1="144.78" y1="60.96" x2="106.68" y2="60.96" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="TOUCH_PAD" pad="5"/>
 <contactref element="MPR121_TOUCHPADS" pad="5"/>
-<wire x1="144.78" y1="63.5" x2="113.03" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="144.78" y1="63.5" x2="106.68" y2="63.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="TOUCH_PAD" pad="6"/>
 <contactref element="MPR121_TOUCHPADS" pad="6"/>
-<wire x1="144.78" y1="66.04" x2="113.03" y2="66.04" width="0" layer="19" extent="1-1"/>
+<wire x1="144.78" y1="66.04" x2="106.68" y2="66.04" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="TOUCH_PAD" pad="7"/>
 <contactref element="MPR121_TOUCHPADS" pad="7"/>
-<wire x1="144.78" y1="68.58" x2="113.03" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="144.78" y1="68.58" x2="106.68" y2="68.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="TOUCH_PAD" pad="8"/>
 <contactref element="MPR121_TOUCHPADS" pad="8"/>
-<wire x1="144.78" y1="71.12" x2="113.03" y2="71.12" width="0" layer="19" extent="1-1"/>
+<wire x1="144.78" y1="71.12" x2="106.68" y2="71.12" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 <contactref element="TOUCH_PAD" pad="9"/>
 <contactref element="MPR121_TOUCHPADS" pad="9"/>
-<wire x1="144.78" y1="73.66" x2="113.03" y2="73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="144.78" y1="73.66" x2="106.68" y2="73.66" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="TOUCH_PAD" pad="10"/>
 <contactref element="MPR121_TOUCHPADS" pad="10"/>
-<wire x1="144.78" y1="76.2" x2="113.03" y2="76.2" width="0" layer="19" extent="1-1"/>
+<wire x1="144.78" y1="76.2" x2="106.68" y2="76.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="TOUCH_PAD" pad="11"/>
 <contactref element="MPR121_TOUCHPADS" pad="11"/>
-<wire x1="144.78" y1="78.74" x2="113.03" y2="78.74" width="0" layer="19" extent="1-1"/>
+<wire x1="144.78" y1="78.74" x2="106.68" y2="78.74" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="TOUCH_PAD" pad="12"/>
 <contactref element="MPR121_TOUCHPADS" pad="12"/>
-<wire x1="144.78" y1="81.28" x2="113.03" y2="81.28" width="0" layer="19" extent="1-1"/>
+<wire x1="144.78" y1="81.28" x2="106.68" y2="81.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U$1" pad="+5V"/>
@@ -1003,32 +1003,32 @@ design rules under a new name.</description>
 <signal name="N$18">
 <contactref element="ARDUINO_FTDI" pad="1"/>
 <contactref element="ARDUINO_FTDI_HOLES" pad="1"/>
-<wire x1="92.71" y1="35.56" x2="118.11" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="36.83" x2="115.57" y2="36.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">
 <contactref element="ARDUINO_FTDI" pad="2"/>
 <contactref element="ARDUINO_FTDI_HOLES" pad="2"/>
-<wire x1="95.25" y1="35.56" x2="120.65" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="95.25" y1="36.83" x2="118.11" y2="36.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
 <contactref element="ARDUINO_FTDI" pad="3"/>
 <contactref element="ARDUINO_FTDI_HOLES" pad="3"/>
-<wire x1="97.79" y1="35.56" x2="123.19" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="97.79" y1="36.83" x2="120.65" y2="36.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$21">
 <contactref element="ARDUINO_FTDI" pad="4"/>
 <contactref element="ARDUINO_FTDI_HOLES" pad="4"/>
-<wire x1="100.33" y1="35.56" x2="125.73" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="100.33" y1="36.83" x2="123.19" y2="36.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$22">
 <contactref element="ARDUINO_FTDI" pad="5"/>
 <contactref element="ARDUINO_FTDI_HOLES" pad="5"/>
-<wire x1="102.87" y1="35.56" x2="128.27" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="102.87" y1="36.83" x2="125.73" y2="36.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$23">
 <contactref element="ARDUINO_FTDI" pad="6"/>
 <contactref element="ARDUINO_FTDI_HOLES" pad="6"/>
-<wire x1="105.41" y1="35.56" x2="130.81" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="105.41" y1="36.83" x2="128.27" y2="36.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$26">
 <contactref element="U$2" pad="1"/>

@@ -135,8 +135,8 @@
 <wire x1="0" y1="89.84" x2="0" y2="0" width="0" layer="20"/>
 <text x="3.81" y="85.09" size="1.778" layer="21" font="vector">ramanPi_controlBoard V1.0</text>
 <text x="3.81" y="82.55" size="1.778" layer="21" font="vector">designed by fl@c@ 2014</text>
-<text x="3.81" y="76.2" size="1.778" layer="21" font="vector">theHackadayPrize_2014</text>
-<text x="3.81" y="78.74" size="1.778" layer="21" font="vector">http://hackaday.io/project/1279</text>
+<text x="3.81" y="74.93" size="1.27" layer="21" font="vector">theHackadayPrize_2014</text>
+<text x="3.81" y="77.47" size="1.27" layer="21" font="vector">http://hackaday.io/project/1279</text>
 <text x="147.32" y="13.97" size="1.778" layer="21" font="vector" rot="R270">PowerIn</text>
 <text x="147.32" y="19.05" size="1.778" layer="21" font="vector" rot="R90">encoder</text>
 <text x="147.32" y="33.02" size="1.778" layer="21" font="vector" rot="R90">laserGood</text>
@@ -206,6 +206,7 @@
 <text x="88.9" y="52.07" size="1.778" layer="21" font="vector">HIH-4030</text>
 <text x="105.41" y="59.69" size="1.016" layer="21" font="vector" rot="R90">AFPID:1603</text>
 <text x="91.44" y="59.69" size="1.016" layer="21" font="vector" rot="R90">SFE:SEN-09569</text>
+<text x="3.81" y="80.01" size="1.27" layer="21" font="vector">released under the GNU Public License V2</text>
 </plain>
 <libraries>
 <library name="nucleoF401RE">
@@ -804,7 +805,7 @@ design rules under a new name.</description>
 <element name="POWER_IN" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-2" value="M023.5MM" x="143.51" y="6.35" rot="R90"/>
 <element name="JP1" library="SparkFun-Connectors" package="1X07" value="" x="125.73" y="21.59" rot="R270"/>
 <element name="JP2" library="SparkFun-Connectors" package="1X07" value="" x="125.73" y="48.26" rot="R270"/>
-<element name="U$2" library="SparkFun-Aesthetics" package="OSHW-LOGO-L" value="" x="45.72" y="83.82"/>
+<element name="U$2" library="SparkFun-Aesthetics" package="OSHW-LOGO-L" value="" x="46.99" y="83.82"/>
 <element name="U$3" library="SparkFun-Aesthetics" package="OSHW-LOGO-L" value="" x="13.97" y="22.86" rot="R270"/>
 </elements>
 <signals>

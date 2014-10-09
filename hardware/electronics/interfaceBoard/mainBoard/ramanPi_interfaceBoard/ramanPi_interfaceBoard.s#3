@@ -3985,6 +3985,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="142.24" y1="43.18" x2="142.24" y2="99.06" width="0.1524" layer="91"/>
 <junction x="88.9" y="99.06"/>
 <junction x="142.24" y="99.06"/>
+<junction x="160.02" y="208.28"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -4132,6 +4133,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="185.42" y="104.14"/>
 <junction x="139.7" y="104.14"/>
 <junction x="226.06" y="104.14"/>
+<junction x="162.56" y="205.74"/>
+<junction x="165.1" y="205.74"/>
+<junction x="226.06" y="147.32"/>
+<junction x="149.86" y="104.14"/>
+<wire x1="91.44" y1="162.56" x2="91.44" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="205.74" x2="147.32" y2="205.74" width="0.1524" layer="91"/>
+<junction x="91.44" y="162.56"/>
+<junction x="147.32" y="205.74"/>
 </segment>
 </net>
 <net name="N$24" class="0">
