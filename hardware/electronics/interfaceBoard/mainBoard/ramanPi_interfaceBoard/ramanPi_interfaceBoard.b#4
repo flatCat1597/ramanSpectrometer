@@ -155,7 +155,8 @@
 <text x="148.59" y="59.69" size="1.778" layer="21" font="vector" rot="R90">TouchPad</text>
 <text x="148.59" y="12.7" size="1.778" layer="21" font="vector" rot="R90">NeoPixel</text>
 <text x="149.86" y="2.54" size="1.778" layer="21" font="vector" rot="R90">PWR_IN</text>
-<text x="148.59" y="52.07" size="1.778" layer="21" font="vector" rot="R90">1</text>
+<text x="147.32" y="53.34" size="1.778" layer="21" font="vector" rot="R90">1</text>
+<text x="147.32" y="26.67" size="1.778" layer="21" font="vector" rot="R90">1</text>
 </plain>
 <libraries>
 <library name="nucleoF401RE">

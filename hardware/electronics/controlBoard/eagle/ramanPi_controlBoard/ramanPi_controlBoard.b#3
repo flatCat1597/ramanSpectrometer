@@ -135,8 +135,8 @@
 <wire x1="0" y1="89.84" x2="0" y2="0" width="0" layer="20"/>
 <text x="3.81" y="85.09" size="1.778" layer="21" font="vector">ramanPi_controlBoard V1.0</text>
 <text x="3.81" y="82.55" size="1.778" layer="21" font="vector">designed by fl@c@ 2014</text>
-<text x="3.81" y="76.2" size="1.778" layer="21" font="vector">theHackadayPrize_2014</text>
-<text x="3.81" y="78.74" size="1.778" layer="21" font="vector">http://hackaday.io/project/1279</text>
+<text x="3.81" y="74.93" size="1.27" layer="21" font="vector">theHackadayPrize_2014</text>
+<text x="3.81" y="77.47" size="1.27" layer="21" font="vector">http://hackaday.io/project/1279</text>
 <text x="147.32" y="13.97" size="1.778" layer="21" font="vector" rot="R270">PowerIn</text>
 <text x="147.32" y="19.05" size="1.778" layer="21" font="vector" rot="R90">encoder</text>
 <text x="147.32" y="33.02" size="1.778" layer="21" font="vector" rot="R90">laserGood</text>
@@ -156,17 +156,8 @@
 <text x="99.06" y="33.02" size="1.778" layer="21" font="vector">+</text>
 <text x="142.24" y="2.54" size="1.778" layer="21" font="vector">Pos</text>
 <text x="142.24" y="12.7" size="1.778" layer="21" font="vector">Gnd</text>
-<text x="12.7" y="59.69" size="5.08" layer="22" font="vector" rot="MR270">ramanPi</text>
+<text x="12.7" y="59.69" size="5.08" layer="16" font="vector" rot="MR270">ramanPi</text>
 <circle x="13.97" y="22.86" radius="1.27" width="0.4064" layer="16"/>
-<wire x1="13.97" y1="48.26" x2="13.97" y2="24.13" width="0.4064" layer="22"/>
-<wire x1="15.24" y1="24.13" x2="17.78" y2="26.67" width="0.4064" layer="22"/>
-<wire x1="12.7" y1="22.86" x2="10.16" y2="22.86" width="0.4064" layer="22"/>
-<wire x1="15.24" y1="21.59" x2="20.32" y2="16.51" width="0.4064" layer="22"/>
-<wire x1="17.78" y1="22.86" x2="15.24" y2="22.86" width="0.4064" layer="22"/>
-<wire x1="13.97" y1="20.32" x2="13.97" y2="21.59" width="0.4064" layer="22"/>
-<wire x1="10.16" y1="26.67" x2="12.7" y2="24.13" width="0.4064" layer="22"/>
-<wire x1="10.16" y1="19.05" x2="12.7" y2="21.59" width="0.4064" layer="22"/>
-<circle x="13.97" y="22.86" radius="1.27" width="0.4064" layer="22"/>
 <text x="90.17" y="48.26" size="1.778" layer="21" font="vector">in1</text>
 <text x="90.17" y="21.59" size="1.778" layer="21" font="vector">in1</text>
 <wire x1="120.65" y1="6.35" x2="115.57" y2="6.35" width="0.4064" layer="21"/>
@@ -206,87 +197,90 @@
 <text x="88.9" y="52.07" size="1.778" layer="21" font="vector">HIH-4030</text>
 <text x="105.41" y="59.69" size="1.016" layer="21" font="vector" rot="R90">AFPID:1603</text>
 <text x="91.44" y="59.69" size="1.016" layer="21" font="vector" rot="R90">SFE:SEN-09569</text>
+<text x="3.81" y="80.01" size="1.27" layer="21" font="vector">released under the GNU Public License V2</text>
 </plain>
 <libraries>
 <library name="nucleoF401RE">
 <packages>
 <package name="F401-RE">
-<pad name="PC_3-ANALOGIN-MOSI" x="2.54" y="3.81" drill="0.8" shape="square"/>
-<pad name="PC_2-ANALOGIN-MISO" x="2.54" y="6.35" drill="0.8" shape="square"/>
-<pad name="VBAT" x="2.54" y="8.89" drill="0.8" shape="square"/>
-<pad name="PH_1" x="2.54" y="11.43" drill="0.8" shape="square"/>
-<pad name="PH_0" x="2.54" y="13.97" drill="0.8" shape="square"/>
-<pad name="PC_15" x="2.54" y="16.51" drill="0.8" shape="square"/>
-<pad name="PC_14" x="2.54" y="19.05" drill="0.8" shape="square"/>
-<pad name="PC_13-USERBUTTON" x="2.54" y="21.59" drill="0.8" shape="square"/>
-<pad name="PB_7-PWM4/2" x="2.54" y="24.13" drill="0.8" shape="square"/>
-<pad name="GND" x="2.54" y="26.67" drill="0.8" shape="square"/>
-<pad name="PA_15-PWM1/2" x="2.54" y="29.21" drill="0.8" shape="square"/>
-<pad name="PA_14" x="2.54" y="31.75" drill="0.8" shape="square"/>
-<pad name="PA_13" x="2.54" y="34.29" drill="0.8" shape="square"/>
-<pad name="NC2" x="2.54" y="36.83" drill="0.8" shape="square"/>
-<pad name="NC" x="2.54" y="39.37" drill="0.8" shape="square"/>
-<pad name="BOOT0" x="2.54" y="41.91" drill="0.8" shape="square"/>
-<pad name="3.3V" x="2.54" y="44.45" drill="0.8" shape="square"/>
-<pad name="PC_12-MOSI" x="2.54" y="46.99" drill="0.8" shape="square"/>
-<pad name="PC_10-SCK" x="2.54" y="49.53" drill="0.8" shape="square"/>
-<pad name="PC_0" x="5.08" y="3.81" drill="0.8" shape="square"/>
-<pad name="PC_1" x="5.08" y="6.35" drill="0.8" shape="square"/>
-<pad name="PB_0" x="5.08" y="8.89" drill="0.8" shape="square"/>
-<pad name="PA_4" x="5.08" y="11.43" drill="0.8" shape="square"/>
-<pad name="PA_1" x="5.08" y="13.97" drill="0.8" shape="square"/>
-<pad name="PA_0" x="5.08" y="16.51" drill="0.8" shape="square"/>
-<pad name="NC4" x="5.08" y="19.05" drill="0.8" shape="square"/>
-<pad name="GND4" x="5.08" y="24.13" drill="0.8" shape="square"/>
-<pad name="VIN" x="5.08" y="21.59" drill="0.8" shape="square"/>
-<pad name="GND3" x="5.08" y="26.67" drill="0.8" shape="square"/>
-<pad name="+5V" x="5.08" y="29.21" drill="0.8" shape="square"/>
-<pad name="+3V3" x="5.08" y="31.75" drill="0.8" shape="square"/>
-<pad name="NRST" x="5.08" y="34.29" drill="0.8" shape="square"/>
-<pad name="NC3" x="5.08" y="39.37" drill="0.8" shape="square"/>
-<pad name="IOREF" x="5.08" y="36.83" drill="0.8" shape="square"/>
-<pad name="GND2" x="5.08" y="41.91" drill="0.8" shape="square"/>
-<pad name="E5V" x="5.08" y="44.45" drill="0.8" shape="square"/>
-<pad name="PD_2" x="5.08" y="46.99" drill="0.8" shape="square"/>
-<pad name="PC_11-MISO" x="5.08" y="49.53" drill="0.8" shape="square"/>
-<pad name="PA_3" x="63.5" y="3.81" drill="0.8" shape="square"/>
-<pad name="NC8" x="66.04" y="3.81" drill="0.8" shape="square"/>
-<pad name="NC7" x="66.04" y="6.35" drill="0.8" shape="square"/>
-<pad name="PA_2" x="63.5" y="6.35" drill="0.8" shape="square"/>
-<pad name="PA_10" x="63.5" y="8.89" drill="0.8" shape="square"/>
-<pad name="PC_4-ANALOGIN" x="66.04" y="8.89" drill="0.8" shape="square"/>
-<pad name="AGND" x="66.04" y="11.43" drill="0.8" shape="square"/>
-<pad name="PB_3" x="63.5" y="11.43" drill="0.8" shape="square"/>
-<pad name="PB_5" x="63.5" y="13.97" drill="0.8" shape="square"/>
-<pad name="PB_13-PWM1/1N-SCK" x="66.04" y="13.97" drill="0.8" shape="square"/>
-<pad name="PB_14-PWM1/2N-MISO" x="66.04" y="16.51" drill="0.8" shape="square"/>
-<pad name="PB_4" x="63.5" y="16.51" drill="0.8" shape="square"/>
-<pad name="PB_10" x="63.5" y="19.05" drill="0.8" shape="square"/>
-<pad name="PB_15-PWM1/3N-MOSI" x="66.04" y="19.05" drill="0.8" shape="square"/>
-<pad name="PB_1-PWM1/3N-ANALOGIN" x="66.04" y="21.59" drill="0.8" shape="square"/>
-<pad name="PA_8" x="63.5" y="21.59" drill="0.8" shape="square"/>
-<pad name="PA_9" x="63.5" y="24.13" drill="0.8" shape="square"/>
-<pad name="PB_2" x="66.04" y="24.13" drill="0.8" shape="square"/>
-<pad name="GND6" x="66.04" y="26.67" drill="0.8" shape="square"/>
-<pad name="PC_7" x="63.5" y="26.67" drill="0.8" shape="square"/>
-<pad name="PB_6" x="63.5" y="29.21" drill="0.8" shape="square"/>
-<pad name="NC6" x="66.04" y="29.21" drill="0.8" shape="square"/>
-<pad name="PB_12" x="66.04" y="31.75" drill="0.8" shape="square"/>
-<pad name="PA_7" x="63.5" y="31.75" drill="0.8" shape="square"/>
-<pad name="PA_6" x="63.5" y="34.29" drill="0.8" shape="square"/>
-<pad name="PA_11-PWM1/4" x="66.04" y="34.29" drill="0.8" shape="square"/>
-<pad name="PA_12" x="66.04" y="36.83" drill="0.8" shape="square"/>
-<pad name="PA_5" x="63.5" y="36.83" drill="0.8" shape="square"/>
-<pad name="GND5" x="63.5" y="39.37" drill="0.8" shape="square"/>
-<pad name="NC5" x="66.04" y="39.37" drill="0.8" shape="square"/>
-<pad name="U5V" x="66.04" y="41.91" drill="0.8" shape="square"/>
-<pad name="AVDD" x="63.5" y="41.91" drill="0.8" shape="square"/>
-<pad name="PB_9" x="63.5" y="44.45" drill="0.8" shape="square"/>
-<pad name="PC_5-ANALOGIN" x="66.04" y="44.45" drill="0.8" shape="square"/>
-<pad name="PC_6-PWM3/1" x="66.04" y="46.99" drill="0.8" shape="square"/>
-<pad name="PB_8" x="63.5" y="46.99" drill="0.8" shape="square"/>
-<pad name="PC_9" x="63.5" y="49.53" drill="0.8" shape="square"/>
-<pad name="PC_8-PWM3/3" x="66.04" y="49.53" drill="0.8" shape="square"/>
+<description>ST Microelectronics STM32
+ST Nucleo F401-RE</description>
+<pad name="PC_3-ANALOGIN-MOSI" x="2.54" y="3.81" drill="1" shape="square"/>
+<pad name="PC_2-ANALOGIN-MISO" x="2.54" y="6.35" drill="1" shape="square"/>
+<pad name="VBAT" x="2.54" y="8.89" drill="1" shape="square"/>
+<pad name="PH_1" x="2.54" y="11.43" drill="1" shape="square"/>
+<pad name="PH_0" x="2.54" y="13.97" drill="1" shape="square"/>
+<pad name="PC_15" x="2.54" y="16.51" drill="1" shape="square"/>
+<pad name="PC_14" x="2.54" y="19.05" drill="1" shape="square"/>
+<pad name="PC_13-USERBUTTON" x="2.54" y="21.59" drill="1" shape="square"/>
+<pad name="PB_7-PWM4/2" x="2.54" y="24.13" drill="1" shape="square"/>
+<pad name="GND" x="2.54" y="26.67" drill="1" shape="square"/>
+<pad name="PA_15-PWM1/2" x="2.54" y="29.21" drill="1" shape="square"/>
+<pad name="PA_14" x="2.54" y="31.75" drill="1" shape="square"/>
+<pad name="PA_13" x="2.54" y="34.29" drill="1" shape="square"/>
+<pad name="NC2" x="2.54" y="36.83" drill="1" shape="square"/>
+<pad name="NC" x="2.54" y="39.37" drill="1" shape="square"/>
+<pad name="BOOT0" x="2.54" y="41.91" drill="1" shape="square"/>
+<pad name="3.3V" x="2.54" y="44.45" drill="1" shape="square"/>
+<pad name="PC_12-MOSI" x="2.54" y="46.99" drill="1" shape="square"/>
+<pad name="PC_10-SCK" x="2.54" y="49.53" drill="1" shape="square" rot="R90"/>
+<pad name="PC_0" x="5.08" y="3.81" drill="1" shape="square"/>
+<pad name="PC_1" x="5.08" y="6.35" drill="1" shape="square"/>
+<pad name="PB_0" x="5.08" y="8.89" drill="1" shape="square"/>
+<pad name="PA_4" x="5.08" y="11.43" drill="1" shape="square"/>
+<pad name="PA_1" x="5.08" y="13.97" drill="1" shape="square"/>
+<pad name="PA_0" x="5.08" y="16.51" drill="1" shape="square"/>
+<pad name="NC4" x="5.08" y="19.05" drill="1" shape="square"/>
+<pad name="GND4" x="5.08" y="24.13" drill="1" shape="square"/>
+<pad name="VIN" x="5.08" y="21.59" drill="1" shape="square"/>
+<pad name="GND3" x="5.08" y="26.67" drill="1" shape="square"/>
+<pad name="+5V" x="5.08" y="29.21" drill="1" shape="square"/>
+<pad name="+3V3" x="5.08" y="31.75" drill="1" shape="square"/>
+<pad name="NRST" x="5.08" y="34.29" drill="1" shape="square"/>
+<pad name="NC3" x="5.08" y="39.37" drill="1" shape="square"/>
+<pad name="IOREF" x="5.08" y="36.83" drill="1" shape="square"/>
+<pad name="GND2" x="5.08" y="41.91" drill="1" shape="square"/>
+<pad name="E5V" x="5.08" y="44.45" drill="1" shape="square"/>
+<pad name="PD_2" x="5.08" y="46.99" drill="1" shape="square"/>
+<pad name="PC_11-MISO" x="5.08" y="49.53" drill="1" shape="square"/>
+<pad name="PA_3" x="63.5" y="3.81" drill="1" shape="square"/>
+<pad name="NC8" x="66.04" y="3.81" drill="1" shape="square"/>
+<pad name="NC7" x="66.04" y="6.35" drill="1" shape="square"/>
+<pad name="PA_2" x="63.5" y="6.35" drill="1" shape="square"/>
+<pad name="PA_10" x="63.5" y="8.89" drill="1" shape="square"/>
+<pad name="PC_4-ANALOGIN" x="66.04" y="8.89" drill="1" shape="square"/>
+<pad name="AGND" x="66.04" y="11.43" drill="1" shape="square"/>
+<pad name="PB_3" x="63.5" y="11.43" drill="1" shape="square"/>
+<pad name="PB_5" x="63.5" y="13.97" drill="1" shape="square"/>
+<pad name="PB_13-PWM1/1N-SCK" x="66.04" y="13.97" drill="1" shape="square"/>
+<pad name="PB_14-PWM1/2N-MISO" x="66.04" y="16.51" drill="1" shape="square"/>
+<pad name="PB_4" x="63.5" y="16.51" drill="1" shape="square"/>
+<pad name="PB_10" x="63.5" y="19.05" drill="1" shape="square"/>
+<pad name="PB_15-PWM1/3N-MOSI" x="66.04" y="19.05" drill="1" shape="square"/>
+<pad name="PB_1-PWM1/3N-ANALOGIN" x="66.04" y="21.59" drill="1" shape="square"/>
+<pad name="PA_8" x="63.5" y="21.59" drill="1" shape="square"/>
+<pad name="PA_9" x="63.5" y="24.13" drill="1" shape="square"/>
+<pad name="PB_2" x="66.04" y="24.13" drill="1" shape="square"/>
+<pad name="GND6" x="66.04" y="26.67" drill="1" shape="square"/>
+<pad name="PC_7" x="63.5" y="26.67" drill="1" shape="square"/>
+<pad name="PB_6" x="63.5" y="29.21" drill="1" shape="square"/>
+<pad name="NC6" x="66.04" y="29.21" drill="1" shape="square"/>
+<pad name="PB_12" x="66.04" y="31.75" drill="1" shape="square"/>
+<pad name="PA_7" x="63.5" y="31.75" drill="1" shape="square"/>
+<pad name="PA_6" x="63.5" y="34.29" drill="1" shape="square"/>
+<pad name="PA_11-PWM1/4" x="66.04" y="34.29" drill="1" shape="square"/>
+<pad name="PA_12" x="66.04" y="36.83" drill="1" shape="square"/>
+<pad name="PA_5" x="63.5" y="36.83" drill="1" shape="square"/>
+<pad name="GND5" x="63.5" y="39.37" drill="1" shape="square"/>
+<pad name="NC5" x="66.04" y="39.37" drill="1" shape="square"/>
+<pad name="U5V" x="66.04" y="41.91" drill="1" shape="square"/>
+<pad name="AVDD" x="63.5" y="41.91" drill="1" shape="square"/>
+<pad name="PB_9" x="63.5" y="44.45" drill="1" shape="square"/>
+<pad name="PC_5-ANALOGIN" x="66.04" y="44.45" drill="1" shape="square"/>
+<pad name="PC_6-PWM3/1" x="66.04" y="46.99" drill="1" shape="square"/>
+<pad name="PB_8" x="63.5" y="46.99" drill="1" shape="square"/>
+<pad name="PC_9" x="63.5" y="49.53" drill="1" shape="square"/>
+<pad name="PC_8-PWM3/3" x="66.04" y="49.53" drill="1" shape="square"/>
 <wire x1="0" y1="82.55" x2="0" y2="55.88" width="0.127" layer="21"/>
 <wire x1="0" y1="55.88" x2="0" y2="0" width="0.127" layer="21"/>
 <wire x1="0" y1="0" x2="68.58" y2="0" width="0.127" layer="21"/>
@@ -297,10 +291,10 @@
 <hole x="46.99" y="1.27" drill="0.6"/>
 <hole x="10.16" y="54.61" drill="0.6"/>
 <hole x="59.69" y="52.07" drill="0.6"/>
-<pad name="P$1" x="66.04" y="77.47" drill="0.8" shape="square"/>
-<pad name="P$2" x="66.04" y="74.93" drill="0.8" shape="square"/>
-<pad name="P$3" x="2.54" y="77.47" drill="0.8" shape="square"/>
-<pad name="P$4" x="2.54" y="74.93" drill="0.8" shape="square"/>
+<pad name="P$1" x="66.04" y="77.47" drill="1" shape="square"/>
+<pad name="P$2" x="66.04" y="74.93" drill="1" shape="square"/>
+<pad name="P$3" x="2.54" y="77.47" drill="1" shape="square"/>
+<pad name="P$4" x="2.54" y="74.93" drill="1" shape="square"/>
 <text x="44.45" y="58.42" size="1.27" layer="21" font="vector">ST NUCLEO F401-RE</text>
 </package>
 </packages>
@@ -604,6 +598,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="0.4186" y="-1.0105"/>
 </polygon>
 </package>
+<package name="FIDUCIAL-1X2">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -804,8 +801,9 @@ design rules under a new name.</description>
 <element name="POWER_IN" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-2" value="M023.5MM" x="143.51" y="6.35" rot="R90"/>
 <element name="JP1" library="SparkFun-Connectors" package="1X07" value="" x="125.73" y="21.59" rot="R270"/>
 <element name="JP2" library="SparkFun-Connectors" package="1X07" value="" x="125.73" y="48.26" rot="R270"/>
-<element name="U$2" library="SparkFun-Aesthetics" package="OSHW-LOGO-L" value="" x="45.72" y="83.82"/>
-<element name="U$3" library="SparkFun-Aesthetics" package="OSHW-LOGO-L" value="" x="13.97" y="22.86" rot="R270"/>
+<element name="U$2" library="SparkFun-Aesthetics" package="OSHW-LOGO-L" value="" x="46.99" y="83.82"/>
+<element name="FID1" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="2.54" y="2.54"/>
+<element name="FID2" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="144.78" y="87.63"/>
 </elements>
 <signals>
 <signal name="+3.3V">
@@ -879,9 +877,6 @@ design rules under a new name.</description>
 <wire x1="119.38" y1="54.61" x2="102.87" y2="38.1" width="0.4064" layer="16"/>
 <wire x1="102.87" y1="38.1" x2="102.87" y2="29.21" width="0.4064" layer="16"/>
 <wire x1="102.87" y1="29.21" x2="100.33" y2="26.67" width="0.4064" layer="16"/>
-<wire x1="100.33" y1="26.67" x2="96.52" y2="26.67" width="0.4064" layer="16"/>
-<wire x1="96.52" y1="26.67" x2="87.63" y2="26.67" width="0.4064" layer="16"/>
-<wire x1="87.63" y1="26.67" x2="86.36" y2="25.4" width="0.4064" layer="16"/>
 <wire x1="86.36" y1="25.4" x2="62.23" y2="25.4" width="0.4064" layer="16"/>
 <wire x1="62.23" y1="25.4" x2="55.88" y2="19.05" width="0.4064" layer="16"/>
 <wire x1="55.88" y1="19.05" x2="55.88" y2="10.16" width="0.4064" layer="16"/>
@@ -905,6 +900,9 @@ design rules under a new name.</description>
 <wire x1="134.62" y1="26.67" x2="138.43" y2="30.48" width="0.4064" layer="16"/>
 <wire x1="138.43" y1="30.48" x2="140.97" y2="30.48" width="0.4064" layer="16"/>
 <wire x1="96.52" y1="25.4" x2="96.52" y2="26.67" width="0.4064" layer="16"/>
+<wire x1="96.52" y1="26.67" x2="87.63" y2="26.67" width="0.4064" layer="16"/>
+<wire x1="87.63" y1="26.67" x2="86.36" y2="25.4" width="0.4064" layer="16"/>
+<wire x1="100.33" y1="26.67" x2="96.52" y2="26.67" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$5">
 <contactref element="U$1" pad="PA_5"/>
@@ -970,10 +968,10 @@ design rules under a new name.</description>
 <wire x1="119.38" y1="19.05" x2="97.79" y2="19.05" width="0.4064" layer="16"/>
 <wire x1="68.58" y1="10.16" x2="68.58" y2="29.21" width="0.4064" layer="1"/>
 <via x="68.58" y="29.21" extent="1-16" drill="0.7"/>
-<wire x1="68.58" y1="29.21" x2="87.63" y2="29.21" width="0.4064" layer="16"/>
 <via x="87.63" y="29.21" extent="1-16" drill="0.7"/>
 <via x="97.79" y="19.05" extent="1-16" drill="0.7"/>
 <wire x1="87.63" y1="29.21" x2="97.79" y2="19.05" width="0.4064" layer="1"/>
+<wire x1="68.58" y1="29.21" x2="87.63" y2="29.21" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$9">
 <contactref element="U$1" pad="PB_15-PWM1/3N-MOSI"/>
@@ -1156,34 +1154,40 @@ design rules under a new name.</description>
 <contactref element="ROTARY_ENCODER" pad="2"/>
 <via x="100.33" y="30.48" extent="1-16" drill="0.7"/>
 <wire x1="100.33" y1="30.48" x2="97.79" y2="27.94" width="0.4064" layer="16"/>
-<wire x1="97.79" y1="27.94" x2="50.8" y2="27.94" width="0.4064" layer="16"/>
 <wire x1="50.8" y1="27.94" x2="38.1" y2="15.24" width="0.4064" layer="16"/>
 <wire x1="38.1" y1="15.24" x2="38.1" y2="10.16" width="0.4064" layer="16"/>
 <wire x1="143.51" y1="24.13" x2="142.24" y2="24.13" width="0.4064" layer="1"/>
 <wire x1="142.24" y1="24.13" x2="135.89" y2="30.48" width="0.4064" layer="1"/>
 <wire x1="135.89" y1="30.48" x2="100.33" y2="30.48" width="0.4064" layer="1"/>
+<wire x1="97.79" y1="27.94" x2="50.8" y2="27.94" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$4">
 <contactref element="CUVETTE_SENSE" pad="1"/>
 <contactref element="U$1" pad="PC_6-PWM3/1"/>
-<wire x1="38.1" y1="71.12" x2="38.1" y2="72.39" width="0.4064" layer="16"/>
-<wire x1="38.1" y1="72.39" x2="34.29" y2="72.39" width="0.4064" layer="16"/>
-<wire x1="34.29" y1="72.39" x2="31.75" y2="69.85" width="0.4064" layer="16"/>
-<wire x1="31.75" y1="69.85" x2="31.75" y2="59.69" width="0.4064" layer="16"/>
-<wire x1="31.75" y1="59.69" x2="60.96" y2="30.48" width="0.4064" layer="16"/>
-<wire x1="60.96" y1="30.48" x2="88.9" y2="30.48" width="0.4064" layer="16"/>
-<wire x1="88.9" y1="30.48" x2="90.17" y2="29.21" width="0.4064" layer="16"/>
-<wire x1="90.17" y1="29.21" x2="96.52" y2="29.21" width="0.4064" layer="16"/>
-<wire x1="96.52" y1="29.21" x2="97.79" y2="30.48" width="0.4064" layer="16"/>
-<via x="97.79" y="30.48" extent="1-16" drill="0.7"/>
-<wire x1="134.62" y1="21.59" x2="135.89" y2="21.59" width="0.4064" layer="1"/>
-<wire x1="135.89" y1="21.59" x2="137.16" y2="22.86" width="0.4064" layer="1"/>
-<wire x1="137.16" y1="22.86" x2="137.16" y2="27.94" width="0.4064" layer="1"/>
-<wire x1="137.16" y1="27.94" x2="135.89" y2="29.21" width="0.4064" layer="1"/>
-<wire x1="135.89" y1="29.21" x2="102.87" y2="29.21" width="0.4064" layer="1"/>
-<wire x1="102.87" y1="29.21" x2="101.6" y2="27.94" width="0.4064" layer="1"/>
-<wire x1="101.6" y1="27.94" x2="100.33" y2="27.94" width="0.4064" layer="1"/>
-<wire x1="100.33" y1="27.94" x2="97.79" y2="30.48" width="0.4064" layer="1"/>
+<wire x1="38.1" y1="71.12" x2="38.1" y2="72.39" width="0.4064" layer="1"/>
+<wire x1="38.1" y1="72.39" x2="36.83" y2="73.66" width="0.4064" layer="1"/>
+<wire x1="36.83" y1="73.66" x2="34.29" y2="73.66" width="0.4064" layer="1"/>
+<wire x1="34.29" y1="73.66" x2="33.02" y2="72.39" width="0.4064" layer="1"/>
+<wire x1="33.02" y1="72.39" x2="33.02" y2="67.31" width="0.4064" layer="1"/>
+<wire x1="33.02" y1="67.31" x2="36.83" y2="63.5" width="0.4064" layer="1"/>
+<wire x1="36.83" y1="63.5" x2="38.1" y2="63.5" width="0.4064" layer="1"/>
+<via x="38.1" y="63.5" extent="1-16" drill="0.7"/>
+<wire x1="38.1" y1="63.5" x2="96.52" y2="63.5" width="0.4064" layer="16"/>
+<wire x1="96.52" y1="63.5" x2="100.33" y2="59.69" width="0.4064" layer="16"/>
+<wire x1="100.33" y1="59.69" x2="100.33" y2="55.88" width="0.4064" layer="16"/>
+<wire x1="100.33" y1="55.88" x2="105.41" y2="50.8" width="0.4064" layer="16"/>
+<wire x1="105.41" y1="50.8" x2="109.22" y2="50.8" width="0.4064" layer="16"/>
+<via x="109.22" y="50.8" extent="1-16" drill="0.7"/>
+<wire x1="109.22" y1="50.8" x2="127" y2="50.8" width="0.4064" layer="1"/>
+<wire x1="127" y1="50.8" x2="129.54" y2="48.26" width="0.4064" layer="1"/>
+<wire x1="129.54" y1="48.26" x2="129.54" y2="38.1" width="0.4064" layer="1"/>
+<wire x1="129.54" y1="38.1" x2="134.62" y2="33.02" width="0.4064" layer="1"/>
+<via x="134.62" y="33.02" extent="1-16" drill="0.7"/>
+<wire x1="134.62" y1="21.59" x2="133.35" y2="21.59" width="0.4064" layer="16"/>
+<wire x1="133.35" y1="21.59" x2="130.81" y2="24.13" width="0.4064" layer="16"/>
+<wire x1="130.81" y1="24.13" x2="130.81" y2="27.94" width="0.4064" layer="16"/>
+<wire x1="130.81" y1="27.94" x2="134.62" y2="31.75" width="0.4064" layer="16"/>
+<wire x1="134.62" y1="31.75" x2="134.62" y2="33.02" width="0.4064" layer="16"/>
 </signal>
 <signal name="GROUND">
 <contactref element="FILTER_STEPPER_PWR" pad="2"/>
@@ -1274,12 +1278,12 @@ design rules under a new name.</description>
 <wire x1="55.88" y1="74.93" x2="39.37" y2="74.93" width="0.4064" layer="16"/>
 <via x="39.37" y="74.93" extent="1-16" drill="0.7"/>
 <wire x1="45.72" y1="68.58" x2="45.72" y2="67.31" width="0.4064" layer="1"/>
-<wire x1="45.72" y1="67.31" x2="44.45" y2="66.04" width="0.4064" layer="1"/>
-<wire x1="44.45" y1="66.04" x2="34.29" y2="66.04" width="0.4064" layer="1"/>
-<wire x1="34.29" y1="66.04" x2="33.02" y2="67.31" width="0.4064" layer="1"/>
-<wire x1="33.02" y1="67.31" x2="33.02" y2="73.66" width="0.4064" layer="1"/>
-<wire x1="33.02" y1="73.66" x2="34.29" y2="74.93" width="0.4064" layer="1"/>
-<wire x1="34.29" y1="74.93" x2="39.37" y2="74.93" width="0.4064" layer="1"/>
+<wire x1="45.72" y1="67.31" x2="40.64" y2="62.23" width="0.4064" layer="1"/>
+<wire x1="40.64" y1="62.23" x2="33.02" y2="62.23" width="0.4064" layer="1"/>
+<wire x1="33.02" y1="62.23" x2="30.48" y2="64.77" width="0.4064" layer="1"/>
+<wire x1="30.48" y1="64.77" x2="30.48" y2="72.39" width="0.4064" layer="1"/>
+<wire x1="30.48" y1="72.39" x2="33.02" y2="74.93" width="0.4064" layer="1"/>
+<wire x1="33.02" y1="74.93" x2="39.37" y2="74.93" width="0.4064" layer="1"/>
 <wire x1="143.51" y1="40.64" x2="144.78" y2="40.64" width="0.4064" layer="16"/>
 <wire x1="144.78" y1="40.64" x2="146.05" y2="39.37" width="0.4064" layer="16"/>
 <wire x1="146.05" y1="39.37" x2="146.05" y2="29.21" width="0.4064" layer="16"/>
@@ -1301,7 +1305,7 @@ design rules under a new name.</description>
 <wire x1="15.24" y1="22.86" x2="17.78" y2="22.86" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$27">
-<wire x1="13.97" y1="21.59" x2="13.97" y2="20.32" width="0.4064" layer="16"/>
+<wire x1="13.97" y1="21.59" x2="13.97" y2="19.05" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$28">
 <wire x1="12.7" y1="22.86" x2="10.16" y2="22.86" width="0.4064" layer="16"/>
@@ -1318,7 +1322,73 @@ design rules under a new name.</description>
 <signal name="N$32">
 <wire x1="12.7" y1="24.13" x2="10.16" y2="26.67" width="0.4064" layer="16"/>
 </signal>
+<signal name="N$33">
+<wire x1="7.62" y1="3.81" x2="7.62" y2="1.27" width="0.4064" layer="16"/>
+</signal>
+<signal name="N$34">
+<wire x1="6.35" y1="2.54" x2="8.89" y2="2.54" width="0.4064" layer="16"/>
+</signal>
+<signal name="N$35">
+<wire x1="15.24" y1="72.39" x2="15.24" y2="69.85" width="0.4064" layer="16"/>
+</signal>
+<signal name="N$36">
+<wire x1="13.97" y1="71.12" x2="16.51" y2="71.12" width="0.4064" layer="16"/>
+</signal>
+<signal name="N$37">
+<wire x1="132.08" y1="88.9" x2="132.08" y2="86.36" width="0.4064" layer="16"/>
+</signal>
+<signal name="N$38">
+<wire x1="130.81" y1="87.63" x2="133.35" y2="87.63" width="0.4064" layer="16"/>
+</signal>
+<signal name="N$39">
+<wire x1="143.51" y1="17.78" x2="143.51" y2="15.24" width="0.4064" layer="16"/>
+</signal>
+<signal name="N$40">
+<wire x1="142.24" y1="16.51" x2="144.78" y2="16.51" width="0.4064" layer="16"/>
+</signal>
+<signal name="N$41">
+<wire x1="15.24" y1="72.39" x2="15.24" y2="69.85" width="0.4064" layer="1"/>
+</signal>
+<signal name="N$42">
+<wire x1="13.97" y1="71.12" x2="16.51" y2="71.12" width="0.4064" layer="1"/>
+</signal>
+<signal name="N$43">
+<wire x1="7.62" y1="3.81" x2="7.62" y2="1.27" width="0.4064" layer="1"/>
+</signal>
+<signal name="N$44">
+<wire x1="6.35" y1="2.54" x2="8.89" y2="2.54" width="0.4064" layer="1"/>
+</signal>
+<signal name="N$45">
+<wire x1="132.08" y1="88.9" x2="132.08" y2="86.36" width="0.4064" layer="1"/>
+</signal>
+<signal name="N$46">
+<wire x1="130.81" y1="87.63" x2="133.35" y2="87.63" width="0.4064" layer="1"/>
+</signal>
+<signal name="N$47">
+<wire x1="143.51" y1="17.78" x2="143.51" y2="15.24" width="0.4064" layer="1"/>
+</signal>
+<signal name="N$48">
+<wire x1="142.24" y1="16.51" x2="144.78" y2="16.51" width="0.4064" layer="1"/>
+</signal>
 </signals>
+<errors>
+<approved hash="19,1,bfc7b2c9b2ccbfc2"/>
+<approved hash="19,1,bb88b48eb48dbb8b"/>
+<approved hash="19,1,46dc47e647e346d9"/>
+<approved hash="19,1,e821f31bf31ee824"/>
+<approved hash="19,16,bfc7b2c9b2ccbfc2"/>
+<approved hash="19,16,9efe807c593e01f8"/>
+<approved hash="5,16,0d7d92d2ca8af2b6"/>
+<approved hash="5,16,e9976c32635a5cb8"/>
+<approved hash="19,16,f727959b8cdd988d"/>
+<approved hash="19,16,8f0b87196ef91007"/>
+<approved hash="5,16,7c3f378f7cc87513"/>
+<approved hash="5,16,44620968f1cfe37a"/>
+<approved hash="19,16,4aa95ed9cdf79fc3"/>
+<approved hash="19,16,bb88b48eb48dbb8b"/>
+<approved hash="19,16,46dc47e647e346d9"/>
+<approved hash="19,16,e821f31bf31ee824"/>
+</errors>
 </board>
 </drawing>
 </eagle>
