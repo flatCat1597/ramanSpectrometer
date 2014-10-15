@@ -4351,6 +4351,140 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="semicon-smd-ipc">
+<description>&lt;b&gt;IPC Standard SMD Semiconductors&lt;/b&gt;&lt;p&gt;
+A few devices defined according to the IPC standard.&lt;p&gt;
+Based on:&lt;p&gt;
+IPC-SM-782&lt;br&gt;
+IRevision A, August 1993&lt;br&gt;
+Includes Amendment 1, October 1996&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOT23W">
+<description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
+wave soldering</description>
+<wire x1="-1.973" y1="1.983" x2="1.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-1.983" x2="-1.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-1.983" x2="-1.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="1.983" x2="1.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="1.422" y1="0.66" x2="1.422" y2="-0.66" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="-0.66" x2="-1.422" y2="-0.66" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="-0.66" x2="-1.422" y2="0.66" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="0.66" x2="1.422" y2="0.66" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.303" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.303" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.303" dx="1" dy="1.4" layer="1"/>
+<text x="-2.03" y="2.0701" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.9949" y="-3.3701" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+<rectangle x1="-0.5001" y1="-0.5001" x2="0.5001" y2="0.5001" layer="35"/>
+</package>
+<package name="SOT23">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+<package name="SOT89">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="2.235" y1="-1.245" x2="-2.235" y2="-1.245" width="0.127" layer="51"/>
+<wire x1="2.235" y1="1.219" x2="2.235" y2="-1.245" width="0.127" layer="51"/>
+<wire x1="-2.235" y1="-1.245" x2="-2.235" y2="1.219" width="0.127" layer="51"/>
+<wire x1="-2.235" y1="1.219" x2="2.235" y2="1.219" width="0.127" layer="51"/>
+<wire x1="-0.7874" y1="1.5748" x2="-0.3556" y2="2.0066" width="0.1998" layer="51"/>
+<wire x1="-0.3556" y1="2.0066" x2="0.3556" y2="2.0066" width="0.1998" layer="51"/>
+<wire x1="0.3556" y1="2.0066" x2="0.7874" y2="1.5748" width="0.1998" layer="51"/>
+<wire x1="0.7874" y1="1.5748" x2="0.7874" y2="1.2954" width="0.1998" layer="51"/>
+<wire x1="0.7874" y1="1.2954" x2="-0.7874" y2="1.2954" width="0.1998" layer="51"/>
+<wire x1="-0.7874" y1="1.2954" x2="-0.7874" y2="1.5748" width="0.1998" layer="51"/>
+<smd name="1" x="-1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
+<smd name="3" x="1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
+<smd name="2" x="0" y="-1.727" dx="0.8" dy="1.9" layer="1"/>
+<smd name="2@1" x="0" y="0.94" dx="2.032" dy="3.65" layer="1" roundness="75"/>
+<text x="-2.54" y="3.175" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.4051" y="-4.3449" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.7272" y1="-2.1082" x2="-1.27" y2="-1.27" layer="51"/>
+<rectangle x1="1.27" y1="-2.1082" x2="1.7272" y2="-1.27" layer="51"/>
+<rectangle x1="-0.2794" y1="-2.1082" x2="0.2794" y2="-1.27" layer="51"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-0.7874" y="1.3208"/>
+<vertex x="-0.7874" y="1.5748"/>
+<vertex x="-0.3556" y="2.0066"/>
+<vertex x="0.3048" y="2.0066"/>
+<vertex x="0.3556" y="2.0066"/>
+<vertex x="0.7874" y="1.5748"/>
+<vertex x="0.7874" y="1.2954"/>
+<vertex x="-0.7874" y="1.2954"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="NPN">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.0399" x2="0.3081" y2="-1.4239" width="0.1524" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NPN-TRANSISTOR_" prefix="Q" uservalue="yes">
+<description>&lt;B&gt;NPN TRANSISTOR&lt;/B&gt;</description>
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23W" package="SOT23W">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT23" package="SOT23">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT89" package="SOT89">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4381,6 +4515,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="1210" value="0.1uf"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="1210" value="0.1uf"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="1210" value="0.1uf"/>
+<part name="Q1" library="semicon-smd-ipc" deviceset="NPN-TRANSISTOR_" device="SOT23" value="2n2222"/>
+<part name="R5" library="adafruit" deviceset="R-US_" device="M1206" value="10k"/>
+<part name="RASPI_RESET" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-VERT"/>
 </parts>
 <sheets>
 <sheet>
@@ -4393,10 +4530,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="GND1" gate="1" x="83.82" y="7.62"/>
 <instance part="GND2" gate="1" x="165.1" y="96.52"/>
 <instance part="R1" gate="G$1" x="137.16" y="142.24" rot="R180"/>
-<instance part="DS18B20" gate="A" x="22.86" y="81.28" rot="R180"/>
+<instance part="DS18B20" gate="A" x="2.54" y="81.28" rot="R180"/>
 <instance part="CCD_BOARD" gate="G$1" x="124.46" y="20.32"/>
 <instance part="GND3" gate="1" x="152.4" y="7.62"/>
-<instance part="TCS34725" gate="G$1" x="25.4" y="35.56"/>
+<instance part="TCS34725" gate="G$1" x="7.62" y="35.56"/>
 <instance part="POWER_IN" gate="G$1" x="187.96" y="114.3" rot="R180"/>
 <instance part="LED_STATUS" gate="G$1" x="187.96" y="134.62" rot="R180"/>
 <instance part="LED_BUSY" gate="G$1" x="187.96" y="149.86" rot="R180"/>
@@ -4407,6 +4544,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="C1" gate="G$1" x="124.46" y="33.02" rot="R90"/>
 <instance part="C2" gate="G$1" x="160.02" y="20.32" rot="R180"/>
 <instance part="C3" gate="G$1" x="114.3" y="162.56" rot="R270"/>
+<instance part="Q1" gate="G$1" x="22.86" y="121.92"/>
+<instance part="R5" gate="G$1" x="25.4" y="147.32" rot="R90"/>
+<instance part="RASPI_RESET" gate="G$1" x="5.08" y="121.92" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -4453,7 +4593,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="SI1145_DIGITAL_UV_INDEX" gate="G$1" pin="7"/>
 <wire x1="40.64" y1="55.88" x2="180.34" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="TCS34725" gate="G$1" pin="3"/>
-<wire x1="30.48" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="35.56" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
 <junction x="40.64" y="55.88"/>
 </segment>
@@ -4465,7 +4605,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="SI1145_DIGITAL_UV_INDEX" gate="G$1" pin="6"/>
 <wire x1="93.98" y1="58.42" x2="180.34" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="TCS34725" gate="G$1" pin="4"/>
-<wire x1="30.48" y1="38.1" x2="93.98" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="38.1" x2="93.98" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="38.1" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
 <junction x="93.98" y="58.42"/>
 </segment>
@@ -4518,14 +4658,14 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="152.4" y1="111.76" x2="165.1" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="111.76" x2="165.1" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="83.82" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="83.82" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="83.82" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="111.76" x2="38.1" y2="111.76" width="0.1524" layer="91"/>
 <junction x="38.1" y="111.76"/>
 <pinref part="DS18B20" gate="A" pin="3"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="TCS34725" gate="G$1" pin="6"/>
-<wire x1="30.48" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="43.18" x2="83.82" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="43.18" x2="83.82" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GND6"/>
@@ -4567,6 +4707,14 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="119.38" y1="162.56" x2="127" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="127" y1="162.56" x2="127" y2="152.4" width="0.1524" layer="91"/>
 <junction x="127" y="152.4"/>
+<pinref part="Q1" gate="G$1" pin="E"/>
+<wire x1="25.4" y1="116.84" x2="25.4" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="111.76" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="RASPI_RESET" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="119.38" x2="15.24" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="119.38" x2="15.24" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="111.76" x2="25.4" y2="111.76" width="0.1524" layer="91"/>
+<junction x="25.4" y="111.76"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -4583,13 +4731,13 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <junction x="93.98" y="157.48"/>
 <pinref part="SUPPLY1" gate="G$1" pin="5V"/>
 <wire x1="93.98" y1="157.48" x2="93.98" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="81.28" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="81.28" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="DS18B20" gate="A" pin="2"/>
 <wire x1="154.94" y1="71.12" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
 <junction x="154.94" y="71.12"/>
 <wire x1="35.56" y1="81.28" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="TCS34725" gate="G$1" pin="7"/>
-<wire x1="35.56" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="45.72" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
 <junction x="35.56" y="81.28"/>
 <pinref part="POWER_IN" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="114.3" x2="154.94" y2="114.3" width="0.1524" layer="91"/>
@@ -4602,6 +4750,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="33.02" x2="119.38" y2="33.02" width="0.1524" layer="91"/>
 <junction x="114.3" y="33.02"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="152.4" x2="25.4" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="157.48" x2="35.56" y2="157.48" width="0.1524" layer="91"/>
+<junction x="35.56" y="157.48"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -4627,7 +4779,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="U$1" gate="G$1" pin="PH_0"/>
 <wire x1="43.18" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="99.06" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="78.74" x2="25.4" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="78.74" x2="5.08" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="DS18B20" gate="A" pin="1"/>
 </segment>
 </net>
@@ -4635,14 +4787,14 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="TCS34725" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="PC_7"/>
-<wire x1="30.48" y1="33.02" x2="96.52" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="33.02" x2="96.52" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="33.02" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="TCS34725" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="30.48" x2="99.06" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="30.48" x2="99.06" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PA_9"/>
 <wire x1="99.06" y1="30.48" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
 </segment>
@@ -4709,6 +4861,27 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="111.76" y1="22.86" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="CCD_BOARD" gate="G$1" pin="3"/>
 <wire x1="111.76" y1="22.86" x2="116.84" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="NRST"/>
+<wire x1="88.9" y1="142.24" x2="88.9" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="149.86" x2="40.64" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="149.86" x2="40.64" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="134.62" x2="25.4" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="C"/>
+<wire x1="25.4" y1="134.62" x2="25.4" y2="127" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="134.62" x2="25.4" y2="142.24" width="0.1524" layer="91"/>
+<junction x="25.4" y="134.62"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="RASPI_RESET" gate="G$1" pin="1"/>
+<pinref part="Q1" gate="G$1" pin="B"/>
+<wire x1="12.7" y1="121.92" x2="20.32" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

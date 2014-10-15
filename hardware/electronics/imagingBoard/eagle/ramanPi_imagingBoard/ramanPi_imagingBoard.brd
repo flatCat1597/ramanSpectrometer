@@ -147,6 +147,7 @@
 <text x="88.9" y="46.99" size="1.27" layer="21" font="vector" rot="R90">status</text>
 <text x="95.25" y="46.99" size="1.27" layer="21" font="vector" rot="R90">busy</text>
 <text x="101.6" y="46.99" size="1.27" layer="21" font="vector" rot="R90">test</text>
+<text x="87.63" y="13.97" size="1.778" layer="21" rot="R90">raspiReset</text>
 </plain>
 <libraries>
 <library name="nucleoF401RE">
@@ -585,6 +586,32 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
+<library name="semicon-smd-ipc">
+<description>&lt;b&gt;IPC Standard SMD Semiconductors&lt;/b&gt;&lt;p&gt;
+A few devices defined according to the IPC standard.&lt;p&gt;
+Based on:&lt;p&gt;
+IPC-SM-782&lt;br&gt;
+IRevision A, August 1993&lt;br&gt;
+Includes Amendment 1, October 1996&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOT23">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -595,13 +622,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 </classes>
 <designrules>
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
@@ -623,11 +643,11 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="8mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
+<param name="mdCopperDimension" value="10mil"/>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
-<param name="msDrill" value="24mil"/>
+<param name="msWidth" value="8mil"/>
+<param name="msDrill" value="20mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -637,15 +657,15 @@ design rules under a new name.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMinPadTop" value="12mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
 <param name="rlMinPadInner" value="10mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMinPadBottom" value="12mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="10mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="10mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -662,7 +682,7 @@ design rules under a new name.</description>
 <param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="25mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -788,6 +808,9 @@ design rules under a new name.</description>
 <element name="C1" library="SparkFun-Capacitors" package="1210" value="0.1uf" x="50.8" y="11.43" rot="R180"/>
 <element name="C2" library="SparkFun-Capacitors" package="1210" value="0.1uf" x="66.04" y="11.43"/>
 <element name="C3" library="SparkFun-Capacitors" package="1210" value="0.1uf" x="93.98" y="26.67" rot="MR90"/>
+<element name="Q1" library="semicon-smd-ipc" package="SOT23" value="2n2222" x="45.72" y="17.78" rot="R180"/>
+<element name="R5" library="adafruit" package="M1206" value="10k" x="50.8" y="15.24"/>
+<element name="RASPI_RESET" library="SparkFun-Connectors" package="JST-2-PTH-VERT" value="M02JST-PTH-VERT" x="90.17" y="17.78" rot="R270"/>
 </elements>
 <signals>
 <signal name="+3.3V">
@@ -985,6 +1008,8 @@ design rules under a new name.</description>
 <vertex x="1.27" y="1.27"/>
 </polygon>
 <wire x1="73.66" y1="67.31" x2="73.66" y2="71.12" width="0.4064" layer="1"/>
+<contactref element="Q1" pad="2"/>
+<contactref element="RASPI_RESET" pad="2"/>
 </signal>
 <signal name="5V">
 <contactref element="U$1" pad="+5V"/>
@@ -1018,6 +1043,9 @@ design rules under a new name.</description>
 <wire x1="83.82" y1="31.75" x2="83.82" y2="43.18" width="0.4064" layer="1"/>
 <wire x1="83.82" y1="43.18" x2="90.17" y2="49.53" width="0.4064" layer="1"/>
 <wire x1="90.17" y1="49.53" x2="90.17" y2="54.61" width="0.4064" layer="1"/>
+<contactref element="R5" pad="2"/>
+<wire x1="52.4" y1="11.43" x2="52.4" y2="15.04" width="0.4064" layer="1"/>
+<wire x1="52.4" y1="15.04" x2="52.2" y2="15.24" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="U$1" pad="PC_8-PWM3/3"/>
@@ -1162,6 +1190,29 @@ design rules under a new name.</description>
 </signal>
 <signal name="VIN">
 <contactref element="U$1" pad="VIN"/>
+</signal>
+<signal name="N$19">
+<contactref element="U$1" pad="NRST"/>
+<contactref element="Q1" pad="3"/>
+<contactref element="R5" pad="1"/>
+<wire x1="49.4" y1="15.24" x2="47.16" y2="15.24" width="0.4064" layer="1"/>
+<wire x1="47.16" y1="15.24" x2="45.72" y2="16.68" width="0.4064" layer="1"/>
+<wire x1="49.4" y1="15.24" x2="48.26" y2="15.24" width="0.4064" layer="1"/>
+<wire x1="48.26" y1="15.24" x2="46.99" y2="13.97" width="0.4064" layer="1"/>
+<wire x1="46.99" y1="13.97" x2="46.99" y2="11.43" width="0.4064" layer="1"/>
+<via x="46.99" y="11.43" extent="1-16" drill="0.7"/>
+<wire x1="50.8" y1="6.35" x2="50.8" y2="7.62" width="0.4064" layer="16"/>
+<wire x1="50.8" y1="7.62" x2="46.99" y2="11.43" width="0.4064" layer="16"/>
+</signal>
+<signal name="N$3">
+<contactref element="RASPI_RESET" pad="1"/>
+<contactref element="Q1" pad="1"/>
+<wire x1="89.62" y1="18.78" x2="87.36" y2="18.78" width="0.4064" layer="1"/>
+<wire x1="87.36" y1="18.78" x2="86.36" y2="17.78" width="0.4064" layer="1"/>
+<wire x1="86.36" y1="17.78" x2="49.53" y2="17.78" width="0.4064" layer="1"/>
+<wire x1="49.53" y1="17.78" x2="48.26" y2="19.05" width="0.4064" layer="1"/>
+<wire x1="48.26" y1="19.05" x2="46.84" y2="19.05" width="0.4064" layer="1"/>
+<wire x1="46.84" y1="19.05" x2="46.67" y2="18.88" width="0.4064" layer="1"/>
 </signal>
 </signals>
 </board>
