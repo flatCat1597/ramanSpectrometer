@@ -9,19 +9,7 @@ import serial
 import numpy as np
 import os
 import plotly.plotly as py
-
 from plotly.graph_objs import *
-py.sign_in("flatCat_", "kvtfqov8xc")
-trace1 = Scatter(
-    x=[1, 2, 3, 4],
-    y=[10, 15, 13, 17]
-)
-trace2 = Scatter(
-    x=[1, 2, 3, 4],
-    y=[16, 5, 11, 9]
-)
-data = Data([trace1, trace2])
-plot_url = py.plot(data, filename='basic-line')
 
 def killOldData():
 	try:
@@ -58,13 +46,18 @@ def readSpectra(saveIt):
 	x1 = []                                                                 																					# initialize the X coord
 	y1 = []                                                                 																					# initialize the y coord
 
+	py.sign_in("YOUR_USER_ID_HERE", "YOUR_USER_KEY_HERE")																										# sign into plot.ly
+
 	for line in lines:
 		p = line.split()																																		# scan the rows of the file stored in lines, and put the values 
 		x1.append(float(p[0]))																															#      into some variables:
 		y1.append(float(p[1]))
+
+	print y1[2323]
+		
 	fig = plt.figure(1)
 	ax = fig.add_subplot(111, axisbg='black')
-	rect = fig.patch # a rectangle instance
+	rect = fig.patch 																																		# a rectangle instance
 	rect.set_facecolor('lightslategray')	
 	ax.relim()
 	ax.autoscale_view(True,True,True)
@@ -78,8 +71,13 @@ def readSpectra(saveIt):
 #	plt.autoscale(True, axis='y', tight=True)
 	xv = np.array(x1)                                                       																				# set the array for x
 	yv = np.array(y1)                                                       																				# set the array for y
-	plt.plot(xv, yv, color = 'white', lw=1)                                                        												# plot the data
-	plt.show()                                                              																					# show the graph
+	
+	plotly_trace1 = Scatter(x=xv, y=yv)																									# add data to plot.ly array
+	plotly_data = Data([plotly_trace1])																											# send data to plot.ly
+	plot_url = py.plot(plotly_data, filename='ramanPi')																					# create graph and display on plot.ly
+
+	plt.plot(xv, yv, color = 'white', lw=1)                                                        												# plot the matplotlib data
+	plt.show()                                                              																					# show the matplotlib graph
 	if saveIt == 1:
 		fname = "\figure_1.png"
 		print "Creating: " + fname
