@@ -9,19 +9,9 @@ import serial
 import numpy as np
 import os
 import plotly.plotly as py
-
 from plotly.graph_objs import *
-py.sign_in("flatCat_", "kvtfqov8xc")
-trace1 = Scatter(
-    x=[1, 2, 3, 4],
-    y=[10, 15, 13, 17]
-)
-trace2 = Scatter(
-    x=[1, 2, 3, 4],
-    y=[16, 5, 11, 9]
-)
-data = Data([trace1, trace2])
-plot_url = py.plot(data, filename='basic-line')
+import pygame, sys
+from pygame.locals import *
 
 def killOldData():
 	try:
@@ -39,7 +29,25 @@ yAxisMax = 4
 xAxisMin = 1
 xAxisMax = 3648
 
+pygame.init()
+pygame.font.init()
+fpsClock = pygame.time.Clock()
+window = pygame.display.set_mode((800,600))
+pygame.display.set_caption('spectraCide0.1 on ramanPi - the DIY ramanSpectrometer')
+red = pygame.Color(255,0,0)
+green = pygame.Color(0,255,0)
+blue = pygame.Color(0,0,255)
+white = pygame.Color(255,255,255)
+black = pygame.Color(0,0,0)
+mouseX, mouseY = 0, 0
+fontObj = pygame.font.Font('freesansbold.ttf',32)
+msg = 'ramanPi'
 
+def drawInterfaceMain():
+	pygame.draw.rect(window, blue, (8,8,794,54))
+	pygame.draw.rect(window, red, (10,10,790,50))
+	pygame.draw.rect(window, red, (10,100,130,60))
+	pygame.display.update()
 
 def getSpectra():
 	with serial.Serial('COM62', 921600) as mcu, open(fname,fmode) as outf: 												# setup serial for communication to Nucelo and open the data file
@@ -58,13 +66,16 @@ def readSpectra(saveIt):
 	x1 = []                                                                 																					# initialize the X coord
 	y1 = []                                                                 																					# initialize the y coord
 
+	py.sign_in("YOUR_ID", "YOUR_KEY")																										# sign into plot.ly
+
 	for line in lines:
 		p = line.split()																																		# scan the rows of the file stored in lines, and put the values 
 		x1.append(float(p[0]))																															#      into some variables:
 		y1.append(float(p[1]))
+
 	fig = plt.figure(1)
 	ax = fig.add_subplot(111, axisbg='black')
-	rect = fig.patch # a rectangle instance
+	rect = fig.patch 																																		# a rectangle instance
 	rect.set_facecolor('lightslategray')	
 	ax.relim()
 	ax.autoscale_view(True,True,True)
@@ -78,8 +89,13 @@ def readSpectra(saveIt):
 #	plt.autoscale(True, axis='y', tight=True)
 	xv = np.array(x1)                                                       																				# set the array for x
 	yv = np.array(y1)                                                       																				# set the array for y
-	plt.plot(xv, yv, color = 'white', lw=1)                                                        												# plot the data
-	plt.show()                                                              																					# show the graph
+
+	plotly_trace1 = Scatter(x=xv, y=yv)																										# add data to plot.ly array
+	plotly_data = Data([plotly_trace1])																											# send data to plot.ly
+	plot_url = py.plot(plotly_data, filename='ramanPi')																					# create graph and display on plot.ly
+
+	plt.plot(xv, yv, color = 'white', lw=1)                                                        												# plot the matplotlib data
+	plt.show()                                                              																					# show the matplotlib graph
 	if saveIt == 1:
 		fname = "\figure_1.png"
 		print "Creating: " + fname
@@ -118,25 +134,59 @@ def setSensitivity():
 		
 	
 plot_Title = 'ramanPi - DIY 3D Printable RaspberryPi Raman Spectrometer'
+drawInterfaceMain()
+
 while(1):
-	os.system('cls')
-	print "ramanPi - DIY 3D Printable RaspberryPi Raman Spectrometer"
-	print "SpectraSide_01  by fl@c@"
-	print ""
-	killOldData()
-	print "1 - Get Spectra"
-	print "2 - Get Spectra and Save File"
-	print "3 - Set Sensitivity"
-	print "4 - Quit"
-	try:
-		req = input("Enter your choice..")
-	except SyntaxError:
-		pass
-	if req ==1:
-		startSpectraCapture(0)
-	if req ==2:
-		startSpectraCapture(1)
-	if req == 3:
-		setSensitivity()
-	if req == 4:
-		quit()
+	msgObj = fontObj.render(msg,False, blue)
+	msgRectobj = msgObj.get_rect()
+	msgRectobj.topleft = (10,20)
+	window.blit(msgObj, msgRectobj)
+
+	for event in pygame.event.get():
+		if event.type == QUIT:
+			pygame.quit()
+			sys.exit()
+		elif event.type == MOUSEMOTION:
+			mousex, mousey = event.pos
+		elif event.type == MOUSEBUTTONUP:
+			mousex, mousey = event.pos
+			drawInterfaceMain()
+			if event.button in (1,2,3):
+				msg = 'left, middle, or right mouse click'
+			elif event.button in (4,5):
+				msg = 'mouse scrolled up or down'
+	
+		elif event.type == KEYDOWN:
+			drawInterfaceMain()
+			if event.key in (K_LEFT, K_RIGHT, K_UP, K_DOWN):
+				msg = 'Arrow Key Pressed'
+			if event.key == K_a:
+				msg = 'A Key pressed'
+			if event.key == K_ESCAPE:
+				pygame.event.post(pygame.event.Event(QUIT))
+	pygame.display.update()
+#	fpsClock.tick(30)
+
+
+#while(1):
+#	os.system('cls')
+#	print "ramanPi - DIY 3D Printable RaspberryPi Raman Spectrometer"
+#	print "SpectraSide_01  by fl@c@"
+#	print ""
+#	killOldData()
+#	print "1 - Get Spectra"
+#	print "2 - Get Spectra and Save File"
+#	print "3 - Set Sensitivity"
+#	print "4 - Quit"
+#	try:
+#		req = input("Enter your choice..")
+#	except SyntaxError:
+#		pass
+#	if req ==1:
+#		startSpectraCapture(0)
+#	if req ==2:
+#		startSpectraCapture(1)
+#	if req == 3:
+#		setSensitivity()
+#	if req == 4:
+#		quit()

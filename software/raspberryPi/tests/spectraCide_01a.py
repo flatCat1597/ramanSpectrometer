@@ -27,8 +27,6 @@ yAxisMax = 4
 xAxisMin = 1
 xAxisMax = 3648
 
-
-
 def getSpectra():
 	with serial.Serial('COM62', 921600) as mcu, open(fname,fmode) as outf: 												# setup serial for communication to Nucelo and open the data file
 		mcu.write('r\r\n') 																																	# send the command to the nucleo to start the capture
@@ -46,15 +44,13 @@ def readSpectra(saveIt):
 	x1 = []                                                                 																					# initialize the X coord
 	y1 = []                                                                 																					# initialize the y coord
 
-	py.sign_in("YOUR_USER_ID_HERE", "YOUR_USER_KEY_HERE")																										# sign into plot.ly
+	py.sign_in("YOUR_ID", "YOUR_KEY")																										# sign into plot.ly
 
 	for line in lines:
 		p = line.split()																																		# scan the rows of the file stored in lines, and put the values 
 		x1.append(float(p[0]))																															#      into some variables:
 		y1.append(float(p[1]))
 
-	print y1[2323]
-		
 	fig = plt.figure(1)
 	ax = fig.add_subplot(111, axisbg='black')
 	rect = fig.patch 																																		# a rectangle instance
@@ -71,8 +67,8 @@ def readSpectra(saveIt):
 #	plt.autoscale(True, axis='y', tight=True)
 	xv = np.array(x1)                                                       																				# set the array for x
 	yv = np.array(y1)                                                       																				# set the array for y
-	
-	plotly_trace1 = Scatter(x=xv, y=yv)																									# add data to plot.ly array
+
+	plotly_trace1 = Scatter(x=xv, y=yv)																										# add data to plot.ly array
 	plotly_data = Data([plotly_trace1])																											# send data to plot.ly
 	plot_url = py.plot(plotly_data, filename='ramanPi')																					# create graph and display on plot.ly
 
@@ -116,6 +112,7 @@ def setSensitivity():
 		
 	
 plot_Title = 'ramanPi - DIY 3D Printable RaspberryPi Raman Spectrometer'
+
 while(1):
 	os.system('cls')
 	print "ramanPi - DIY 3D Printable RaspberryPi Raman Spectrometer"

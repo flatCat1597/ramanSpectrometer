@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1041</width>
+    <height>714</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QComboBox" name="postSite_combo">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>30</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>plot.ly</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>phant</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>120</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>CCD Exposure Time</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sampleName_box">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>140</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>251</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Internet Spectral Database:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>251</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Compounds List:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>120</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Sample Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>160</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Capture Progress</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>220</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Spectra</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>0</y>
+      <width>301</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>ramanPi - spectraCide V0.1</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="compoundList">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>256</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <item>
+     <property name="text">
+      <string>Aliphatic compounds</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>alkanes</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>halogenoalkanes</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>alcohols</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>aldehydes and ketones</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>carboxylic acids</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>acyl chlorides</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>acid anhydrides</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>esters</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>amides</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>nitriles</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>amines</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>amino acides etc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Aromatic compounds</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>arenes</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>aryl halides</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>phenol</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>phenylamine</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="saveSpectra_btn">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>70</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save Spectra</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="getSpectra_btn">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>30</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Get Spectra</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="exposureLCD">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>140</y>
+      <width>111</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDial" name="exposureDial">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>20</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="notchesVisible">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="captureProgress">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>180</y>
+      <width>301</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="postSpectra_btn">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>30</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Post Spectra</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="internetSpectralDatabaseList">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <item>
+     <property name="text">
+      <string>RRUFF </string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QCheckBox" name="autoSaveSpectra_Check">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>110</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Auto Save Spectra</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="spectralView">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>240</y>
+      <width>741</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="quit_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>620</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Quit</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1041</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuRamanPi_spectraCide_v0_1">
+    <property name="title">
+     <string>ramanPi_spectraCide_v0.1</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuRamanPi_spectraCide_v0_1"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>exposureDial</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>exposureLCD</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>340</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>345</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
