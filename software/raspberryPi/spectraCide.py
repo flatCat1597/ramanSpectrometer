@@ -27,6 +27,7 @@ class mainWindowClass(QtGui.QMainWindow, form_class):
 		self.postSpectra_btn.clicked.connect(self.plotLy)
 		self.saveSpectra_btn.clicked.connect(self.saveSpectra)
 		self.quit_btn.clicked.connect(self.quitApp)
+		self.popUpSpectra_btn.clicked.connect(self.popUpSpectra)
 		self.captureProgress.setValue(0)
 
 	def killOldData(self):
@@ -110,13 +111,18 @@ class mainWindowClass(QtGui.QMainWindow, form_class):
 		view.fitInView(imgItem)
 		view.setRenderHint(QtGui.QPainter.Antialiasing)
 		view.show()
+		
+	def popUpSpectra(self):
+		plt.show()
 
 	def saveSpectra(self):
 		timestr = time.strftime("%Y%m%d%H%M%S")
 		self.save("ramanPi_spectra_" + timestr, ext="png", close=False, verbose=True)
 
 	def plotLy(self):
-		py.sign_in("YOUR_ID", "YOUR_KEY")																										# sign into plot.ly
+		userID = self.userName_box.text()
+		userKey = self.userKey_box.text()
+		py.sign_in(userId, userKey)																													# sign into plot.ly
 
 		f2 = open('spectra.dat', 'r')                                																						# open the spectra.dat file for reading into the graph
 		lines = f2.readlines()                                          																						# read the entire file into a single variable
@@ -137,8 +143,8 @@ class mainWindowClass(QtGui.QMainWindow, form_class):
 		plotly_data = Data([plotly_trace1])																											# send data to plot.ly
 		plot_url = py.plot(plotly_data, filename='ramanPi' + timestr)																					# create graph and display on plot.ly
 
-
 	def startSpectraCapture(self):
+		self.setSensitivity()
 		self.captureProgress.setValue(0)
 		self.killOldData()
 		print "Aquiring spectra......"
@@ -161,23 +167,37 @@ class mainWindowClass(QtGui.QMainWindow, form_class):
 
 	def setSensitivity(self):
 		mcu = serial.Serial('COM62', 921600)
-		print "Set Sensitivity Level:"
-		try:
-			sens = input("Enter Sensitivity Level (1-6):")
-		except SyntaxError:
-			pass
-		if sens == 1:
+		print "Set Sensitivity Level:" 
+		print self.exposureDial.value()
+#		try:
+#			sens = input("Enter Sensitivity Level (1-6):")
+#		except SyntaxError:
+#			pass
+#		if sens == 1:
+		expVal = self.exposureDial.value()
+		if expVal == 1:
 			mcu.write('l\r\n')
-		if sens == 2:
+			print "Exposure Setting: 1"
+#		if sens == 2:
+		if expVal == 2:
 			mcu.write('v\r\n')
-		if sens == 3:
+			print "Exposure Setting: 2"
+#		if sens == 3:
+		if expVal == 3:
 			mcu.write('n\r\n')
-		if sens == 4:
+			print "Exposure Setting: 3"
+#		if sens == 4:
+		if expVal == 4:
 			mcu.write('m\r\n')
-		if sens == 5:
+			print "Exposure Setting: 4"
+#		if sens == 5:
+		if expVal == 5:
 			mcu.write('h\r\n')
-		if sens == 6:
+			print "Exposure Setting: 5"
+#		if sens == 6:
+		if expVal == 6:
 			mcu.write('c\r\n')
+			print "Exposure Setting: 6"
 		
 	def quitApp(self):
 		sys.exit()
