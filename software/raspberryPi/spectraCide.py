@@ -15,7 +15,7 @@ fmode = 'ab'																																					# set the file mode to append b
 lines = 0
 
 yAxisMin = 0.85
-yAxisMax = 4
+yAxisMax = 70
 xAxisMin = 1
 xAxisMax = 3648
 
