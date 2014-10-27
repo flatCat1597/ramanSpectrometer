@@ -67,3 +67,11 @@
 1x Aspen Aerogel SPACELOFT Insulation Hydrophobic Mat, 10" x 14" Sample 5mm						$7.00
 1x Car Vehicle 19mm 12V Blue LED Angel Eye Push Power Button Metal Switch Latching					$4.99
 1x Neon gas ampoule, purity 99.999% element sample									$9.86
+1x HIH-4030 Humidity Sensor Breakout							(SparkFun SEN-09569)	$16.95
+10X 3S JST-XH Connector Adapter plug for 3 Cell 11.1v battery 4Pin male&female						$2.86
+1x JST 2.0mm PH 2-Pin Connector with Wire x 20 Sets									$4.99
+6x .01uf capacitor (smd 1206) - decoupling for imagingBoard/CCD								$0.05
+1x 100Pcs MMBT2222 SOT-23 2N2222 SMD NPN Transistor									$0.99
+1x Red LED for imagingBoard indicator											$0.25
+1x Blue LED for imagingBoard indicator											$0.25
+1x 1206 SMD/SMT Surface mount Resistors - 20pcs 10K									$1.00

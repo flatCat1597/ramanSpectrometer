@@ -36,17 +36,17 @@ module tray(){
 
 module traySupports(){
 	color([1,0.4,0]){
-	translate([-3.75,-5,-3]){
+	translate([-4.5,-5,-3]){
 		cube(size=[2,130,4],center=true);
 	}
-	translate([3.75,-5,-3]){
+	translate([4.5,-5,-3]){
 		cube(size=[2,130,4],center=true);
 	}
 	//lower inside rails
-	translate([3.5,-5,-4.75]){
+	translate([4.25,-5,-4.75]){
 		cube(size=[3.5,130,1.5],center=true);
 	}
-	translate([-3.5,-5,-4.75]){
+	translate([-4.25,-5,-4.75]){
 		cube(size=[3.5,130,1.5],center=true);
 	}
 
