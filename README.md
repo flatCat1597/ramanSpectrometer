@@ -3,6 +3,8 @@ ramanPi
 the DIY 3D Printable Raman Spectrometer
 =================
 
+If you are interested in contributing to ramanPi we are looking for Python and pyQT4 developers!  We are also looking for researchers, universities or whoever else may have experience with raman spectrometers to participate in a use case study for the interface and functionality development!  If you're interested or think you have something to contribute, please contact us at dev@ ramanPi.org!!
+You can also check a list of development efforts at ramanPi.org as well!  
 
 The following is from wikipedia on Raman Spectroscopy:
 
