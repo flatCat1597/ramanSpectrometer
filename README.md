@@ -3,6 +3,9 @@ ramanPi
 the DIY 3D Printable Raman Spectrometer
 =================
 
+Update: October 11,2016 
+        I am considering moving ramanPi to gitlab and sunsetting the gitHub repo..  Gitlab seems to be better in quite a few ways..Questions or comments are welcome..!
+
 If you are interested in contributing to ramanPi we are looking for Python and pyQT4 developers!  We are also looking for researchers, universities or whoever else may have experience with raman spectrometers to participate in a use case study for the interface and functionality development!  If you're interested or think you have something to contribute, please contact us at dev@ ramanPi.org!!
 You can also check a list of development efforts at ramanPi.org as well!  
 
