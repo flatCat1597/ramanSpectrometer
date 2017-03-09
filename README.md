@@ -2,6 +2,8 @@ ramanPi
 =================
 the DIY 3D Printable Raman Spectrometer
 =================
+Update: March 8,2017
+        This repository will no longer contain minor updates to the project.  The new repository at gitLab will have the latest and greatest files.  The github repo will only be updated at major intervals.  Please check the repository at https://gitlab.com/ramanPi before using any of the files here to build a ramanPi.  New development has started, and there are going to be lots of updates!  Let us know if you're interested in contributing!  PM fl@C@ on the hackaday.io site at https://hackaday.io/project/1279-ramanpi-raman-spectrometer 
 
 Update: October 11,2016 
         I am considering moving ramanPi to gitlab and sunsetting the gitHub repo..  Gitlab seems to be better in quite a few ways..Questions or comments are welcome..!
